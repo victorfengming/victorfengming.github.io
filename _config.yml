@@ -106,11 +106,31 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "ttk Blog",
+        title: "ttk",
         href: "https://ttk1907.github.io/"
     },
     {
-        title: "yupeng Blog",
+        title: "yupeng",
         href: "https://zhengyupengzz.github.io/"
+    },
+    {
+        title: "jiesang",
+        href: "https://jiesangqaq.github.io"
+    },
+    {
+        title: "yueyang",
+        href: "https://1978413822.github.io/"
+    },
+    {
+        title: "chenzan",
+        href: "https://llzanz.github.io/"
+    },
+    {
+        title: "haha",
+        href: "https://caoyang7.github.io/"
+    },
+    {
+        title: "rwj",
+        href: "https://raoweijiapng.github.io/"
     }
 ]
