@@ -17,7 +17,7 @@ future: true
 # SNS settings
 RSS: true
 weibo_username:     mercyblitz
-github_username:    mercyblitz
+github_username:    victorfengming
 twitter_username:   mercyblitz
 #facebook_username:  mercyblitz
 #linkedin_username:  firstname-lastname-idxxxx
