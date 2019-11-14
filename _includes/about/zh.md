@@ -7,7 +7,6 @@
 
 让我们一起去探索代码世界中的奇妙故事吧!
 
-![helloworld](/images/hello_world.gif)
 
 <h3>友情链接：</h3>  
 ➩ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
