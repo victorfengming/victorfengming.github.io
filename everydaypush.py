@@ -10,6 +10,4 @@ os.system('git push -u origin master')
 
 # TODO csdn更新博文
 # TODO 项目文档->概述
-# TODO jdbc+servelet+这个那个
-# TODO 简历还没写
 
