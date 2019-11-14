@@ -1,6 +1,6 @@
 ---
 title: "可能是全网最好的MySQL重要知识点/面试题总结"
-tags: basis MySQL Index database
+tags: basis mysql Index database
 ---
 
 
