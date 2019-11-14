@@ -26,12 +26,12 @@ tags: JavaScript web solution
 
 <body>
 <div id="main">
-    <img src="./images/1.png">
-    <img src="./images/2.png">
-    <img src="./images/3.png">
-    <img src="./images/4.png">
-    <img src="./images/5.png">
-    <img src="./images/6.png">
+    <img src="./img/1.png">
+    <img src="./img/2.png">
+    <img src="./img/3.png">
+    <img src="./img/4.png">
+    <img src="./img/5.png">
+    <img src="./img/6.png">
 </div>
 <div>
     <a href="javascript:;"><div id="leftside" class="side"></div></a>

@@ -36,7 +36,7 @@ tags: ide solution sublime
 
 <p>第二步：<strong>放到package包下</strong>，这里必须手动添加依赖，不然不会生效</p>
 
-<p><img alt="" class="has" src="/images/posts/ide/sublime_packagecontrol.png"></p>
-<p><img alt="" class="has" src="/images/posts/ide/sublime_packagecontrol2.png"></p>
+<p><img alt="" class="has" src="/img/posts/ide/sublime_packagecontrol.png"></p>
+<p><img alt="" class="has" src="/img/posts/ide/sublime_packagecontrol2.png"></p>
 
 <p>图中第一个是用package control安装的 没用。</p>                                    </div>

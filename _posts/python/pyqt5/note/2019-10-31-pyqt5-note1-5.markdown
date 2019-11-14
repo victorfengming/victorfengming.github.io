@@ -241,7 +241,7 @@ app.exec_()
 
 ### QWidget中设置图标与QApplication中设置图标的区别
 - 通过QWidget设置出来的窗体的图标,可以是每个窗体一个图标.
-- 通过QApplication的`setWindowIcon(QIcon("./images/水枪.png"))`
+- 通过QApplication的`setWindowIcon(QIcon("./img/水枪.png"))`
 设置所有的窗体的默认图标
 
 - 注意:在mac系统中只能识别QApplication中设置的图标

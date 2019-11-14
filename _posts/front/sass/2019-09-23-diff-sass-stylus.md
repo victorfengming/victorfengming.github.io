@@ -660,7 +660,7 @@ $type<span class="hljs-value">: monster;</span>
 <pre class="prettyprint" name="code"><code class="hljs ruby has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-variable">$animal</span>-<span class="hljs-symbol">list:</span> puma, sea-slug, egret, salamander;
 <span class="hljs-variable">@each</span> <span class="hljs-variable">$animal</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$animal</span>-list {
   .<span class="hljs-comment">#{$animal}-icon {</span>
-    background-<span class="hljs-symbol">image:</span> url(<span class="hljs-string">'/images/<span class="hljs-subst">#{<span class="hljs-variable">$animal</span>}</span>.png'</span>);
+    background-<span class="hljs-symbol">image:</span> url(<span class="hljs-string">'/img/<span class="hljs-subst">#{<span class="hljs-variable">$animal</span>}</span>.png'</span>);
   }
 }<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li></ul></pre>
 
@@ -669,16 +669,16 @@ $type<span class="hljs-value">: monster;</span>
 
 
 <pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.puma-icon</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/images/puma.png'</span>)</span></span></span>; 
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/puma.png'</span>)</span></span></span>; 
 <span class="hljs-rule">}</span></span>
 <span class="hljs-class">.sea-slug-icon</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/images/sea-slug.png'</span>)</span></span></span>; 
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/sea-slug.png'</span>)</span></span></span>; 
 <span class="hljs-rule">}</span></span>
 <span class="hljs-class">.egret-icon</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/images/egret.png'</span>)</span></span></span>; 
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/egret.png'</span>)</span></span></span>; 
 <span class="hljs-rule">}</span></span>
 <span class="hljs-class">.salamander-icon</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/images/salamander.png'</span>)</span></span></span>; 
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/salamander.png'</span>)</span></span></span>; 
 <span class="hljs-rule">}</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li></ul></pre>
 
 <p>以上就是sass，Less css与stylus的最显著的区别。</p>                                    </div>

@@ -13,14 +13,14 @@ tags: ide solution
 
 - 别管别的,在vscode任意界面,直接就按`ctrl+shift+k`和`ctrl+shift+m`
 
-![img](/images/posts/ide/vscode_keymap.png)
+![img](/img/posts/ide/vscode_keymap.png)
 
 - 在搜索栏中输入`intelliJ idea keybindings`,并选择第一个
 
-![img](/images/posts/ide/vscode_keymap2.png)
+![img](/img/posts/ide/vscode_keymap2.png)
 
 - 在右边的详情页面,直接点击安装后,重启编辑器即可使用
 
-![img](/images/posts/ide/vscode_keymap3.png)
+![img](/img/posts/ide/vscode_keymap3.png)
 
 后续内容更加精彩,请持续关注

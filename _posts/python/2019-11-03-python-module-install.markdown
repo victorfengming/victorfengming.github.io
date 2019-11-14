@@ -57,8 +57,8 @@ tags: Python solution basis
         <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6431398,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
         <a id="green_channel_follow" onclick="follow('2449c41d-c738-e311-8d02-90b11c0b17d6');" href="javascript:void(0);">关注我</a>
     <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
-    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="https://common.cnblogs.com/images/icon_weibo_24.png" alt=""></a>
-    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="https://common.cnblogs.com/images/wechat.png" alt=""></a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="https://common.cnblogs.com/img/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="https://common.cnblogs.com/img/wechat.png" alt=""></a>
 </div>
 <div id="author_profile">
     <div id="author_profile_info" class="author_profile_info">

@@ -24,5 +24,5 @@ tags: web vue solution
 
 如果显示出了版本号的信息,即表示vue安装成功
 
-![vue-v](/images/posts/vue/vuejs3.png)
+![vue-v](/img/posts/vue/vuejs3.png)
 

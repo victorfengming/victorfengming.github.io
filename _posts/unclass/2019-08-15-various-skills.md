@@ -70,7 +70,7 @@ tags: skills entertainment
     答：
         哇塞这个太厉害了，我的天呐！
         不仅能预览手机模式，还能选择手机型号，整挺好！  
-![imgdes](/images/posts/technology/chrome-phone.png)    
+![imgdes](/img/posts/technology/chrome-phone.png)    
 
 
 

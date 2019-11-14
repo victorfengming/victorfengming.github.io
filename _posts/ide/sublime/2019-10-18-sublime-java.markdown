@@ -49,5 +49,5 @@ tags: ide solution sublime
 
 <h2 id="然后然我们来看看结果如何"><a name="t5"></a>然后然我们来看看结果如何</h2>
 
-<p><img src="/images/posts/ide/sublime_java.png" alt="sublime_java" title=""> <br>
+<p><img src="/img/posts/ide/sublime_java.png" alt="sublime_java" title=""> <br>
 It Works！！！</p>                                  

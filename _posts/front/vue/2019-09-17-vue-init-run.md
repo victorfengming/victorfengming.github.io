@@ -106,6 +106,6 @@ victor@asus:~/WebstormProjects/vuejs/vue_demo2/vue-playlist$ npm run dev
 ```
 地址为:http://localhost:8080
 ```
-![vuehelloworld](/images/posts/vue/vuejs4.png)
+![vuehelloworld](/img/posts/vue/vuejs4.png)
 
 

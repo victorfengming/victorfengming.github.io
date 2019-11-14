@@ -11,7 +11,7 @@ tags: Python background
  2. 在在notepad++中，按F5，或者菜单栏点击 "运行－＞运行" (默认快捷键是 F5 )，在弹出的对话框中，输入`cmd /k python "$(FULL_CURRENT_PATH)"& PAUSE & EXIT`
 
 <div align="center">
-    <img src="/images/posts/technology/20190712173112386notepad1.png" >  
+    <img src="/img/posts/technology/20190712173112386notepad1.png" >  
 </div>
 
 
@@ -19,7 +19,7 @@ tags: Python background
 
 
  <div align="center">
-    <img src="/images/posts/technology/20190712173148840notepad2.png" >  
+    <img src="/img/posts/technology/20190712173148840notepad2.png" >  
 </div>
 
 

@@ -14,7 +14,7 @@ tags: Java basis
 <p>在java中，final的含义在不同的场景下有细微的差别，但总体上来说，它指的是“<strong>这是不可变的</strong>”。下面，我们来讲final的四种主要用法。</p>
 <h3>1.修饰数据</h3>
 <p>在编写程序时，我们经常需要说明一个数据是不可变的，我们成为常量。在java中，用final关键字修饰的变量，只能进行一次赋值操作，并且在生存期内不可以改变它的值。更重要的是，final会告诉编译器，这个数据是不会修改的，那么编译器就可能会在编译时期就对该数据进行替换甚至执行计算，这样可以对我们的程序起到一点优化。不过在针对基本类型和引用类型时，final关键字的效果存在细微差别。我们来看下面的例子：</p>
-<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/img/copycode.gif" alt="复制代码"></a></span></div>
 <pre><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> Value {
 </span><span style="color: #008080;"> 2</span>     <span style="color: #0000ff;">int</span><span style="color: #000000;"> v;
 </span><span style="color: #008080;"> 3</span>     <span style="color: #0000ff;">public</span> Value(<span style="color: #0000ff;">int</span><span style="color: #000000;"> v) {
@@ -39,7 +39,7 @@ tags: Java basis
 </span><span style="color: #008080;">22</span>         value3.v = 4<span style="color: #000000;">;
 </span><span style="color: #008080;">23</span> <span style="color: #000000;">    }
 </span><span style="color: #008080;">24</span> }</pre>
-<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/img/copycode.gif" alt="复制代码"></a></span></div></div>
 <p>上面的例子中，我们先来看一下main方法中的几个final修饰的数据，在给value1赋初始值之后，我们无法再对value1的值进行修改，final关键字起到了常量的作用。从value2我们可以看到，final修饰的变量可以不在声明时赋值，即可以先声明，后赋值。value3时一个引用变量，这里我们可以看到final修饰引用变量时，只是限定了引用变量的引用不可改变，即不能将value3再次引用另一个Value对象，但是引用的对象的值是可以改变的，从内存模型中我们看的更加清晰：</p>
 <p><img src="https://images2015.cnblogs.com/blog/1055692/201701/1055692-20170130101552386-541665575.jpg" alt=""></p>
 <p>上图中，final修饰的值用粗线条的边框表示它的值是不可改变的，我们知道引用变量的值实际上是它所引用的对象的地址，也就是说该地址的值是不可改变的，从而说明了为什么引用变量不可以改变引用对象。而实际引用的对象实际上是不受final关键字的影响的，所以它的值是可以改变的。</p>
@@ -47,7 +47,7 @@ tags: Java basis
 <p>最后我们需要注意的一点是，同时使用static和final修饰的成员在内存中只占据一段不能改变的存储空间。</p>
 <h3>2.修饰方法参数</h3>
 <p>前面我们可以看到，如果变量是我们自己创建的，那么使用final修饰表示我们只会给它赋值一次且不会改变变量的值。那么如果变量是作为参数传入的，我们怎么保证它的值不会改变呢？这就用到了final的第二种用法，即在我们编写方法时，可以在参数前面添加final关键字，它表示在整个方法中，我们不会（实际上是不能）改变参数的值：</p>
-<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/img/copycode.gif" alt="复制代码"></a></span></div>
 <pre><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> FinalTest {
 
     </span><span style="color: #008000;">/*</span><span style="color: #008000;"> ... </span><span style="color: #008000;">*/</span>
@@ -58,7 +58,7 @@ tags: Java basis
         value.v = 5; <span style="color: #008000;">//</span><span style="color: #008000;"> 可以改变引用对象的值</span>
 <span style="color: #000000;">    }
 }</span></pre>
-<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/images/copycode.gif" alt="复制代码"></a></span></div></div>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="//common.cnblogs.com/img/copycode.gif" alt="复制代码"></a></span></div></div>
 <h3>3.修饰方法</h3>
 <p>第三种方式，即用final关键字修饰方法，它表示该方法不能被覆盖。这种使用方式主要是从设计的角度考虑，即明确告诉其他可能会继承该类的程序员，不希望他们去覆盖这个方法。这种方式我们很容易理解，然而，关于private和final关键字还有一点联系，这就是类中所有的private方法都隐式地指定为是final的，由于无法在类外使用private方法，所以也就无法覆盖它。</p>
 <h3>4.修饰类</h3>

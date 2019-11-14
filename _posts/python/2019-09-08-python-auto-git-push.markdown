@@ -47,6 +47,6 @@ os.system('git push origin master')
 python3 everydaypush.py
 ```
 结果如下:
-![python auto git push](/images/posts/python/python-auto-git-push.png)
+![python auto git push](/img/posts/python/python-auto-git-push.png)
 
 小编后续会升级和完善相应功能,请持续关注~

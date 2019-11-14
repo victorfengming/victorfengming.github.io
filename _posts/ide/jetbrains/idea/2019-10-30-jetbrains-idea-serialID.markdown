@@ -21,7 +21,7 @@ java的序列化机制是通过在运行时判断类的serialVersionUID来验证
 
 ### 2、设置你的IDEA为检查序列化ID
 
-![](/images/posts/ide/idea_serializable_UID.png)
+![](/img/posts/ide/idea_serializable_UID.png)
 
 ### 3、重启IDEA
 有的版本可以不重启,比如小编使用的
@@ -31,7 +31,7 @@ IntelliJ IDEA 2019.2.3 (Ultimate Edition)
 
 这个可以根据实际情况而定
 ### 4、在需要自动生成序列化ID的类中使用快捷键:Alt+Insert
-![](/images/posts/ide/idea_generate.png)
+![](/img/posts/ide/idea_generate.png)
 
 ### 本文参考
 [岳阳-丁's blog](https://1978413822.github.io/)的[IDEA加序列化](https://1978413822.github.io/2019/10/29/2019-10-29-idea%E4%B8%AD%E5%8A%A0%E5%BA%8F%E5%88%97%E5%8C%96/)

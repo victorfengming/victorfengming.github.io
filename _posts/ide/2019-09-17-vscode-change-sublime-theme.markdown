@@ -13,19 +13,19 @@ tags: ide solution
 
 - 别管别的,在vscode任意界面,直接就按`ctrl+shift+P`打开命令面板
 
-![img](/images/posts/ide/vscode_ctrl_shift_p.png)
+![img](/img/posts/ide/vscode_ctrl_shift_p.png)
 
 - 输入`theme`
 
-![img](/images/posts/ide/vscode_choice_theme.png)
+![img](/img/posts/ide/vscode_choice_theme.png)
 
 - 进入首选项->颜色主题,然后直接就选择`monokai`主题
 
-![img](/images/posts/ide/vscode_choice_theme2.png)
+![img](/img/posts/ide/vscode_choice_theme2.png)
 
 - 现在你会神奇的发现,当前主题和sublime一样一样的了呢!
 
 - `sublime`的主题
-![img](/images/posts/ide/sublime_theme.png)
+![img](/img/posts/ide/sublime_theme.png)
 - `vscode`的主题
-![img](/images/posts/ide/vscode_theme.png)
+![img](/img/posts/ide/vscode_theme.png)

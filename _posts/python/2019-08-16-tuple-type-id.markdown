@@ -23,19 +23,19 @@ tags: Python background
 ### python3.6版本
 <br>
 <div align="left">
-    <img src="/images/posts/technology/20190806224625211tuple.png" >  
+    <img src="/img/posts/technology/20190806224625211tuple.png" >  
 </div>
 在Python3.7以上版本中,元组将会和数值类型的操作方式类似,若变量内容相同,则只是改变了变量的指向的内存地址,用is方法检测结果为True
 <br>
 ### python3.7版本
 <br>
 <div align="left">
-    <img src="/images/posts/technology/20190806224756626tuple.png" >  
+    <img src="/img/posts/technology/20190806224756626tuple.png" >  
 </div>
 ### python3.8版本
 <br>
 <div align="left">
-    <img src="/images/posts/technology/20190806224651517tuple.png" >  
+    <img src="/img/posts/technology/20190806224651517tuple.png" >  
 </div>
 
 

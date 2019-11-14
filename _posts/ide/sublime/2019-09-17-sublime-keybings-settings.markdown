@@ -79,12 +79,12 @@ tags: ide solution
 在sublime菜单栏中点击Preferences(首选项)->settings(设置)  
 在sublime菜单栏中点击Preferences(首选项)->key bindings(快捷键)
 
-![sublime_setting](/images/posts/ide/sublime_settings.png)
+![sublime_setting](/img/posts/ide/sublime_settings.png)
 
 如图,左边的是默认设置,在右边粘贴你的设置配置代码即可
 
-![sublime_setting](/images/posts/ide/sublime_settings2.png)
+![sublime_setting](/img/posts/ide/sublime_settings2.png)
 
 如图,左边的是默认快捷键,在右边粘贴你的自定义快捷键即可
 
-![sublime_setting](/images/posts/ide/sublime_settings3.png)
+![sublime_setting](/img/posts/ide/sublime_settings3.png)

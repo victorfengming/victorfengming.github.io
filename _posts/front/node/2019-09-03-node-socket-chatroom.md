@@ -144,4 +144,4 @@ io.on('connection',function (socket) {
 在本机的ip地址中访问本地服务器即可  
 `http://127.0.0.1:1998/`
 
-![chatroom](/images/posts/node/chatroom.png)
+![chatroom](/img/posts/node/chatroom.png)

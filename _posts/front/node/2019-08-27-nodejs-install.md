@@ -32,11 +32,11 @@ sudo apt-get install -y nodejs
 
 ### 方法2：  
 在nodejs官方网站download页面中选择需要使用的版本,可以选择LTS或current,选择对应系统右键复制链接地址
-![node官网](/images/posts/node/node-install.png)  
+![node官网](/img/posts/node/node-install.png)  
 
 如果需要下载历史版本可以选择download页面底部PreviousReleases,也可以直接访问http://nodejs.org/dist/或https://nodejs.org/download/release/  
 
-![historyversion](/images/posts/node/node-install2.png)
+![historyversion](/img/posts/node/node-install2.png)
 
 当然你也可以使用[淘宝](https://www.taobao.com/)npm镜像下载对应的[node版本](https://npm.taobao.org/mirrors/node/)  
 
