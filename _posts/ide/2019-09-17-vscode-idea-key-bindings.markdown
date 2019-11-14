@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Visual Studio Code引入jetbrains快捷键'
-date: 2019-09-17
 tags: ide solution
 ---
 

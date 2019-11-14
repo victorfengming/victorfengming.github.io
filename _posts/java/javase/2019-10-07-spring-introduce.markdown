@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Spring 概述'
-date: 2019-10-07
 tags: Java basis spring
 ---
 

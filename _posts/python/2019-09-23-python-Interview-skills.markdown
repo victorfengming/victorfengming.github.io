@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python面试的一些心得，与Python练习题分享"
-date: 2019-09-23 
 tags: Python solution 
 ---
 

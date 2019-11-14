@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "markdown简识"
-date: 2019-08-17 
 tags: skills basis 
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "jupyter浅析"
-date: 2019-10-27 
 tags: Python solution basis
 ---
 

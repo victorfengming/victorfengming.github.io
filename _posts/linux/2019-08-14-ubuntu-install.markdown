@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Ubuntu系统的安装"
-date: 2019-08-15 
 tags: Linux solution ubuntu
 ---
 

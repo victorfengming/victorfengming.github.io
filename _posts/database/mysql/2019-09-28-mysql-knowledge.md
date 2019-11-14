@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: "MySql数据库知识学习笔记------索引，优化，事务"  
-date: 2019-09-28  
 tags: Linux deepin database mysql   
 ---  
   

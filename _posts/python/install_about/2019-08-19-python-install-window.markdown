@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "python安装以及版本检测"
-date: 2019-08-19 
 tags: Python background 
 ---
 

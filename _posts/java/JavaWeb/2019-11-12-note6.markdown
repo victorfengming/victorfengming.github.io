@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'JavaWeb笔记03-Servlet'  
-date: 2019-11-12  
 tags: Java basis note JDBC
 ---  
   

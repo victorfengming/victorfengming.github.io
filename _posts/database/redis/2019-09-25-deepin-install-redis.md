@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "一行命令带你安装redis(deepin系统下)"
-date: 2019-09-25 
 tags: Linux deepin database redis
 ---
 

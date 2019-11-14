@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: "Scrapy笔记01"  
-date: 2019-11-11   
 tags: Python solution basis  
 ---  
   

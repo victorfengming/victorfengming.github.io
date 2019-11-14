@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jQuery中的元素方法'
-date: 2019-09-08 
 tags: JavaScript web solution
 ---
 

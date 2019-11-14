@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'DataGrip使用入门-常用操作（三）'  
-date: 2019-10-05  
 tags: ide solution datagrip jetbrains  
 ---  
   

@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "mysql中的RDBMS 术语"  
-date: 2019-10-02  
 tags: Linux database mysql   
 ---
 

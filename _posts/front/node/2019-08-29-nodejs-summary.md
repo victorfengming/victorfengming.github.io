@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Node.js笔记整理"
-date: 2019-08-29 
 tags: node background server basis
 ---
 

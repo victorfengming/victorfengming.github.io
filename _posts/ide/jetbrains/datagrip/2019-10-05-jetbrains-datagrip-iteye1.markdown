@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'DataGrip使用入门-安装及数据源管理（一）'  
-date: 2019-10-05  
 tags: ide solution datagrip jetbrains  
 ---  
   

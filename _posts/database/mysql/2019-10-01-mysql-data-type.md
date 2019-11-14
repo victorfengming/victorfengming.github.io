@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "MySQL的基础数据类型"  
-date: 2019-10-01  
 tags: database mysql   
 ---
 

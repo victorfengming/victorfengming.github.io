@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "在ubuntu下安装mysql数据库"  
-date: 2019-10-09  
 tags: database mysql solution ubuntu
 ---
 

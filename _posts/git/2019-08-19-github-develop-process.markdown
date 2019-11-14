@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "github开源项目的协同开发流程"
-date: 2019-08-20 
 tags: Git solution 
 ---
 

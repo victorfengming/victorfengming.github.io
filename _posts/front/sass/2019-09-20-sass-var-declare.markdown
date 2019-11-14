@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sass中变量声明'
-date: 2019-09-20 
 tags: web html solution sass
 ---
 

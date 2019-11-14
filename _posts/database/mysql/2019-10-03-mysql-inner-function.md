@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "mysql中的内置函数"  
-date: 2019-10-03  
 tags: Linux database mysql   
 ---
 

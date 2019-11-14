@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "关于deepin系统的各种坑"
-date: 2019-09-24 
 tags: Linux deepin 
 ---
 

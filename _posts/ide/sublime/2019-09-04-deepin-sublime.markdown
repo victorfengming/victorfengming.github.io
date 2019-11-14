@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sublime Text'
-date: 2019-09-04
 tags: deepin solution ide
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "几个优秀的mysql管理工具与应用程序推荐"  
-date: 2019-10-09  
 tags: database mysql solution
 ---
 

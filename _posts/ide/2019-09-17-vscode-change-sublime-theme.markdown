@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '教你将Visual Studio Code打造成更加强大的sublime'
-date: 2019-09-17
 tags: ide solution
 ---
 

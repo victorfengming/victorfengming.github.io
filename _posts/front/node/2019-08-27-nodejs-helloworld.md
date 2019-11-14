@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "node的第一个程序"
-date: 2019-08-27 
 tags: node background server basis
 ---
 

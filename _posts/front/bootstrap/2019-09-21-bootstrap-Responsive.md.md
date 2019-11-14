@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Bootstrap 响应式设计"
-date: 2019-09-21 
 tags: web basis Bootstrap
 ---
 

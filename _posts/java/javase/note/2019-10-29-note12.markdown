@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java笔记12-函数式接口'
-date: 2019-10-29
 tags: Java basis note 
 ---
 

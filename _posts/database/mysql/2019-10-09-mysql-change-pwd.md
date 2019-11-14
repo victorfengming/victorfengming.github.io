@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "mysql修改密码方法"  
-date: 2019-10-09  
 tags: database mysql solution
 ---
 

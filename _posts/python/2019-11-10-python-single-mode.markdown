@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "python中的单例模式"
-date: 2019-11-10 
 tags: Python solution basis
 ---
 

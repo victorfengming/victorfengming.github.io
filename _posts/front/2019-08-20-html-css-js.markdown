@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '前端相关知识索引'
-date: 2019-08-20 
 tags: Index web 
 ---
 

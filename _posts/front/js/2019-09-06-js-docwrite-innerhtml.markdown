@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'JS中的document.write和innerHTML区别'
-date: 2019-09-06 
 tags: JavaScript web solution
 ---
 

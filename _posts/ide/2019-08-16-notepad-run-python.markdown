@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Notepad++运行python"
-date: 2019-08-16 
 tags: Python background
 ---
 

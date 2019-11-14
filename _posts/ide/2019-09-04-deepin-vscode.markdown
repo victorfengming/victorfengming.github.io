@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Visual Studio Code'
-date: 2019-09-04
 tags: deepin solution ide
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jQuery手动触发事件-trigger()方法'
-date: 2019-09-08
 tags: JavaScript web jQuery 
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "啥是Layui"
-date: 2019-09-20 
 tags: web basis Layui
 ---
 

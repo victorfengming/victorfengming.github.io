@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "PHP中的输出语句对比"
-date: 2019-10-10 
 tags: php background basis 
 ---
 

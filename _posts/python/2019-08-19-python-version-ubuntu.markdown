@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "更改Ubuntu默认Python版本方法"
-date: 2019-08-30 
 tags: Python background ubuntu
 ---
 

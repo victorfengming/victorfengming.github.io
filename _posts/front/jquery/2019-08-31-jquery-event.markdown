@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jQuery中的事件'
-date: 2019-08-31 
 tags: JavaScript web basis jQuery  
 ---
 

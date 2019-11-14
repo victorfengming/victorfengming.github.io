@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "PyQt5学习笔记16-20"
-date: 2019-11-01 
 tags: Python solution basis PyQt5
 ---
 

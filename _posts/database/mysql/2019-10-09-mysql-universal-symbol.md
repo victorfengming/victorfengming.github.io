@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "mysql中的通配符使用"  
-date: 2019-10-09  
 tags: database mysql solution
 ---
 

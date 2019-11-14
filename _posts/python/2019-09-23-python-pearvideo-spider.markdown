@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "python爬取梨视频"
-date: 2019-09-23 
 tags: Python solution 
 ---
 

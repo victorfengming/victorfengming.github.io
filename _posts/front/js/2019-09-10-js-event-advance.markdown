@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'js中的事件委托或是事件代理详解'
-date: 2019-09-10 
 tags: JavaScript web solution
 ---
 <html>

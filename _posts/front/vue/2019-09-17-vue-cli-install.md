@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Vue CLI的安装"
-date: 2019-09-17 
 tags: web vue solution
 ---
 

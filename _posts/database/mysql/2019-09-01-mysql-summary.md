@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "可能是全网最好的MySQL重要知识点/面试题总结"
-date: 2019-09-28 
 tags: basis MySQL Index database
 ---
 

@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'jetbrains 系列IDE 使用技巧'  
-date: 2019-09-18  
 tags: ide solution IDEA jetbrains
 ---  
   

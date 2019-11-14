@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '关于Sass和less的奇妙故事'
-date: 2019-09-23 
 tags: web solution sass  
 ---
 

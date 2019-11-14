@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Deepin下java开发环境部署'
-date: 2019-09-04
 tags: Java deepin solution
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '23种设计模式汇总整理'
-date: 2019-10-15
 tags: Java basis
 ---
 

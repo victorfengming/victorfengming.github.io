@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sublime弹出更新框解决方案'
-date: 2019-10-12
 tags: ide solution sublime
 ---
 

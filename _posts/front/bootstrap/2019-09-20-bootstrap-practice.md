@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Bootstrap 编程实战闯关"
-date: 2019-09-20 
 tags: web basis Bootstrap
 ---
 

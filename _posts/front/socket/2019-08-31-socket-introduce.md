@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "socket简介"
-date: 2019-08-30 
 tags: socket web basis 
 ---
 

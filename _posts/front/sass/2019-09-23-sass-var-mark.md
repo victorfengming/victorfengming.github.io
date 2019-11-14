@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sass - 变量($)'
-date: 2019-09-23 
 tags: web html solution sass  
 ---
 

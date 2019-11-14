@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'JS中的元素获取'
-date: 2019-08-29 
 tags: JavaScript web basis 
 ---
 

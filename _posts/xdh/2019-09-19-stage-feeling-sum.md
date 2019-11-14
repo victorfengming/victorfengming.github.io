@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "兄弟会 - 阶段感悟汇总"
-date: 2019-09-19
 tags: XDH  
 ---
 

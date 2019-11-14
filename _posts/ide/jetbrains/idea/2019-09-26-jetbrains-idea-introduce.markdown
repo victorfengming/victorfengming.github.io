@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '宇宙最强Java编辑器:IntelliJ IDEA 介绍'
-date: 2019-09-26
 tags: ide solution idea jetbrains
 ---
 

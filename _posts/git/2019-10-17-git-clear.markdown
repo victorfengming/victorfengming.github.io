@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "删除github上的commit历史记录"
-date: 2019-10-17 
 tags: Git solution
 ---
 

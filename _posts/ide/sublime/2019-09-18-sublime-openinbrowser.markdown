@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sublime运行代码 open in browser快捷键设置'
-date: 2019-09-18
 tags: ide solution sublime
 ---
 

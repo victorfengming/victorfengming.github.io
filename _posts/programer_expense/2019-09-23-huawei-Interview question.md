@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '华为面试题：1+4=5，2+5=12，3+6=21，问8+11=？网友：幼儿园级别'
-date: 2019-09-23 
 tags: entertainment  
 ---
 

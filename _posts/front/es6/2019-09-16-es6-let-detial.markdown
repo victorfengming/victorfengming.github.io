@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'ES6中的let命令'
-date: 2019-09-16 
 tags: web html basis
 ---
 

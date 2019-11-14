@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'JDBC笔记01'  
-date: 2019-11-08  
 tags: Java basis note JDBC
 ---  
 

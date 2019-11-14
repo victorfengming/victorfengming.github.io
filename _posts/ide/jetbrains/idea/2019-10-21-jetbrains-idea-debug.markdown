@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '在IDEA中调试代码'
-date: 2019-10-21
 tags: ide solution idea jetbrains
 ---
 

@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: '宇宙最强PHP编辑器:PhpStorm 介绍'  
-date: 2019-09-26  
 tags: ide solution PhpStorm jetbrains  
 ---  
   

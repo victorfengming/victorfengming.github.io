@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'CSS中的定位'
-date: 2019-09-05 
 tags: css web solution
 ---
 

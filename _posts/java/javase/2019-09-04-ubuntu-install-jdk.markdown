@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'ubuntu系统下Java环境JDK的安装'
-date: 2019-09-04
 tags: Java ubuntu solution
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "PHP MySQL Insert Into"  
-date: 2019-10-04  
 tags: database mysql php  
 ---
 

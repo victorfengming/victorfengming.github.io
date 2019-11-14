@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '如何直接在网页中显示PDF文件'
-date: 2019-10-19 
 tags: web html solution
 ---
 

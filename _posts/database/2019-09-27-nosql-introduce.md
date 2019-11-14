@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Nosql简介 Redis，Memchche,MongoDb的区别"
-date: 2019-09-27
 tags: Linux deepin database nosql 
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python pip 安装与使用"
-date: 2019-10-12 
 tags: Python solution basis
 ---
 

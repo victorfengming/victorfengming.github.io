@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Git仓库.git文件夹目录介绍"
-date: 2019-10-17 
 tags: Git solution
 ---
 

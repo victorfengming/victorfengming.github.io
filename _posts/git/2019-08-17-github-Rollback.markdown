@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "git版本的回滚"
-date: 2019-08-17 
 tags: Git solution 
 ---
 

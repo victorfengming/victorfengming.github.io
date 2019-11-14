@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'Intelij DataGrip 使用教程'  
-date: 2019-10-04  
 tags: ide solution datagrip jetbrains  
 ---  
   

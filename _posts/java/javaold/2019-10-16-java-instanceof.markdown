@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'Java中的instanceof简析'  
-date: 2019-10-16  
 tags: Java basis  
 ---  
   

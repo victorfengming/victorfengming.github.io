@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java中线程池、Lambda表达式'
-date: 2019-10-22
 tags: Java basis
 ---
 

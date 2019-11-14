@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'DataGrip使用入门-导出数据（四）'  
-date: 2019-10-05  
 tags: ide solution datagrip jetbrains  
 ---  
   

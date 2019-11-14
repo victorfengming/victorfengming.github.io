@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sass中嵌套CSS的规则'
-date: 2019-09-20 
 tags: web html solution sass
 ---
 

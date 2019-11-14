@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'IDEA自动生成序列化ID'
-date: 2019-10-30
 tags: ide solution idea jetbrains
 ---
 

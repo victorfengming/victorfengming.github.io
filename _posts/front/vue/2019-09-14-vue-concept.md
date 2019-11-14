@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Vue2.0 中，“渐进式框架”和“自底向上增量开发的设计”这两个概念是什么？"
-date: 2019-09-14 
 tags: web vue solution
 ---
 

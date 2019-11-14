@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "关于Python3.7和Python3.6中元组类型数据内存存储问题"
-date: 2019-08-16 
 tags: Python background
 ---
 

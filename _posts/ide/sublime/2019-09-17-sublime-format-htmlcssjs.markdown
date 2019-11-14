@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'sublime一键格式化html/css/js'
-date: 2019-09-17
 tags: ide solution sublime
 ---
 

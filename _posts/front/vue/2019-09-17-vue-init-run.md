@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "初始化vue项目并启动"
-date: 2019-09-17 
 tags: web vue basis
 ---
 

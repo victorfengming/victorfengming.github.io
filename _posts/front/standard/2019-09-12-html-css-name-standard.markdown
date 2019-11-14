@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'HTML，CSS的class与id命名规则'
-date: 2019-09-12 
 tags: web html solution css
 ---
 

@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: '宇宙最强数据库编辑器:datagrip 介绍'  
-date: 2019-09-26  
 tags: ide solution datagrip jetbrains  
 ---  
   

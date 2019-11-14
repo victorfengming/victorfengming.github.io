@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Deepin 下安装 LAMP"
-date: 2019-09-25 
 tags: Linux deepin php database
 ---
 

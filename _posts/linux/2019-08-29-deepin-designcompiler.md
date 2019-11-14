@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "deepin系统安装design compiler"
-date: 2019-08-29 
 tags: Linux deepin 
 ---
 

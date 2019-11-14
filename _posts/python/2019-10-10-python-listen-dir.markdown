@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "python中文件变化监控-watchdog"
-date: 2019-10-10 
 tags: Python solution 
 ---
 

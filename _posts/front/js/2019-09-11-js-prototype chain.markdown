@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'js 原型链的理解'
-date: 2019-09-11 
 tags: JavaScript web basis
 ---
 

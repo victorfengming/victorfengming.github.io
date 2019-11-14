@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jquery点击事件获取该元素在整个一类元素中的索引值'
-date: 2019-09-07
 tags: JavaScript web jQuery 
 ---
 

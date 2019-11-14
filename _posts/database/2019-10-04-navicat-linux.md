@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "linux版navicat安装和破解（亲测汗水经验）"
-date: 2019-10-04 
 tags: windows navicat solution
 ---
 

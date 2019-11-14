@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'ES6中let和var的区别'
-date: 2019-09-16 
 tags: web html solution
 ---
 

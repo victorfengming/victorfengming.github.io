@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "vim中批量添加注释"
-date: 2019-08-22 
 tags: vim Linux basis 
 ---
 

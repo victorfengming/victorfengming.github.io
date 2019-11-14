@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "PHP的特点小结"
-date: 2019-08-19 
 tags: php background basis
 ---
 

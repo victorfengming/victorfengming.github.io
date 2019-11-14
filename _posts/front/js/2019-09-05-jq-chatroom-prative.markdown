@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '慕课网轮播图100%还原'
-date: 2019-09-05 
 tags: JavaScript web solution
 ---
 

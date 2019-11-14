@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "git工具基础"
-date: 2019-08-17 
 tags: Git basis 
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java中Collection类数据的增删改查'
-date: 2019-10-20
 tags: Java basis
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "python爬取妹子图+tkinter下载界面"
-date: 2019-09-23 
 tags: Python solution spider tkinter
 ---
 

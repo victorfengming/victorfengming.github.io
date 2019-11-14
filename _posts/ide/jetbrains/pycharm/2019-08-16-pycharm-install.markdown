@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'PyCharm的安装以及破解'
-date: 2019-08-16 
 tags: Python background 
 ---
 

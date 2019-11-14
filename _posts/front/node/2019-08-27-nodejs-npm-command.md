@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "npm常用命令"
-date: 2019-08-27 
 tags: node background server basis
 ---
 

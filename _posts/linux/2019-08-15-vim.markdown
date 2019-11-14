@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "vim编辑器简介"
-date: 2019-08-15 
 tags: vim basis Linux 
 ---
 

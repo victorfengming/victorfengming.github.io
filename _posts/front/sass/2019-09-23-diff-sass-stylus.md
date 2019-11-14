@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sass、LESS 和 Stylus区别总结'
-date: 2019-09-23 
 tags: web solution sass  
 ---
 

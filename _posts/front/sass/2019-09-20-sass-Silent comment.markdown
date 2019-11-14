@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '啥是静默注释(在sass中)'
-date: 2019-09-20 
 tags: web html solution sass
 ---
 

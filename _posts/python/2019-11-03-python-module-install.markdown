@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "python 相关模块安装 国内镜像地址"
-date: 2019-11-03 
 tags: Python solution basis
 ---
 

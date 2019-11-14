@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "ubuntu下安装python3.7"
-date: 2019-08-30 
 tags: Python background ubuntu
 ---
  

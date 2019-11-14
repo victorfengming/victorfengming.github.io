@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "ubuntu系统下nodejs的安装"
-date: 2019-08-27 
 tags: node background solution ubuntu
 ---
 

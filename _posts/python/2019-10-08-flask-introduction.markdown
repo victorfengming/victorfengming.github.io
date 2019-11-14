@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Flask 概述"
-date: 2019-10-08 
 tags: Python solution web flask
 ---
 

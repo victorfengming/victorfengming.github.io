@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python基础部分索引"
-date: 2019-08-29 
 tags: Python background Index
 ---
 

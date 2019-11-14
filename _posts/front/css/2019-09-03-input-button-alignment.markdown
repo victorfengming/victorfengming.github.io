@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'CSS中input和button对齐的解决方案'
-date: 2019-09-03 
 tags: css web solution
 ---
 

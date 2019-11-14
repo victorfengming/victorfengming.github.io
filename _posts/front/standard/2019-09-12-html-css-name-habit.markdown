@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'CSS中id与class 命名规则及编码的6个最佳习惯'
-date: 2019-09-12 
 tags: web html solution
 ---
   

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "PHP中的魔术常量"
-date: 2019-08-19 
 tags: php background basis 
 ---
 

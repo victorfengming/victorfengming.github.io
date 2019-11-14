@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '关于Sass变量名用中划线还是下划线分隔问题'
-date: 2019-09-20 
 tags: web html solution sass
 ---
 

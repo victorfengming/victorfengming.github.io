@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python自然语言处理工具小结"
-date: 2019-08-30 
 tags: Python background solution
 ---
 

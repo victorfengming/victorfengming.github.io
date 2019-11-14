@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'WebStrom实时预览功能--Chrome'
-date: 2019-09-18
 tags: ide solution webstrom jetbrains
 ---
 

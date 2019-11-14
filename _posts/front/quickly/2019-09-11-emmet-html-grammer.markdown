@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Emmet的html语法'
-date: 2019-09-11 
 tags: web html solution
 ---
 

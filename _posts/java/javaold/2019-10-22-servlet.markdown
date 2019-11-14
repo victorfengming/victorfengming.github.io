@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'servlet的配置以及使用'
-date: 2019-10-22
 tags: Java basis servlet
 ---
 

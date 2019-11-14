@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "送你一些小技巧"
-date: 2019-08-15 
 tags: skills entertainment 
 ---
 

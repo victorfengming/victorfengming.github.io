@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python实现自动推本地github博客到远程仓库"
-date: 2019-10-10 
 tags: Python solution Git 
 ---
 

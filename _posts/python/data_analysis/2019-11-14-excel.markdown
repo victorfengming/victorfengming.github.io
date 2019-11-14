@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: "数据分析之Excel笔记"  
-date: 2019-11-14   
 tags: Python solution basis data_analysis Excel  
 ---  
   

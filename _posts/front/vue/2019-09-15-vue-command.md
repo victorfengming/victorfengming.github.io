@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Vue指令大全"
-date: 2019-09-15 
 tags: web vue basis
 ---
 

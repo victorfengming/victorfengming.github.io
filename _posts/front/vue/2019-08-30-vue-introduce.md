@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Vue.js简单介绍"
-date: 2019-08-30 
 tags: JavaScript web vue basis
 ---
 

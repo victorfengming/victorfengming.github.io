@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jQ动画效果大全'
-date: 2019-09-11
 tags: JavaScript web jQuery 
 ---
 <div class="htmledit_views" id="content_views">

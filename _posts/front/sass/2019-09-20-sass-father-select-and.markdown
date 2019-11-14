@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sass中父选择器的标识符&'
-date: 2019-09-20 
 tags: web html solution sass
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Sass中子组合选择器和同层组合选择器：>、+和~'
-date: 2019-09-20 
 tags: web html solution sass
 ---
 

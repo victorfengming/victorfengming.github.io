@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java中final关键字的几种用法'
-date: 2019-10-11
 tags: Java basis
 ---
 

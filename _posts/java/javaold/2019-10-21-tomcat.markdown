@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'tomcat的配置以及使用'
-date: 2019-10-21
 tags: Java basis tomcat
 ---
 

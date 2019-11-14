@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: '宇宙最强python编辑器:pycharm 介绍'  
-date: 2019-09-26  
 tags: ide solution pycharm jetbrains  
 ---  
   

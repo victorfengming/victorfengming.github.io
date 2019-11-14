@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "git log解析，打log随心所欲！"
-date: 2019-09-06 
 tags: Git solution 
 ---
 

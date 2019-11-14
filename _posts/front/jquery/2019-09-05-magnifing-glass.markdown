@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jQ实现放大镜特效'
-date: 2019-09-05
 tags: JavaScript web jQuery 
 ---
 

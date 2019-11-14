@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "我的第一个Vue程序"
-date: 2019-09-18 
 tags: web vue basis
 ---
 

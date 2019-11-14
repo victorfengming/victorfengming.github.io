@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "git个人整理总结"
-date: 2019-08-21 
 tags: Git basis
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Node.js REPL(交互式解释器)"
-date: 2019-08-27 
 tags: node background server basis
 ---
 

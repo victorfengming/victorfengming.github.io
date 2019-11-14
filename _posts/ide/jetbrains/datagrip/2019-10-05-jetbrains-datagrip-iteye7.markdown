@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'DataGrip使用进阶-文本编辑器（三）'  
-date: 2019-10-05  
 tags: ide solution datagrip jetbrains  
 ---  
   

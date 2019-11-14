@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "nodejs中的npm介绍"
-date: 2019-08-27 
 tags: node background server basis
 ---
 

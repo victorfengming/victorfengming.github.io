@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Vue的项目目录解析"
-date: 2019-09-17 
 tags: web vue basis
 ---
 

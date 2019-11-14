@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'JavaWeb笔记01-XML'  
-date: 2019-11-11  
 tags: Java basis note JDBC
 ---  
   

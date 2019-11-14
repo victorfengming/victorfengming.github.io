@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'sublime Text 正则替换'
-date: 2019-09-12 
 tags: web html solution sublime
 ---
 

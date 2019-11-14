@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'DataGrip使用进阶-导航及搜索（一）'  
-date: 2019-10-05  
 tags: ide solution datagrip jetbrains  
 ---  
   

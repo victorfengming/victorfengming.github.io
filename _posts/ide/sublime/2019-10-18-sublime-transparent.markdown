@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'sublime text 背景半透明设置'
-date: 2019-10-18
 tags: ide solution sublime
 ---
 

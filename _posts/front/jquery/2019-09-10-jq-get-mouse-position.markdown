@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'js、jq获取当前鼠标位置'
-date: 2019-09-10
 tags: JavaScript web jQuery 
 ---
 

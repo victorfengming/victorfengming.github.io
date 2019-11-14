@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python中的魔术方法"
-date: 2019-08-29 
 tags: Python background 
 ---
 

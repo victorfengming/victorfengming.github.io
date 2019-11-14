@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "关于deepin系统不能识别蓝牙设备问题的完美解决方案"
-date: 2019-08-29 
 tags: Linux deepin 
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "PHP MySQL 创建数据库和表"  
-date: 2019-10-04  
 tags: database mysql php  
 ---
 

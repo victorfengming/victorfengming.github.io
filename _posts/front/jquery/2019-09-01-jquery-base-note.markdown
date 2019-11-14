@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'jQuery基础笔记和面试题'
-date: 2019-09-01 
 tags: JavaScript web jQuery 
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'js和jq判断select是否选中、获取select选中的值'
-date: 2019-09-07 
 tags: JavaScript web solution
 ---
 

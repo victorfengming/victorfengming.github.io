@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'java中最强语法--lambda表达式'
-date: 2019-11-10
 tags: Java basis
 ---
 

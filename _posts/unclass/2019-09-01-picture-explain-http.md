@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "图解HTTP"
-date: 2019-09-01 
 tags: web server
 ---
 

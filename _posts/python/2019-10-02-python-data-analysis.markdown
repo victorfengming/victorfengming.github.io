@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python数据分析 | (21) Web APIs交互和数据库交互"
-date: 2019-10-02 
 tags: Python solution 
 ---
 

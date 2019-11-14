@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '宇宙最强编辑器系列:Jetbrains介绍'
-date: 2019-09-26
 tags: ide solution jetbrains
 ---
 

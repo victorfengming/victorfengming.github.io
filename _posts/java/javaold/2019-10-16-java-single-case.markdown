@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java设计模式之单例模式'
-date: 2019-10-16
 tags: Java basis
 ---
 版权声明：本文为CSDN博主「炸斯特」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。

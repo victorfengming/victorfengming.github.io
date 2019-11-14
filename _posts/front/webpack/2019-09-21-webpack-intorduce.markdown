@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: '前端框架之webpack介绍'  
-date: 2019-09-21   
 tags: web html basis  
 ---  
   

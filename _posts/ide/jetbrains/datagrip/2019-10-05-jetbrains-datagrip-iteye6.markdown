@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'DataGrip使用进阶-代码提示及格式化（二）'  
-date: 2019-10-05  
 tags: ide solution datagrip jetbrains  
 ---  
   

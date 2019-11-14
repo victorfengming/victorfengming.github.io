@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python实现修改图片尺寸"
-date: 2019-10-13 
 tags: Python solution basis
 ---
 

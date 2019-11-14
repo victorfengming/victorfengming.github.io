@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '前端相关优质项目推荐'
-date: 2019-09-20 
 tags: web html solution
 ---
 

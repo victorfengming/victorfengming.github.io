@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '漫话：如何给女朋友解释什么是适配器模式?'
-date: 2019-08-31 
 tags: entertainment
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "程序员必须掌握哪些算法？"
-date: 2019-09-23 
 tags: summer solution
 ---
 

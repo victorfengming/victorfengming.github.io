@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "关于安装deepin+window10双系统没有声音的问题"
-date: 2019-08-29 
 tags: Linux deepin 
 ---
 

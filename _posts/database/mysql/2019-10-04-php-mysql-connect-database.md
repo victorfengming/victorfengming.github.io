@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "PHP MySQL 连接数据库"  
-date: 2019-10-04  
 tags: database mysql php  
 ---
 

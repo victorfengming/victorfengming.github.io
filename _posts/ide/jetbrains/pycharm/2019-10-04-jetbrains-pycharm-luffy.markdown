@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'Pycharm使用秘籍'  
-date: 2019-10-04  
 tags: ide solution pycharm jetbrains  
 ---  
   

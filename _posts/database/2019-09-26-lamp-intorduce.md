@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "关于LAMP架构的简单介绍"
-date: 2019-09-26
 tags: Linux deepin php database mysql 
 ---
 

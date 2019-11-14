@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java中网络编程'
-date: 2019-10-25
 tags: Java basis
 ---
 

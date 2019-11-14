@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '送你一些实用的工具,收藏起来留着用'
-date: 2019-10-12 
 tags: entertainment 
 ---
 

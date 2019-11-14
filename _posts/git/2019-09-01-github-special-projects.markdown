@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "GitHub上那些奇葩项目"
-date: 2019-09-01 
 tags: Git entertainment 
 ---
 

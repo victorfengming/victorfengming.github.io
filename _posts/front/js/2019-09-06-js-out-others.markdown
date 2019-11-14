@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'JS中的排他思想'
-date: 2019-09-06 
 tags: JavaScript web solution
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java 重写(Override)与重载(Overload)'
-date: 2019-10-11
 tags: Java basis oop
 ---
 

@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: "Oracle基础知识总结"  
-date: 2019-09-28  
 tags: Linux deepin database oracle   
 ---  
   

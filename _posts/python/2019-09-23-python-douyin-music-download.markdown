@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python爬虫帮你打包下载所有抖音好听的背景音乐，还不快收藏一起听歌"
-date: 2019-09-23 
 tags: Python solution 
 ---
 

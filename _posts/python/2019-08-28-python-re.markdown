@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Python3中的re正则"
-date: 2019-08-28 
 tags: Python background 
 ---
 

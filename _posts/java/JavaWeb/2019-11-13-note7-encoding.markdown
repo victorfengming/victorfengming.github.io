@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: 'JavaWeb笔记04-解决GET与POST乱码问题'  
-date: 2019-11-13  
 tags: Java basis note
 ---  
   

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "node+socket+jq 实现简易聊天室"
-date: 2019-09-03 
 tags: node web server solution
 ---
 

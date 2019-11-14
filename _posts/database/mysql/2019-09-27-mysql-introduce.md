@@ -1,7 +1,5 @@
 ---      
-layout: post      
 title: "Mysql数据库简介"      
-date: 2019-09-27      
 tags: Linux deepin database mysql       
 ---      
       

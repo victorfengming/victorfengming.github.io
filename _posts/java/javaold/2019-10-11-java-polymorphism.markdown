@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java中的多态'
-date: 2019-10-11
 tags: Java basis oop
 ---
 

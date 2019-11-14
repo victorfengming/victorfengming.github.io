@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "PyQt5+Socket实现CS架构的建议聊天室"
-date: 2019-11-02 
 tags: Python solution basis PyQt5 Socket
 ---
 

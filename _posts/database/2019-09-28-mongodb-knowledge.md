@@ -1,7 +1,5 @@
 ---  
-layout: post  
 title: "MongoDB从入门到放弃！"  
-date: 2019-09-28  
 tags: Linux deepin database mongodb   
 ---  
   

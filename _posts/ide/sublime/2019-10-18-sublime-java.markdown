@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'sublime text 配置java开发环境'
-date: 2019-10-18
 tags: ide solution sublime
 ---
 

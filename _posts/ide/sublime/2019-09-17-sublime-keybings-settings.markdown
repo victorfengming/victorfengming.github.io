@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'sublime快捷键和设置配置(jetbrains习惯)'
-date: 2019-09-17
 tags: ide solution
 ---
 

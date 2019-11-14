@@ -1,7 +1,5 @@
 ---
-layout: post
 title: '关于java语法的各种坑'
-date: 2019-10-15
 tags: Java basis Python
 ---
 

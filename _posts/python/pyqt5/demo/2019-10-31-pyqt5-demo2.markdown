@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "PyQt5案例汇总(完整版)"
-date: 2019-10-31 
 tags: Python solution basis PyQt5
 ---
 

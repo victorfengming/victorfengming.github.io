@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Python自动化测试iOS项目"
 date: 2016-08-04 
 tags: python  

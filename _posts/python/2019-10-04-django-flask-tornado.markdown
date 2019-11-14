@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Django/Flask/Tornado三大web框架性能分析"
-date: 2019-10-04 
 tags: Python solution web
 ---
 

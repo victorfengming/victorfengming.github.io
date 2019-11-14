@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Linux常用命令"
-date: 2019-08-24 
 tags: Linux basis server 
 ---
 

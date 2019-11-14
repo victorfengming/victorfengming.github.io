@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "MariaDB mysql 比较区别 选择"  
-date: 2019-10-03  
 tags: Linux database mysql   
 ---
 

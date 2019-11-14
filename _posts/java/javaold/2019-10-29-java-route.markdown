@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 'Java学习路线导航,带你走向CTO'
-date: 2019-10-29
 tags: Java basis
 ---
 

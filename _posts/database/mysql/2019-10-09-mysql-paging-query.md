@@ -1,7 +1,5 @@
 ---
-layout: post  
 title: "MySQL分页查询方法及优化"  
-date: 2019-10-09  
 tags: database mysql solution
 ---
 
