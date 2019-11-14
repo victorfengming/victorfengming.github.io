@@ -104,5 +104,12 @@ page-mathjax: false
 
 # Friends
 friends: [
-    {}
+    {
+        title: "ttk Blog",
+        href: "https://ttk1907.github.io/"
+    },
+    {
+        title: "yupeng Blog",
+        href: "https://zhengyupengzz.github.io/"
+    }
 ]
