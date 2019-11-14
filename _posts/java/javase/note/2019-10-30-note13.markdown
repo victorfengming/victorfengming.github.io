@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: 'Java笔记13-兄弟连在线考试系统'  
-date: 2019-10-29  
+date: 2019-10-30  
 tags: Java basis note   
 ---  
   

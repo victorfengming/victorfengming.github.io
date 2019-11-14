@@ -74,6 +74,6 @@ mysql_close($con);
 
 ### 相关推荐
 
-[PHP MySQL 连接数据库](https://victorfengming.github.io/2019/10/php-mysql-createdatabase/)
+[PHP MySQL 连接数据库](https://victorfengming.github.io/2019/10/04/php-mysql-connect-database/)
 
-[PHP MySQL Insert Into](https://victorfengming.github.io/2019/10/php-mysql-insert/)
+[PHP MySQL Insert Into](https://victorfengming.github.io/2019/10/04/php-mysql-insert/)

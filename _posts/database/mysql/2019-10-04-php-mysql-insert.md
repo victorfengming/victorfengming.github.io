@@ -108,6 +108,6 @@ mysql_close($con)
 
 ### 相关推荐
 
-[PHP MySQL 连接数据库](https://victorfengming.github.io/2019/10/php-mysql-createdatabase/)
+[PHP MySQL 连接数据库](https://victorfengming.github.io/2019/10/04/php-mysql-connect-database/)
 
-[PHP MySQL 创建数据库和表](https://victorfengming.github.io/2019/10/php-mysql-createtables/)
+[PHP MySQL 创建数据库和表](https://victorfengming.github.io/2019/10/04/php-mysql-createtables/)
