@@ -9,7 +9,7 @@ url: "https://weibo.com/mercyblitz"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 post:
-  author: mercyblitz
+  author: victor
 
 # Publish posts or collection documents with a future date.
 future: true
