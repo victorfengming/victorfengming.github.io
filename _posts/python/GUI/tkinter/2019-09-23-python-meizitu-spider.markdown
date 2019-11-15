@@ -1,5 +1,6 @@
 ---
-title: "python爬取妹子图+tkinter下载界面"
+title: "python爬取妹子图"
+subtitle: "tkinter下载界面"
 tags: Python solution spider tkinter
 ---
 

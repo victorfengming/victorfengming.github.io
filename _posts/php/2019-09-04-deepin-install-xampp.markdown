@@ -6,7 +6,6 @@ tags: php deepin solution
 <section>
                 <div class="before">
                     <div class="other">
-
                     </div>
                 </div>
                 <div class="new-box">
