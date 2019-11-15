@@ -1,5 +1,6 @@
 ---  
 title: 'JDBC笔记01'  
+subtitle: 'JDBC,Connection,Statement,ResultSet,PreparedStatement,Properties' 
 tags: Java basis note JDBC
 ---  
 

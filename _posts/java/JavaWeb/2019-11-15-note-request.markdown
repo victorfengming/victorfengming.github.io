@@ -1,6 +1,6 @@
 ---  
-title: 'JavaWeb笔记05'  
-subtitle:   "解决线程安全问题"
+title: 'JavaWeb笔记05-解决线程安全问题'  
+subtitle:   "学习数据分析的第一天"
 tags: Java basis note
 ---  
   

@@ -1,5 +1,6 @@
 ---  
-title: 'JavaWeb笔记02-Tomcat'  
+title: 'JavaWeb笔记02'  
+subtitle: 'Tomcat'  
 tags: Java basis note JDBC
 ---  
   

@@ -1,5 +1,6 @@
 ---  
-title: 'JavaWeb笔记01-XML'  
+title: 'JavaWeb笔记01'  
+subtitle: 'XML'  
 tags: Java basis note JDBC
 ---  
   
