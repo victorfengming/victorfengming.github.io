@@ -29,6 +29,8 @@ RequestDispatcher rd = request.getRequestDispatcher("转发的地址)
 ```
 rd.forward(request,response)
 ```
+### 转发流程
+步骤1: 范文
 ### 特点:
 1. 转发过程中,多个servlet之间共享一份请求信息,共享一个响应对象
 2. 转发只能发生在同一个服务器中(转发无法实现跨域)
