@@ -40,4 +40,12 @@ tags: Java basis note
 3. 编写修改密码页面
     - 要求: 连接数据库,将表单的数据提交到servlet,在通过servlet修改数据库中user29表格的数据
 4. 编写主页:
-    - 要求: 查询数据库user29表格,将表格中所有数据,展示到浏览器中            
+    - 要求: 查询数据库user29表格,将表格中所有数据,展示到浏览器中      
+    
+### 作业实现
+#### 项目地址:
+https://github.com/victorfengming/xdl_javaweb       
+#### 采用技术:
+- JDBC  + 连接池
+- Tomcat  +   Servlet   
+- Oracle   
