@@ -1,6 +1,6 @@
 ---  
-title: 'JavaWeb笔记05'  
-subtitle:   "解决线程安全问题"
+title: 'JavaWeb笔记06'  
+subtitle:   "请求相关"
 tags: Java basis note
 ---  
   
