@@ -1,5 +1,6 @@
 ---
-title: "git log解析，打log随心所欲！"
+title: "git log解析"
+subtitle: "打log随心所欲！"
 tags: Git solution 
 ---
 

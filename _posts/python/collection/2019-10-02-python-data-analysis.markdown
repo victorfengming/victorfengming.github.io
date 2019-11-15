@@ -1,5 +1,6 @@
 ---
-title: "Python数据分析 | (21) Web APIs交互和数据库交互"
+title: "Python数据分析"
+subtitle: "Web APIs交互和数据库交互"
 tags: Python solution 
 ---
 

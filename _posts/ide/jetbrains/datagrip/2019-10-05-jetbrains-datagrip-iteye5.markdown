@@ -1,5 +1,6 @@
 ---  
-title: 'DataGrip使用进阶-导航及搜索（一）'  
+title: 'DataGrip使用进阶'  
+subtitle: '-导航及搜索（一）'  
 tags: ide solution datagrip jetbrains  
 ---  
   

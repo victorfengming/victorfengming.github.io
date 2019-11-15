@@ -1,5 +1,7 @@
 ---
-title: "关于Ubuntu系统vim编辑器不能使用backspace问题解决方案"
+title: "vim编辑器不能使用backspace问题解决方案"
+subtitle: "在ubuntu系统中"
+
 tags: vim solution ubuntu Linux 
 ---
 

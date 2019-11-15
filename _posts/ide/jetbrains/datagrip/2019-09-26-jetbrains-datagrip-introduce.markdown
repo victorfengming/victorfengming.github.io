@@ -1,5 +1,6 @@
 ---  
-title: '宇宙最强数据库编辑器:datagrip 介绍'  
+title: '宇宙最强数据库编辑器'  
+subtitle: 'datagrip 介绍'  
 tags: ide solution datagrip jetbrains  
 ---  
   

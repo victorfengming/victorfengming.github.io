@@ -1,5 +1,6 @@
 ---
-title: 'sublime一键格式化html/css/js'
+title: 'sublime一键格式化'
+subtitle: 'html/css/js'
 tags: ide solution sublime
 ---
 

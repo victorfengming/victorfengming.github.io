@@ -1,5 +1,6 @@
 ---  
-title: 'DataGrip使用入门-导出数据（四）'  
+title: 'DataGrip使用入门'  
+subtitle: '-导出数据（四）'  
 tags: ide solution datagrip jetbrains  
 ---  
   

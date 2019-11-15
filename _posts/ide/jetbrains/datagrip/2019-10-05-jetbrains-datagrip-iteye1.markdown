@@ -1,5 +1,6 @@
 ---  
-title: 'DataGrip使用入门-安装及数据源管理（一）'  
+title: 'DataGrip使用入门'  
+subtitle: '安装及数据源管理（一）'  
 tags: ide solution datagrip jetbrains  
 ---  
   

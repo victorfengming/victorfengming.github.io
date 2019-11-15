@@ -1,5 +1,6 @@
 ---  
-title: 'DataGrip使用进阶-文本编辑器（三）'  
+title: 'DataGrip使用进阶'  
+subtitle: '-文本编辑器（三）'  
 tags: ide solution datagrip jetbrains  
 ---  
   

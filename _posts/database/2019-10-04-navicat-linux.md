@@ -1,5 +1,6 @@
 ---
-title: "linux版navicat安装和破解（亲测汗水经验）"
+title: "linux版navicat安装和破解"
+subtitle: "亲测汗水经验"
 tags: windows navicat solution
 ---
 

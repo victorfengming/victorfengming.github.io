@@ -1,5 +1,6 @@
 ---
-title: "PyQt5+Socket实现CS架构的建议聊天室"
+title: "CS架构的建议聊天室"
+subtitle: "通过PyQt5+Socket实现"
 tags: Python solution basis PyQt5 Socket
 ---
 

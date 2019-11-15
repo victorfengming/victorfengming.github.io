@@ -1,5 +1,6 @@
 ---  
-title: 'DataGrip使用进阶-代码提示及格式化（二）'  
+title: 'DataGrip使用进阶'  
+subtitle: '-代码提示及格式化（二）'  
 tags: ide solution datagrip jetbrains  
 ---  
   

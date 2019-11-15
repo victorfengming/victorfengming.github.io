@@ -1,5 +1,6 @@
 ---  
-title: 'DataGrip使用入门-常用设置（二）'  
+title: 'DataGrip使用入门'  
+subtitle: '-常用设置（二）'  
 tags: ide solution datagrip jetbrains  
 ---  
   

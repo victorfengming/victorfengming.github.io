@@ -1,5 +1,6 @@
 ---
-title: '关于SublimeText3输入法候选窗口不能跟随光标位置的解决方案'
+title: 'SublimeText3输入法问题'
+subtitle: '关于SublimeText3输入法候选窗口不能跟随光标位置的解决方案'
 tags: ide solution sublime
 ---
 

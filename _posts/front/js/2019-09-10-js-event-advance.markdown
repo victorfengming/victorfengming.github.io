@@ -1,5 +1,5 @@
 ---
-title: 'js中的事件委托或是事件代理详解'
+title: 'js中的事件委托和事件代理详解'
 tags: JavaScript web solution
 ---
 <html>

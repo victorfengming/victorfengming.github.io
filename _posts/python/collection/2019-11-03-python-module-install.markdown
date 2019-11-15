@@ -1,5 +1,6 @@
 ---
-title: "python 相关模块安装 国内镜像地址"
+title: "python相关模块安装 "
+subtitle: "国内镜像地址 "
 tags: Python solution basis
 ---
 

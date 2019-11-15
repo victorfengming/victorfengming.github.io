@@ -1,5 +1,6 @@
 ---
-title: "git生成SSH并提交(在github中配置密钥)"
+title: "git生成SSH并提交"
+subtitle: "在github中配置密钥"
 tags: Git solution 
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: 'js和jq判断select是否选中、获取select选中的值'
+title: 'js和jq选择相关'
+subtitle: '判断select是否选中、获取select选中的值'
 tags: JavaScript web solution
 ---
 

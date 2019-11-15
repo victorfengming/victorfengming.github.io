@@ -1,5 +1,5 @@
 ---
-title: 'Sublime Text'
+title: 'Sublime Text简介'
 tags: deepin solution ide
 ---
 

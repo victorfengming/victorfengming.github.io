@@ -1,5 +1,6 @@
 ---  
-title: '宇宙最强python编辑器:pycharm 介绍'  
+title: '宇宙最强python编辑器'  
+subtitle: 'pycharm 介绍'  
 tags: ide solution pycharm jetbrains  
 ---  
   

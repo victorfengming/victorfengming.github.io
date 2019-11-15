@@ -1,5 +1,6 @@
 ---
-title: 'Java中Collection类数据的增删改查'
+title: 'Java中Collection类数据'
+subtitle: '增删改查'
 tags: Java basis
 ---
 

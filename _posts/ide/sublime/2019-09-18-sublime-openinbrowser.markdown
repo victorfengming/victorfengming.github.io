@@ -1,5 +1,6 @@
 ---
-title: 'Sublime运行代码 open in browser快捷键设置'
+title: 'Sublime运行代码'
+subtitle: 'open in browser快捷键设置'
 tags: ide solution sublime
 ---
 

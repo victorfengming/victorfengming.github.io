@@ -1,5 +1,6 @@
 ---
-title: "Navicat Premium v12.1.22 中文最新破解版（附：激活工具）"
+title: "Navicat Premium v12.1.22 中文最新破解版"
+subtitle: "（附：激活工具）"
 tags: windows navicat solution
 ---
 

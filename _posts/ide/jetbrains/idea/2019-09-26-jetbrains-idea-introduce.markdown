@@ -1,5 +1,6 @@
 ---
-title: '宇宙最强Java编辑器:IntelliJ IDEA 介绍'
+title: '宇宙最强Java编辑器'
+subtitle: 'IntelliJ IDEA 介绍'
 tags: ide solution idea jetbrains
 ---
 

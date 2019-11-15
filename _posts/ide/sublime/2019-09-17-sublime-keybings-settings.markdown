@@ -1,5 +1,6 @@
 ---
-title: 'sublime快捷键和设置配置(jetbrains习惯)'
+title: 'sublime快捷键和设置配置'
+subtitle: 'jetbrains习惯'
 tags: ide solution
 ---
 
