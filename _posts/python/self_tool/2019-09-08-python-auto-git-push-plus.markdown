@@ -1,6 +1,6 @@
 ---
 title: "Python实现自动推本地github博客到远程仓库"
-tags: Python solution Git 
+tags: Python solution Git system
 ---
 
 

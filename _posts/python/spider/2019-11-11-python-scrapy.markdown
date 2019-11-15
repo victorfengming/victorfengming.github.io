@@ -1,6 +1,6 @@
 ---  
 title: "Scrapy笔记01"  
-tags: Python solution basis  
+tags: Python solution basis spider
 ---  
   
   

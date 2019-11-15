@@ -1,7 +1,7 @@
 ---
 title: "CS架构的建议聊天室"
 subtitle: "通过PyQt5+Socket实现"
-tags: Python solution basis PyQt5 Socket
+tags: Python solution basis PyQt5 socket
 ---
 
   

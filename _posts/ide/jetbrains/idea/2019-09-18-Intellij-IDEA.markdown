@@ -1,6 +1,6 @@
 ---  
 title: 'jetbrains 系列IDE 使用技巧'  
-tags: ide solution IDEA jetbrains
+tags: ide solution idea jetbrains
 ---  
   
 [谈谈我与 Intellij IDEA 的故事](http://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247485196&idx=1&sn=9160d260e7f4cf5941f27c884a62e8e5&chksm=e8fe9b05df891213e2ce2b46824f7c67cac7e5be10e84aa8102e9c65edec5cc40a40550ac9a7&scene=21#wechat_redirect)  

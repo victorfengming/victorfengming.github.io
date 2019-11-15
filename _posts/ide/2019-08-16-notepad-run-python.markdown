@@ -1,6 +1,6 @@
 ---
 title: "Notepad++运行python"
-tags: Python background
+tags: Python notepad
 ---
 
 

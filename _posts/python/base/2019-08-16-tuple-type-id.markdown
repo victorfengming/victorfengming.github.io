@@ -1,6 +1,6 @@
 ---
 title: "关于Python3.7和Python3.6中元组类型数据内存存储问题"
-tags: Python background
+tags: Python
 ---
 
 
