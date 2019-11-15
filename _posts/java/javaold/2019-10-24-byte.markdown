@@ -19,7 +19,7 @@ tags: Java basis
 - [ ] 能够使用字节输入流读取数据到程序
 - [ ] 能够理解读取数据read(byte[])方法的原理
 - [ ] 能够使用字节流完成文件的复制
-- [ ] 能够使用FileWirter写数据到文件
+- [x] 能够使用FileWirter写数据到文件
 - [ ] 能够说出FileWriter中关闭和刷新方法的区别
 - [ ] 能够使用FileWriter写数据的5个方法
 - [ ] 能够使用FileWriter写数据实现换行和追加写
