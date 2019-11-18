@@ -168,9 +168,4 @@ tags: entertainment
 <p><span style="font-size: 16px;">1.关于协程的概念，小灰也仅仅是知道一些皮毛，希望小伙伴们多多指正。</span></p> 
 <p><strong>2.本漫画纯属娱乐，还请大家尽量珍惜当下的工作，切勿模仿小灰的行为哦。</strong></p> 
 <p style="text-align: center;"><span style="font-size: 16px;">—————END—————</span></p> 
-<p><span style="font-size: 16px;">●编号717，输入编号直达本文</span></p> 
-<p style="text-align: center;"><strong>算法与数据结构</strong></p> 
-<p style="text-align: center;"><strong><span style="font-size: 16px;"></span></strong><strong><span style="font-size: 16px;">更多推荐</span></strong><strong><span style="font-size: 16px;">《</span></strong>18个技术类公众微信<span style="font-size: 16px;"><strong><span style="font-size: 16px;">》</span></strong></span><span><strong></strong></span><a href="http://www.sohu.com/?strategyid=00001&amp;spm=smpc.content.content.2.1574076118908sIBM8BE" target="_blank" title="点击进入搜狐首页" id="backsohucom" style="white-space: nowrap;" data-spm-data="2"><span class="backword"><i class="backsohu"></i>返回搜狐，查看更多</span></a></p>      <!-- 政务账号添加来源标示处理 -->
-      <!-- 政务账号添加来源标示处理 -->
-      <p data-role="editor-name">责任编辑：<span></span></p>
 </article>
