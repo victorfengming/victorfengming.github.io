@@ -3,6 +3,14 @@ title: "一行命令带你安装mongodb(deepin系统下)"
 tags: Linux deepin database mongodb
 ---
 
+
+* content
+{:toc}
+
+
+
+
+
 ### 一行命令安装mongodb
 
 `sudo apt-get install mongodb`
