@@ -1,7 +1,7 @@
 ---
 title: 'sublime快捷键和设置配置'
 subtitle: 'jetbrains习惯'
-tags: ide solution
+tags: ide solution sublime jetbrains
 ---
 
 ### 起步
