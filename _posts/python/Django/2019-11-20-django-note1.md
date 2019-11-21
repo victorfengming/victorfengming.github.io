@@ -80,10 +80,84 @@ LTS : 长期稳定版
 
 ### 5. Django安装
 作为Python Web框架，Django需要Python，在安装Python同时需要安装pip。
-```python
-在线安装Django
+```cmd
+# 在线安装Django
 pip3 install Django
-检测当前是否安装Django及版本
+# 检测当前是否安装Django及版本
 python3 -m django --version
 1.11.7
+```
+这里可以使用 -i 参数来指定镜像源位置
+
+### 6. 使用Django框架搭建项目
+```shell
+# 在一个目录中执行一下命令,就会创建一个web项目目录
+django-admin startproject web
+
+# 进入到web文件夹中,执行以下命令,启动项目
+python3 manage.py runserver
+
+# 接下来就可以在浏览器中访问了
+
+```
+### 创建一个应用
+```shell
+python3 manage.py startapp home
+
+# 以上命令会在项目文件夹中创建一个目录home
+```
+
+### 请求的流程
+用户输入url地址发起请求,服务器接受到请求后,交给跟路由(项目同名目录下的urls.py)
+
+### 使用模板文件
+
+### 路由的定义
+>URL ==> 统一资源定位符
+>指得就是请求的(URL)地址
+>http://python.itxdl.cn/html/tutorial/
+>http://python.itxdl.cn/html/teachers/
+>可以在项目中指定请求的url地址,来交给对应的试图函数进行解析
+
+### 路由的特点
+>路由就是在urls中进行规则的配置
+>按照从上往下的顺序来执行
+>如果匹配到,则假装指定的视图函数来执行
+>如果匹配不到,则抛出404 page not found
+
+### 路由参数
+>路由参数就是在定义规则时,使用小括号`()`括起来的内容,将作为参数传递给视图函数
+```python
+# 路由规则
+url(r'^article/(\d)$', views.article),
+# 视图函数
+def article(request,para):
+    return HttpResponse('接受到的参数是:'+para)
+```
+
+### 命名组,命名参数
+>和路由参数一样是用来获取url中路径作为参数来使用
+>不同的是,命名组会把当前参数作为,关键字参数传递给视图函数,
+>因此对应的视图函数,必须有关键字参数
+```python
+# 命名组 使用?P<变量名>方式来定义
+url(r'abc/(?P<aa>[0-9]+/$',view.abc_2003)
+
+# 在对应的视图函数中则必须有对应的关键字
+def abc_2003(request,aa):
+    print(aa)
+    return HttpResponse('abc_2003')
+```
+
+### 指定用于视图参数的默认值
+两个路由指向同一个视图函数
+```python
+# 路由
+url(r'^user/index/(?P<page>[0-9]+)/$', views.user_index),
+url(r'^user/index/$', views.user_index),
+
+# 视图函数
+def user_index(request,page=1):
+    print(page)
+    return HttpResponse('用户列表数据的显示'+page)    
 ```
