@@ -25,7 +25,8 @@ tags: Python background solution
 8. send(msg)与next()的区别在于send可以传递参数给yield表达式，这时传递的参数会作为yield表达式的值，而yield的参数是返回给调用者的值。——换句话说，就是send可以强行修改上一个yield表达式值。比如函数中有一个yield赋值，a = yield 5，第一次迭代到这里会返回5，a还没有赋值。第二次迭代时，使用.send(10)，那么，就是强行修改yield 5表达式的值为10，本来是5的，那么a=10
 9. send(msg)与next()都有返回值，它们的返回值是当前迭代遇到yield时，yield后面表达式的值，其实就是当前迭代中yield后面的参数。
 10. 第一次调用时必须先next()或send(None)，否则会报错，send后之所以为None是因为这时候没有上一个yield(根据第8条)。可以认为，next()等同于send(None)。
-### 代码示例1：
+### 代码示例1
+
 ```python
 #encoding:UTF-8  
 def yield_test(n):  
@@ -43,7 +44,9 @@ def call(i):
 for i in yield_test(5):  
     print(i,",")  
 ```
+
 ##### 结果是：
+
 ```shell
 >>>   
 0 ,  
@@ -60,6 +63,7 @@ do something.
 end.  
 >>> 
 ```
+
 理解的关键在于：下次迭代时，代码从yield的下一跳语句开始执行。
 
 ### 代码示例2：
