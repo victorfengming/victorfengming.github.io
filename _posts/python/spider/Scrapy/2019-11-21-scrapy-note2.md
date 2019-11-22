@@ -29,13 +29,13 @@ tags: Python solution basis spider
 爬虫的重点在分析网页上面,而不是在写程序上面
 
 ### 后续内容
->post请求怎么办
->如何使用image pipeline
->如何添加headers相关信息
->如何添加代理
->全网爬虫如何建立
->各种中间件的内容
->分布式爬虫的原理以及案例
+- post请求怎么办
+- 如何使用image pipeline
+- 如何添加headers相关信息
+- 如何添加代理
+- 全网爬虫如何建立
+- 各种中间件的内容
+- 分布式爬虫的原理以及案例
 
 ### scrapy数据流
 >1. spiders 中需要有start_urls或者start_requests,生成初始的requests,发送给Engine处理
