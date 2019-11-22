@@ -12,6 +12,7 @@ tags: Python background solution
 
 
 
+
 阅读别人的python源码时碰到了这个yield这个关键字，各种搜索终于搞懂了，在此做一下总结：
 
 1. 通常的for...in...循环中，in后面是一个数组，这个数组就是一个可迭代对象，类似的还有链表，字符串，文件。它可以是mylist = [1, 2, 3]，也可以是mylist = [x*x for x in range(3)]。
