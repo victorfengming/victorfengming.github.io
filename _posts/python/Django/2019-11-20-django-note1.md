@@ -161,3 +161,52 @@ def user_index(request,page=1):
     print(page)
     return HttpResponse('用户列表数据的显示'+page)    
 ```
+
+### 数据库配置
+1. 安装mysql
+2. 创建库,指定字符集
+3. 安装pymysql
+4. 在settings.py的同级目录中找到__init__.py文件,声明pymysql
+5. 在settings.py文件中配置 数据库
+6. 在settings.py文件中添加当前的应用
+
+### 定义模型
+1. 找到应用中的models.py文件
+```python
+from django.db import models
+
+# Create your models here.
+# 模型的作用,降低程序的耦合性,更换数据库就改个配置文件就行了
+
+class Users(models.Model):
+    username = models.CharField(max_length=32)
+    password = models.CharField(max_length=32)
+    email = models.CharField(max_length=50)
+```
+
+2. 生成迁移文件
+```shell
+python3 manage.py makemigrations
+```
+3. 执行迁移
+```shell
+python3 manage.py makemigrate
+```
+
+### 在视图函数中使用模型
+1. 先在视图函数中导入models
+```python
+from . import models
+```
+```python
+# 模型的操作演示
+def mod_demo(request):
+    # 使用模型进行操作数据库 数据的查询操作
+    res = models.Users.objects.all()
+    print(res)
+    # < QuerySet[ < Users: Users object >] >
+    # 一个查询集
+    for x in res:
+        print(x.username)
+    return HttpResponse('模型你给的操作演示')
+```
