@@ -1,7 +1,17 @@
 ---
-title: "Django笔记01"
+title: "Django笔记"
+subtitle: "一个完美主义的web框架"
 tags: Python solution web
 ---
+
+
+
+* content
+{:toc}
+
+
+
+
 
 # 浅谈Web框架
 ### 一,什么是框架?
@@ -284,4 +294,14 @@ url(r'stu/del$',views.stu_del,name='stu_del'),
 url(r'stu/edit$',views.stu_edit,name='stu_edit'),
 # 执行用户数据的更新
 url(r'stu/update$',views.stu_update,name='stu_update'),
+```
+
+生成迁移文件时,还没有吧应用添加到配置文件中?
+如果已经生成迁移文件,则直接执行迁移就可以,
+另外注意,生成的迁移文件不要轻易删除
+
+### 模型定义
+```python
+class User(models.Model):
+    pass
 ```
