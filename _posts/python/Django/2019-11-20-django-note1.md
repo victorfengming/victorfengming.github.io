@@ -171,6 +171,16 @@ def user_index(request,page=1):
 6. 在settings.py文件中添加当前的应用
 
 ### 定义模型
+在模型中定义属性，会生成表中的字段
+django会为表增加自动增长的主键列，每个模型只能有一个主键列
+如果使用选项设置某属性为主键列后，则django不会再生成默认的主键列
+属性命名限制
+
+不能是python的保留关键字
+由于django的查询方式，不允许使用连续的下划线
+
+### 定义步骤
+
 1. 找到应用中的models.py文件
 ```python
 from django.db import models
@@ -209,4 +219,69 @@ def mod_demo(request):
     for x in res:
         print(x.username)
     return HttpResponse('模型你给的操作演示')
+```
+
+### url 统一资源定位符
+>http://127.0.0.1:8000/user/abc?a=1&b=2
+>协议:http https file svn
+>ip或域名 127.0.0.1 www.itxdl.cn
+>端口: 80 443 8000 5000 8080
+>路径: /user/abc
+>参数: ?a=1&b=2
+>
+
+### 模型的操作
+```python
+# 1查询
+# 获取当前模型中所有的对象数据
+# 结果为一个查询集
+obs = models.Stu.objects.all()
+# 根据id获取当前对象 结果 对象
+ob = models.Stu.objects.get(id=1)
+# 注意:get方法能且只能返回一个对象
+# 查多个报错,查不到也报错
+
+# 2添加
+# 第一中方法 
+data = {'name':'admin','age',20}
+ob = models.Stu(**data)
+ob.save()
+# 第二种方法
+ob = models.Stu()
+ob.name = 'zhangsan'
+ob.age = 20
+ob.save()
+
+# 推荐第一种                
+# 3删除
+# 获取对象.执行删除
+ob.delete())
+
+# 4更新
+ob.name = 'aabb'
+ob.save())  
+```
+
+### 用户管理
+>先定义一个视图函数  显示添加表单
+>表单吧数据提交到 执行数据添加的函数中
+>完成后跳转到 用户列表的视图函数中
+>删除链接提交到 一个执行用户删除的视图函数中k,完成后跳转列表页面
+>编辑链接提交到 一个显示用户数据的修改表单中
+>修改表单吧数据 提交到执行数据更新的视图函数中
+
+### 这6个步骤对应6个路由
+```python
+# 用户数据的管理
+url(r'stu/index$',views.stu_index,name='stu_index'),
+# 执行用户的添加
+url(r'stu/insert$',views.stu_insert,name='stu_insert'),
+# 显示添加的表单
+url(r'stu/add$',views.stu_add,name='stu_add'),
+# 执行用户的删除
+url(r'stu/del$',views.stu_del,name='stu_del'),
+# 用户的编辑表单
+url(r'stu/edit$',views.stu_edit,name='stu_edit'),
+# 执行用户数据的更新
+url(r'stu/update$',views.stu_update,name='stu_update'),
 ```
