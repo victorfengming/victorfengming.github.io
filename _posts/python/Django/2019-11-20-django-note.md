@@ -56,7 +56,7 @@ MVC实现了前后端和数据的分离,程序的解耦合,实现了程序的可
 |V|View|视图|业务逻辑|
 |T|Template|模板|html|
 
-# Django简介
+# 起步
 ### 1. 认识Django
 Django是一个高级的Python Web框架，它鼓励快速开发和清洁，务实的设计。
 由经验丰富的开发人员构建，它负责Web开发的许多麻烦，因此您可以专注于编写应用程序，而无需重新创建轮子。
@@ -110,6 +110,9 @@ python3 manage.py runserver
 # 接下来就可以在浏览器中访问了
 
 ```
+
+# Django入门
+
 ### 创建一个应用
 ```shell
 python3 manage.py startapp home
@@ -121,7 +124,7 @@ python3 manage.py startapp home
 用户输入url地址发起请求,服务器接受到请求后,交给跟路由(项目同名目录下的urls.py)
 
 ### 使用模板文件
-
+# URLconf路由
 ### 路由的定义
 >URL ==> 统一资源定位符
 >指得就是请求的(URL)地址
@@ -149,6 +152,7 @@ def article(request,para):
 >和路由参数一样是用来获取url中路径作为参数来使用
 >不同的是,命名组会把当前参数作为,关键字参数传递给视图函数,
 >因此对应的视图函数,必须有关键字参数
+
 ```python
 # 命名组 使用?P<变量名>方式来定义
 url(r'abc/(?P<aa>[0-9]+/$',view.abc_2003)
@@ -172,6 +176,7 @@ def user_index(request,page=1):
     return HttpResponse('用户列表数据的显示'+page)    
 ```
 
+# Model模型
 ### 数据库配置
 1. 安装mysql
 2. 创建库,指定字符集
@@ -212,7 +217,15 @@ python3 manage.py makemigrations
 ```shell
 python3 manage.py makemigrate
 ```
+# View视图
+### Django中的视图
+Django具有“视图”的概念来封装负责处理用户请求和返回响应的逻辑
 
+视图函数或视图简而言之就是一个Python函数，它接受一个Web请求并返回一个Web响应
+
+此响应可以是网页的HTML内容，重定向或404错误，XML文档或图像。
+
+为了将代码放在某处，惯例是将视图views.py放在名为的文件中，放在项目或应用程序目录中
 ### 在视图函数中使用模型
 1. 先在视图函数中导入models
 ```python
@@ -272,6 +285,7 @@ ob.name = 'aabb'
 ob.save())  
 ```
 
+# 增删改查
 ### 用户管理
 >先定义一个视图函数  显示添加表单
 >表单吧数据提交到 执行数据添加的函数中
@@ -305,3 +319,86 @@ url(r'stu/update$',views.stu_update,name='stu_update'),
 class User(models.Model):
     pass
 ```
+在[这里](https://victorfengming.github.io/2019/11/20/django-note/#%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9E%8B)已经说了
+
+# Template模板
+### 模板概念
+作为Web 框架，Django 需要一种很便利的方法以动态地生成HTML。最常见的做法是使用模板。
+
+模板包含所需HTML 输出的静态部分，以及一些特殊的语法，描述如何将动态内容插入。
+
+
+### 模板语法
+
+#### 1.变量
+- 变量输出语法`{{ var }}`
+
+- 当模版引擎遇到一个变量，将计算这个变量，然后将结果输出
+- 变量名必须由字母、数字、下划线（不能以下划线开头）和点组成
+- 当模版引擎遇到点(".")，会按照下列顺序查询：
+    - 字典查询，例如：foo["bar"]
+    - 属性或方法查询，例如：foo.bar
+    - 数字索引查询，例如：foo[bar]
+- 如果变量不存在， 模版系统将插入'' (空字符串)
+- 在模板中调用方法时不能传递参数
+
+#### 2.标签
+- 语法`{ %  tag  % }`
+- 作用
+    - 在输出中创建文本
+    - 控制循环或逻辑
+    - 加载外部信息到模板中
+##### for标签
+```html
+{ %  for ... in ...  % }
+    循环逻辑
+{ %  endfor  % }
+```
+##### if标签
+```html
+{ %  if ...  % }
+    逻辑1
+{ %  elif ...  % }
+    逻辑2
+{ %  else  % }
+    逻辑3
+{ %  endif  % }
+```
+##### comment标签
+```html
+{ %  comment  % }
+    多行注释
+{ %  endcomment  % }
+```
+##### include：加载模板并以标签内的参数渲染
+```html
+{ %  include "base/index.html"  % }
+```
+##### url：反向解析
+```html
+{ %  url 'name' p1 p2  % }
+```
+##### csrf_token：这个标签用于跨站请求伪造保护
+```html
+{ %  csrf_token  % }
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
