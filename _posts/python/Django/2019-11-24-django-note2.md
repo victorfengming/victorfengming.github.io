@@ -95,6 +95,49 @@ uid = models.OneToOneField(Stu, on_delete=models.CASCADE)
 # 因为咱们python并没有类或者函数的欲仙加载,毕竟是脚本语言嘛,还想咋地!
 # 那你还能在类定义之前去实例化对象啊, 你不得先定义在用啊
 ```
+```python
+
+# 创建视图函数 演示一对一模型关系的操作
+def onetoone(request):
+   # 添加
+    # 创建学员信息
+    ob = Stu(sname='李四',age=24)
+    ob.save()
+    # 添加学员详情信息
+    obi = StuInfo()
+    obi.jiguan = "山西"
+    obi.xueli = '大专'
+    # 注意在给外键添加数据时,
+    # 只能选择对象,不能设为对象的id
+    obi.uid = ob
+    obi.save()
+
+    # 查询
+    ob = Stu.objects.first()
+    print(ob.sname)
+    # 与之关联的模型类全小写就可以了
+    # ,另一个对象就出来了
+    print(ob.stuinfo.xueli)
+    # 通过学员 获取学员详情对象
+    print(ob.stuinfo.jiguan)
+
+    # 通过学员详情,获取学员信息
+    ob = StuInfo.objects.last()
+    print(ob.jiguan)
+    print(ob.uid)
+    print(ob.uid.sname)
+    print(ob.uid.age)
+    # 有外键的一方使用外键
+    # 没有外键的一方,使用类名小写
+
+    # 删除
+    # 删除一个表中的记录,应该同步都删除
+    ob = StuInfo.objects.last()
+    ob.delete()
+
+
+    return HttpResponse('演示 一对一模型关系的操作')
+```
 ### 一对多
 ### 多对多        
 # ORM关系映射
