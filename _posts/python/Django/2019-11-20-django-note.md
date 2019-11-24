@@ -413,10 +413,22 @@ Django学习中遇到的问题（1）[django migration No migrations to apply](h
 { %  csrf_token  % }
 ```
 
+### Django框架自带的后台
+1. 在浏览器访问 admin
+`http://127.0.0.1:8000/admin/`
+2. 需要登录,因此要创建一个超级用户
+在命令行执行下一个命令进行创建
+`python3 manage.py createsuperuser`
 
-
-
-
+3. 重新启动服务后 ,使用创建的用户进行后台的登录
+4. 配置settings.py文件,配置语言和时区
+```python
+LANGUAGE_CODE = 'zh-Hans'
+TIME_ZONE = 'Asia/Shanghai'
+USE_I18N = True
+USE_L10N = True
+USE_TZ = False
+```
 
 
 

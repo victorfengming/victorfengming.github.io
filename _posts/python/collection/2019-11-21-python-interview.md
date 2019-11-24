@@ -36,3 +36,10 @@ tags: Python background solution
 - 以上就是我对正则表达式的理解
     
 ### 你对mysql的理解    
+
+
+### char varchar text 区别
+首先都是mysql中的字符串类型
+char 定长字符串(比如,密码因为都是加密后长度一样的)
+varchar 变长字符串(节省空间)
+text 大篇幅的文章文本(效率低,不能设置不默认值)
