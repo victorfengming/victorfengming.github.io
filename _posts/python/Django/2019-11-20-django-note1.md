@@ -1,5 +1,5 @@
 ---
-title: "Django笔记"
+title: "Django笔记-基础"
 subtitle: "一个完美主义的web框架"
 tags: Python solution web
 ---
