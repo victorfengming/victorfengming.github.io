@@ -321,6 +321,36 @@ class User(models.Model):
 ```
 在[这里](https://victorfengming.github.io/2019/11/20/django-note/#%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9E%8B)已经说了
 
+### 模型更改问题
+>如果模型已经创建好了一个表,你再模型中在增加一个字段,在生成迁移文件的时候就会报出
+>新增的一个字段时注意,如果当前新增的字段不允许为空,并且没有设置默认值,
+>则会在生成迁移时
+```shell script
+You are trying to add a non-nullable field 'age' to users without a default; we c
+an't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null v
+alue for this column)
+ 2) Quit, and let me add a default in models.py
+```
+翻译过来是:
+```shell script
+就是说,你加了一个字段,还说不能为空,然后那我之前还有挺多数据呢,这可咋整啊
+您还想添加一个非空字段,还没有默认,是不是傻?
+
+选择一个修复吧,赶紧的:
+
+1)提供一个一次性的值
+
+2)退出，修改当前新增字段
+    1. 设置默认值
+    2. 允许为空
+```
+
+就算你表中没有数据,他也会这样问,以为他傻,他不知道你有没有数据,他也不能知道,也不需要知道
+
+Django学习中遇到的问题（1）[django migration No migrations to apply](https://www.cnblogs.com/william126/p/7591562.html)
+
 # Template模板
 ### 模板概念
 作为Web 框架，Django 需要一种很便利的方法以动态地生成HTML。最常见的做法是使用模板。
