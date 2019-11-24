@@ -1,6 +1,7 @@
-I am a fraternity member and like to go to the clone code in git
+Mingo jr., a fraternity member, majored in python and minored in Java
 
-Although I only know Python helloworld at present, I will try my best
+Here I record my IT learning path, share some learning experience, and a variety of leveling skills, notes and summary
+
 
 Let's explore the amazing stories in the world of code!
 
