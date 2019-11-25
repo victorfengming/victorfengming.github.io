@@ -1,6 +1,6 @@
 ---
 title: "Python脚本实现图片加水印"
-subtitle: "Python无所不能"
+subtitle: "Pillow库"
 tags: Python background solution
 ---
 
