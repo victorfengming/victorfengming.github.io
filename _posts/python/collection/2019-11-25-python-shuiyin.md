@@ -26,14 +26,17 @@ python3.7 环境:[python安装以及版本检测](https://victorfengming.github.
 pycharm2019:[PyCharm的安装以及破解](https://victorfengming.github.io/2019/08/16/pycharm-install/)
 
 pillow库的安装
+
 ```shell script
 pip install pillow
 ```
 
+
 关于pip的安装,可以参考:[Python pip 安装与使用
 ](https://victorfengming.github.io/2019/10/12/python-install-pip/)和[pip配置](https://victorfengming.github.io/2019/11/20/pip-conf/)
 
-### shuiyin.py
+
+### 直接就上代码
 ```python
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
