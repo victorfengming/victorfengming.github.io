@@ -1,5 +1,5 @@
 ---
-title: "Python脚本实现汉子转拼音"
+title: "Python脚本实现汉字转拼音"
 subtitle: "Python无所不能"
 tags: Python background solution
 ---
