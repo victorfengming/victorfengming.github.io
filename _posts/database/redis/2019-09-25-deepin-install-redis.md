@@ -1,6 +1,6 @@
 ---
 title: "一行命令带你安装redis(deepin系统下)"
-tags: Linux deepin database redis
+tags: Linux deepin database redis nosql
 ---
 
 ### 1.安装Redis服务

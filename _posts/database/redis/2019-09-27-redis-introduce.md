@@ -1,6 +1,6 @@
 ---  
 title: "Redis数据库简介"  
-tags: Linux deepin database redis   
+tags: Linux deepin database redis nosql
 ---  
   
 ### Redis 简介  

@@ -1,6 +1,6 @@
 ---
 title: "关于关系型数据库和非关系型数据库的区别浅析"
-tags: database basis
+tags: database basis nosql
 ---
 
 <div class="post">

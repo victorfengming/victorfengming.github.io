@@ -1,6 +1,6 @@
 ---  
 title: "关于redis，学会这8点就够了"  
-tags: Linux deepin database redis   
+tags: Linux deepin database redis nosql
 ---  
   
 <div class="htmledit_views" id="content_views">

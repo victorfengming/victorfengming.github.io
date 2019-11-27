@@ -1,6 +1,6 @@
 ---
 title: "Django/Flask/Tornado三大web框架性能分析"
-tags: Python solution web
+tags: Python solution web django flask
 ---
 
 

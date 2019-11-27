@@ -1,6 +1,6 @@
 ---
 title: 'Spring 概述'
-tags: Java basis spring
+tags: Java basis
 ---
 
 ### 概述

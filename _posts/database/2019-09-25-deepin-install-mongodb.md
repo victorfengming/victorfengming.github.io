@@ -1,6 +1,6 @@
 ---
 title: "一行命令带你安装mongodb(deepin系统下)"
-tags: Linux deepin database mongodb
+tags: Linux deepin database mongodb nosql
 ---
 
 

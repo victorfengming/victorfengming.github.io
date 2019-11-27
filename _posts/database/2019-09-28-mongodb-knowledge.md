@@ -1,6 +1,6 @@
 ---  
 title: "MongoDB从入门到放弃！"  
-tags: Linux deepin database mongodb   
+tags: Linux deepin database mongodb nosql   
 ---  
   
 概述：大家对数据库肯定不陌生，肯定也有很多人用过MySQL，但是在用MySQL的时候各种建表，写表之间的关联让人非常头疼。

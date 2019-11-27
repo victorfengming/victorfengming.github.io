@@ -1,6 +1,6 @@
 ---  
 title: "MongoDB数据库简介"  
-tags: Linux deepin database mongodb   
+tags: Linux deepin database mongodb nosql  
 ---  
   
 ### 什么是MongoDB ?  
