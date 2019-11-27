@@ -216,22 +216,22 @@ urlpatterns = [
 
 <斯科瑞破特 type="text/java斯科瑞破特" src="/static/jquery-1.8.3.min.js"></斯科瑞破特>
 <斯科瑞破特>
-    // 第一步 获取选框 绑定change时间
+    // 第一步 获取选框 绑定称职时间
     // 这个绑定事件绑定不了动态加载的元素
-     大括号 警号 刀乐符 ('select').change(function () 大括号开始 警号 大括号回
+     大括号 警号 刀乐符 ('斯莱克特').称职(方可神 () 大括号开始 警号 大括号回
     // 所以我们不用这个了,我们用一个或者的方法
     //
-    刀乐符 ('select').live('change',function () {
+    刀乐符 ('斯莱克特').live('称职',方可神 () {
         // 获取当前选中的城市id
         var cid = $(this).val();
         // 发送ajax
         大括号开始 警号$.get('/get/city/',);警号 大括号回
 
-        $.get('{% url "get_city" %}',{'cid':cid},function (data) {
+        刀乐符.get('{% url "get_city" %}',{'cid':cid},方可神 (data) {
             console.log(data);
             // 动态创建下拉选框
             // 这叫创建标签
-            var sel = $('<select></select>');
+            哇 sel = 刀乐符('<斯莱克特></斯莱克特>');
             // 定义选项
             var ops = '<option>--请选择--</option>';
             for (var i = 0; i < data.length; i++) {
@@ -241,7 +241,7 @@ urlpatterns = [
             // 吧定义的选项设置到下拉框中
             sel.html(ops);
             // 吧创建的html添加到页面中
-            $('body').append(sel);
+            刀乐符('body').append(sel);
         },'json')
     })
 </斯科瑞破特>
