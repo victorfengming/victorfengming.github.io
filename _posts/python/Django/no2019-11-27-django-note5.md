@@ -34,4 +34,46 @@ tags: Python solution web django
 激活：添加到Django配置文件中的MIDDLEWARE_CLASSES元组中
 使用中间件，可以干扰整个处理过程，每次请求中都会执行中间件的这个方法
 
-# 前台的登录注册
+### 比如这样
+```python
+from django.http import HttpResponse
+import re
+
+class AdminLoginMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+        # One-time configuration and initialization.
+
+    def __call__(self, request):
+
+        # 用户的请求路径# /myadmin/cate/index/
+        path = request.path
+        # 定义允许访问的路径
+        arr = ['/myadmin/login/','/myadmin/dologin/','/myadmin/verifycode/']
+        # 检测用户是否访问后台,并且不是进入登录页面
+        if re.match('/myadmin/',path) and path not in arr:
+            # 检测是否已经登录
+            AdminUser = request.session.get('AdminUser',None)
+            if not AdminUser:
+                # 没有登录
+                return HttpResponse('<script>alert("请先登录");location.href="/myadmin/login/"</script>')
+
+
+        response = self.get_response(request)
+        return response
+```
+
+### 验证码那点事儿
+
+静态资源如果重复访问,不会产生新的请求
+
+所以验证码的刷新要在this.src后面加上?1
+
+像这样:
+```html
+<img src="{% url 'myadmin_verifycode' %}" alt="" style="position:absolute; right: 2px; top: 5px" onclick="this.src = this.src+'?1'">
+```
+这样会越加越多,升级版本(用随机数字):
+```html
+<img src="{% url 'myadmin_vcode' %}" onclick="this.src='{% url 'myadmin_vcode' %}'+'?'+Math.random()" style="position: absolute;top:-5px;right: 2px;">
+```
