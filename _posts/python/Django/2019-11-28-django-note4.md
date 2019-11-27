@@ -66,11 +66,40 @@ tags: Python solution web
 ### 分页优化解决方案
 自定义模板标签
 
+### 5. URL的反向解析
+如果在视图、模板中使用硬编码的链接，在urlconf发生改变时，维护是一件非常麻烦的事情
+
+- 解决：在做链接时，通过指向urlconf的名称，动态生成链接地址
+- 视图：使用django.core.urlresolvers.reverse()函数
+- 模板：使用url模板标签
 
 
+### js
+`$(this)`
+是一个伪变量
 
+```js
 
+// 删除
+    $('.removeCate').click(function(){
+        // 获取当前选择的分类的id
+        var cid = $(this).attr('cid')
+        var a = $(this)
+        // 发送ajax请求.到后台执行删除
+        $.get('{% url 'myadmin_cate_del' %}',{'cid':cid},function(data){
+            // 判断当前的返回值
+            if(data['code'] == 0){
+                // 删除成功
+                // $(this).parents('tr').remove()
+                //  此处的 $(this) 是谁? ajax对象 XMLHttpRequest
+                a.parents('tr').remove()
+            }
+            alert(data['msg'])
+        },'json')
+        
 
+    })
+```
 
 
 
