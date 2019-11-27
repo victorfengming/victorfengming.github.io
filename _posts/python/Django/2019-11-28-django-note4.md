@@ -25,7 +25,7 @@ tags: Python solution web django
 《技术预研报告》
 - 系统设计
 《体系结构设计报告》
-《用户界面设计报告》
+《用户界面报告》
 《数据库设计报告》
 《模块设计报告》
 - 实现与测试
@@ -51,9 +51,9 @@ tags: Python solution web django
 
 ### 地址的使用
 在项目中头像上传时,使用的地址
-为什么有些地方写 `/static/uploads/`
-有些地方写 `./static/uploads/`
-甚至`/home/yc/py16/py16-project/web/static/uploads/`
+- 为什么有些地方写 `/static/uploads/`
+- 有些地方写 `./static/uploads/`
+- 甚至`/home/yc/py16/py16-project/web/static/uploads/`
 
 
 总结来说:两种情况
@@ -78,6 +78,31 @@ tags: Python solution web django
 - 模板：使用url模板标签
 
 
-### js
+### js中的知识点补充
 `$(this)`
-是一个伪变量
+是一个伪变量,在不同的作用域里表示的不同
+
+比如这样:
+```js
+
+// 删除
+    $('.removeCate').click(function(){
+        // 获取当前选择的分类的id
+        var cid = $(this).attr('cid')
+        var a = $(this)
+        // 发送ajax请求.到后台执行删除
+        $.get('url',{'cid':cid},function(data){
+            // 判断当前的返回值
+            if(data['code'] == 0){
+                // 删除成功
+                // $(this).parents('tr').remove()
+                //  此处的 $(this) 是谁? ajax对象 XMLHttpRequest
+                a.parents('tr').remove()
+            }
+            alert(data['msg'])
+        },'json')
+        
+
+    })
+```
+

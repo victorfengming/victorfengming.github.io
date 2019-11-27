@@ -104,18 +104,21 @@ USE_TZ = False
 # 自定义过滤/器
 1. 在应用中创建一个templatetags文件夹
 2. 在templatetags 包中定义一个模块文件diytags.py
+
+
 ```python
+
 from django import template
 
 register = template.Library()
 
-# 自定义过滤器
+''' 自定义过滤器'''
 @register.filter
 def yc_upper(val):
     return val.upper()
 
 
-# 自定义标签
+''' 自定义标签'''
 from django.utils.html import format_html
 @register.simple_tag
 def jia(a,b):
@@ -204,4 +207,42 @@ urlpatterns = [
     url(r'^get/city$', views.get_city,name="get_city"),
 ]
 
+```
+
+
+#### 前台界面
+
+```html
+
+<script type="text/javascript" src="/static/jquery-1.8.3.min.js"></script>
+<script>
+    // 第一步 获取选框 绑定change时间
+    // 这个绑定事件绑定不了动态加载的元素
+    {警号$('select').change(function () {警号}
+    // 所以我们不用这个了,我们用一个或者的方法
+    //
+    $('select').live('change',function () {
+        // 获取当前选中的城市id
+        var cid = $(this).val();
+        // 发送ajax
+        {警号$.get('/get/city/',);警号}
+
+        $.get('{% url "get_city" %}',{'cid':cid},function (data) {
+            console.log(data);
+            // 动态创建下拉选框
+            // 这叫创建标签
+            var sel = $('<select></select>');
+            // 定义选项
+            var ops = '<option>--请选择--</option>';
+            for (var i = 0; i < data.length; i++) {
+                ops += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+            }
+
+            // 吧定义的选项设置到下拉框中
+            sel.html(ops);
+            // 吧创建的html添加到页面中
+            $('body').append(sel);
+        },'json')
+    })
+</script>
 ```
