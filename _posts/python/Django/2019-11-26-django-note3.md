@@ -209,12 +209,11 @@ urlpatterns = [
 #### 前台界面
 
 ```html
-{## 导入jQuery#}
+
 <script type="text/javascript" src="/static/jquery-1.8.3.min.js"></script>
 <script>
     // 第一步 获取选框 绑定change时间
     // 这个绑定事件绑定不了动态加载的元素
-    {#$('select').change(function () {#}
     // 所以我们不用这个了,我们用一个或者的方法
     //
     $('select').live('change',function () {
@@ -241,4 +240,5 @@ urlpatterns = [
         },'json')
     })
 </script>
-```
+
+```    
