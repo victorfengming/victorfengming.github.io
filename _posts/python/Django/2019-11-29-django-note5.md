@@ -71,11 +71,11 @@ class AdminLoginMiddleware:
 
 像这样:
 ```html
-<img src="{% url 'myadmin_verifycode' %}" alt="" style="position:absolute; right: 2px; top: 5px" onclick="this.src = this.src+'?1'">
+<img src="大括号开始 百分号 url 'myadmin_verifycode' 百分号 大括号结束" alt="" style="position:absolute; right: 2px; top: 5px" onclick="this.src = this.src+'?1'">
 ```
 这样会越加越多,升级版本(用随机数字):
 ```html
-<img src="{% url 'myadmin_vcode' %}" onclick="this.src='{% url 'myadmin_vcode' %}'+'?'+Math.random()" style="position: absolute;top:-5px;right: 2px;">
+<img src="大括号开始 百分号 url 'myadmin_vcode' 百分号大括号结束" onclick="this.src='大括号开始百分号 url 'myadmin_vcode' 百分号 大括号结束'+'?'+Math.random()" style="position: absolute;top:-5px;right: 2px;">
 ```
 
 ### 前台页面的基本搭建
