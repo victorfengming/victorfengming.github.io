@@ -222,13 +222,3 @@ sessionid是把数据存在服务端(文件,数据库,内存)
 session依赖cookie,这样更加的安全
 cookie只能存储字符串类型的数据,session在python中的啥格式都行
     
-
-# ORM关系映射
-
-# 单表查询
-
-# 多表查询
-
-# session的使用
-
-# cookie的使用

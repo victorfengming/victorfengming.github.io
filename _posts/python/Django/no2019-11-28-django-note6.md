@@ -1,5 +1,5 @@
 ---
-title: "Django笔记-前台展示"
+title: "Django笔记06-前台展示"
 subtitle: "简约而不简单"
 tags: Python solution web
 ---
