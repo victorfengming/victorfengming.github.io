@@ -220,7 +220,7 @@ urlpatterns = [
         // 获取当前选中的城市id
         var cid = $(this).val();
         // 发送ajax
-        {#$.get('/get/city/',);#}
+        {警号$.get('/get/city/',);警号}
 
         $.get('{% url "get_city" %}',{'cid':cid},function (data) {
             console.log(data);
