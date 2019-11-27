@@ -1,6 +1,6 @@
 ---
 title: "pycharm中运行django的相关配置"
-subtitle: "Requested setting CACHES, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE 问题解决"
+subtitle: "Requested setting CACHES, but settings are not configured. 问题解决"
 tags: Python solution web
 ---
 
