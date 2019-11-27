@@ -27,7 +27,7 @@ pycharm2019:[PyCharm的安装以及破解](https://victorfengming.github.io/2019
 
 pillow库的安装
 
-```shell script
+```
 pip install pillow
 ```
 
@@ -37,6 +37,8 @@ pip install pillow
 
 
 ### 直接就上代码
+
+
 ```python
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-

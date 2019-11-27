@@ -20,6 +20,7 @@ tags: Python solution web django
 
 在cmd中能够正常运行django程序,
 pycharm 中运行不了django的程序，看错误是：
+
 ```shell script
 django.core.exceptions.ImproperlyConfigured: 
 Requested setting CACHES, but settings are not configured. 
@@ -27,6 +28,7 @@ You must either define the environment variable
 DJANGO_SETTINGS_MODULE or call settings.
 configure() before accessing settings. 
 ```
+
 结果百度了半天没结果，最后还是在 老外的网站上找到了答案:
 ### 解决方案
 
