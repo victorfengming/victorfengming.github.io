@@ -77,3 +77,5 @@ class AdminLoginMiddleware:
 ```html
 <img src="{% url 'myadmin_vcode' %}" onclick="this.src='{% url 'myadmin_vcode' %}'+'?'+Math.random()" style="position: absolute;top:-5px;right: 2px;">
 ```
+
+### 前台页面的基本搭建

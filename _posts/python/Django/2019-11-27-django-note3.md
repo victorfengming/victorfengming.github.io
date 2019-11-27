@@ -218,14 +218,14 @@ urlpatterns = [
 <script>
     // 第一步 获取选框 绑定change时间
     // 这个绑定事件绑定不了动态加载的元素
-    {警号$('select').change(function () {警号}
+     大括号 警号 刀乐符 ('select').change(function () 大括号开始 警号 大括号回
     // 所以我们不用这个了,我们用一个或者的方法
     //
     $('select').live('change',function () {
         // 获取当前选中的城市id
         var cid = $(this).val();
         // 发送ajax
-        {警号$.get('/get/city/',);警号}
+        大括号开始 警号$.get('/get/city/',);警号 大括号回
 
         $.get('{% url "get_city" %}',{'cid':cid},function (data) {
             console.log(data);
