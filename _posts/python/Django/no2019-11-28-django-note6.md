@@ -13,7 +13,6 @@ tags: Python solution web
 
 
 
-
 # 前台数据展示
 # 购物车
 # 订单的完成
