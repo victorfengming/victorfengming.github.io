@@ -1,7 +1,7 @@
 ---
 title: "Django笔记05-后台展示"
 subtitle: "一个广受欢迎的服务器端框架"
-tags: Python solution web
+tags: Python solution web django
 ---
 
 

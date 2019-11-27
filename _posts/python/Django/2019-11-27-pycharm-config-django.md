@@ -1,7 +1,7 @@
 ---
 title: "pycharm中运行django的相关配置"
 subtitle: "Requested setting CACHES, but settings are not configured. 问题解决"
-tags: Python solution web
+tags: Python solution web django
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Django笔记04-项目搭建"
 subtitle: "Python开发的一个免费开源的Web框架"
-tags: Python solution web
+tags: Python solution web django
 ---
 
 

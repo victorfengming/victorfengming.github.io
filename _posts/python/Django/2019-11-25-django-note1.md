@@ -1,7 +1,7 @@
 ---
 title: "Django笔记01-基础"
 subtitle: "一个完美主义的web框架"
-tags: Python solution web
+tags: Python solution web django
 ---
 
 

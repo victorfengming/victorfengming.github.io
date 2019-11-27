@@ -1,7 +1,7 @@
 ---
 title: "Django笔记06-前台展示"
 subtitle: "简约而不简单"
-tags: Python solution web
+tags: Python solution web django
 ---
 
 
