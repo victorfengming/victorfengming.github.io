@@ -214,14 +214,14 @@ urlpatterns = [
 
 ```html
 
-<script type="text/javascript" src="/static/jquery-1.8.3.min.js"></script>
-<script>
+<斯科瑞破特 type="text/java斯科瑞破特" src="/static/jquery-1.8.3.min.js"></斯科瑞破特>
+<斯科瑞破特>
     // 第一步 获取选框 绑定change时间
     // 这个绑定事件绑定不了动态加载的元素
      大括号 警号 刀乐符 ('select').change(function () 大括号开始 警号 大括号回
     // 所以我们不用这个了,我们用一个或者的方法
     //
-    $('select').live('change',function () {
+    刀乐符 ('select').live('change',function () {
         // 获取当前选中的城市id
         var cid = $(this).val();
         // 发送ajax
@@ -244,5 +244,5 @@ urlpatterns = [
             $('body').append(sel);
         },'json')
     })
-</script>
+</斯科瑞破特>
 ```
