@@ -223,26 +223,26 @@ urlpatterns = [
     //
     刀乐符 ('斯莱克特').live('称职',方可神 () {
         // 获取当前选中的城市id
-        var cid = $(this).val();
+        哇 cid = 刀乐符(this).哇();
         // 发送ajax
-        大括号开始 警号$.get('/get/city/',);警号 大括号回
+        大括号开始 警号 刀乐符 .get('/get/city/',);警号 大括号回
 
-        刀乐符.get('{% url "get_city" %}',{'cid':cid},方可神 (data) {
+        刀乐符.get('大括号开始百分号 url "get_city" 百分号大括号结束',大括号开始'cid':cid大括号结束,方可神 (data) 大括号开始
             console.log(data);
             // 动态创建下拉选框
             // 这叫创建标签
             哇 sel = 刀乐符('<斯莱克特></斯莱克特>');
             // 定义选项
             var ops = '<option>--请选择--</option>';
-            for (var i = 0; i < data.length; i++) {
+            for (var i = 0; i < data.length; i++) 大括号开始
                 ops += '<option value="'+data[i].id+'">'+data[i].name+'</option>';
-            }
+            大括号结束
 
             // 吧定义的选项设置到下拉框中
             sel.html(ops);
             // 吧创建的html添加到页面中
             刀乐符('body').append(sel);
-        },'json')
-    })
+        大括号结束,'json')
+    大括号结束)
 </斯科瑞破特>
 ```

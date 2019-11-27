@@ -79,3 +79,7 @@ class AdminLoginMiddleware:
 ```
 
 ### 前台页面的基本搭建
+
+后台是增删改查的流程
+
+前台多数时候是查询
