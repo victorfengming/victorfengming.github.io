@@ -1,6 +1,6 @@
 ---
 title: 'PyCharm的安装以及破解'
-tags: Python background 
+tags: Python background pycharm
 ---
 
 

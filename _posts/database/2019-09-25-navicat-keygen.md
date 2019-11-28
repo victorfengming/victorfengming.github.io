@@ -1,7 +1,7 @@
 ---
 title: "Navicat Premium v12.1.22 中文最新破解版"
 subtitle: "（附：激活工具）"
-tags: windows navicat solution
+tags: navicat solution
 ---
 
 <article id="post-513" class="post-513 post type-post status-publish format-standard hentry category-download tag-mysql tag-navicat-premium">

@@ -1,6 +1,6 @@
 ---
 title: "兄弟会 - 阶段感悟汇总"
-tags: XDH  
+tags: XDH summer
 ---
 
 ### 齐健组：

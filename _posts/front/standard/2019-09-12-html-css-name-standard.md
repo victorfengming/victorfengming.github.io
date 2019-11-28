@@ -1,6 +1,6 @@
 ---
 title: 'HTML，CSS的class与id命名规则'
-tags: web html solution css standard
+tags: web html solution css standard css
 ---
 
 ### 最重要的部分先说(命名书写格式)

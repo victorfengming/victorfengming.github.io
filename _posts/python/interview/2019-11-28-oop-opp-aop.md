@@ -1,7 +1,7 @@
 ---
 title: "如何理解面向过程、面向对象、面向切面？它们有什么区别"
 subtitle: "OOP 、 OPP 、 AOP"
-tags: Python solution interview
+tags: Python solution interview oop
 ---
 
 

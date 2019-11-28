@@ -1,6 +1,6 @@
 ---  
 title: "Oracle基础知识总结"  
-tags: Linux deepin database oracle   
+tags: Linux deepin database oracle summer   
 ---  
   
 ORACLE 基础

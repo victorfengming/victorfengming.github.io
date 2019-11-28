@@ -1,6 +1,6 @@
 ---
 title: "Ubuntu系统的安装"
-tags: Linux solution ubuntu
+tags: Linux solution ubuntu system
 ---
 
 
