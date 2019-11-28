@@ -1,6 +1,6 @@
 ---
 title: "python中的接口"
-tags: Python solution interview decorator
+tags: Python solution interview
 ---
 
 ### 什么是接口 ？

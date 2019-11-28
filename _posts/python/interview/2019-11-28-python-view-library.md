@@ -1,3 +1,12 @@
+---
+title: "Python可视化工具介绍"
+subtitle: "帮你找到合适的库"
+tags: Python solution interview
+---
+
+原文链接:https://www.jianshu.com/p/62027a72a794
+
+
 <p>Python有很多可视化工具，大体上可以分为基于matplotlib的工具库和基于JS的工具库。<br>
     有如此丰富的选择是幸福的，无论你要画什么图，都能找到相对的库。但与此同时，弄清楚使用哪个工具更合适可能非常具有挑战性。本文对常用的一些可视化工具进行介绍，并说明它们之间的主要区别。</p>
 <br>

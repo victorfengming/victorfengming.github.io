@@ -1,7 +1,7 @@
 ---
 title: "python 中None，is和==的深入探讨"
 subtitle: "简书 - 创作你的创作"
-tags: Python solution interview decorator
+tags: Python solution interview
 ---
 
 原文链接:https://www.jianshu.com/p/627232777efd

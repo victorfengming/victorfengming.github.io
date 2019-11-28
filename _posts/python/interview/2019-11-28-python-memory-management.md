@@ -1,7 +1,7 @@
 ---
 title: "深入python内存管理"
 subtitle: "属性在运行时的动态替换"
-tags: Python solution interview decorator
+tags: Python solution interview
 ---
 
 ### 本文目录
