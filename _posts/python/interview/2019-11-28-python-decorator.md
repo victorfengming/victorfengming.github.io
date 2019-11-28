@@ -1,3 +1,12 @@
+---
+title: "Python中的装饰器:Decorator"
+subtitle: "面向切面编程,别样的方式"
+tags: Python solution interview
+---
+
+
+
+
 <article class="_2rhmJa"><h2>理解Python装饰器(Decorator)</h2>
     <p>Python装饰器看起来类似Java中的注解，然鹅和注解并不相同，不过同样能够实现面向切面编程。</p>
     <p>想要理解Python中的装饰器，不得不先理解闭包（closure）这一概念。</p>
@@ -78,7 +87,7 @@ closure<span class="token punctuation">(</span><span class="token punctuation">)
     <span class="token keyword">print</span><span class="token punctuation">(</span>test<span class="token punctuation">.</span>__name__ <span
                 class="token operator">+</span> <span class="token string">" param: "</span> <span
                 class="token operator">+</span> p<span class="token punctuation">)</span>
-
+    
 test<span class="token punctuation">(</span><span class="token string">"I'm a param"</span><span
                 class="token punctuation">)</span>
 <span aria-hidden="true"
@@ -144,7 +153,7 @@ wrapper("I'm a param")
         <span class="token keyword">return</span> wrapper
 
     <span class="token keyword">return</span> decorator
-
+    
 @log_with_param<span class="token punctuation">(</span><span class="token string">"param"</span><span
                 class="token punctuation">)</span>
 <span class="token keyword">def</span> <span class="token function">test_with_param</span><span
