@@ -1,3 +1,10 @@
+---
+title: "Python如何判断一个对象是函数还是方法"
+subtitle: "判断对象是否是function的三种方法"
+tags: Python solution interview
+---
+
+
 
 <p>在Python中，判断一个对象是否是方法有如下三种方法。</p>
 

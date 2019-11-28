@@ -1,7 +1,7 @@
 ---
 title: "Django笔记02-进阶"
 subtitle: "可以使Web开发工作愉快并且高效的Web开发框架"
-tags: Python solution web django
+tags: Python solution web django standard
 ---
 
 
