@@ -13,16 +13,40 @@ tags: Python solution interview
 {:toc}
 
 
+### 语言特性
+1.谈谈对 Python 和其他语言的区别:
+[答案在这里](https://victorfengming.github.io/2019/11/28/python-feature/)
+
+2.简述解释型和编译型编程语言:
+[答案在这里](https://victorfengming.github.io/2019/11/28/compile-explain/)
+
+3.Python 的解释器种类以及相关特点？
+[答案在这里](https://victorfengming.github.io/2019/11/28/interpreter-type/)
+
+4.说说你知道的Python3 和 Python2 之间的区别？
+[答案在这里](https://victorfengming.github.io/2019/11/28/python2-python3/)
+
+5.Python3 和 Python2 中 int 和 long 区别？
+[答案在这里](https://victorfengming.github.io/2019/11/28/python23-long/)
+
+6.xrange 和 range 的区别？
+[答案在这里](https://victorfengming.github.io/2019/11/28/python-range-xrange/)
 
 
-[谈谈对Python和其他语言的区别](https://www.jianshu.com/p/373cdf20039d)
+### 编码规范
+7.什么是 PEP8?
+[答案在这里](https://victorfengming.github.io/2019/11/28/python-range-xrange/)
 
+8.了解 Python 之禅么？
+[答案在这里](https://victorfengming.github.io/2019/11/28/python-range-xrange/)
 
-
-[简述编译型与解释型编程语言](https://www.i3geek.com/archives/583)
-
-
-[Python 的解释器种类以及相关特点](https://blog.csdn.net/dqb1991/article/details/97657728)
-
-
-[谈谈对Python和其他语言的区别](https://www.jianshu.com/p/373cdf20039d)
+9.了解 dosctring 么？
+10.了解类型注解么？
+11.例举你知道 Python 对象的命名规范，例如方法或者类等
+12.Python 中的注释有几种？
+13.如何优雅的给一个函数加注释？
+14.如何给变量加注释？
+15.Python 代码缩进中是否支持 Tab 键和空格混用。
+16.是否可以在一句 import 中导入多个库?
+17.在给 Py 文件命名的时候需要注意什么?
+18.例举几个规范 Python 代码风格的工具
