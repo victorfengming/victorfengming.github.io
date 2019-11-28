@@ -1,6 +1,6 @@
 ---
 title: "Python中的装饰器:Decorator"
-subtitle: "面向切面编程,别样的方式"
+subtitle: "别样的方式实现面向切面编程"
 tags: Python solution interview
 ---
 
