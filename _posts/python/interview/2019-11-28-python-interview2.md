@@ -12,6 +12,8 @@ tags: Python solution interview
 * content
 {:toc}
 
+
+
 <h3 style="color:inherit;line-height:inherit;font-weight:bold;border-bottom:2px solid rgb(239,112,96);font-size:1.3em;" id="-1"><a name="t0"></a><span style="font-size:inherit;line-height:inherit;font-weight:normal;background:rgb(239,112,96);color:rgb(255,255,255);">语言特性</span><span style="vertical-align:bottom;border-bottom:36px solid rgb(239,235,233);border-right:20px solid transparent;"> </span><a class="anchorjs-link " href="#-1" aria-label="Anchor link for:  1" data-anchorjs-icon="#" style="opacity: 1; padding-left: 0.375em;"></a></h3>
 
 1.谈谈对 Python 和其他语言的区别:
