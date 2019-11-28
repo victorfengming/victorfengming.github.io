@@ -1,3 +1,12 @@
+---
+title: "如何理解面向过程、面向对象、面向切面？它们有什么区别"
+subtitle: "OOP 、 OPP 、 AOP"
+tags: Python solution interview
+---
+
+
+
+
 <article class="_2rhmJa"><p>我们总会听见如下词语：</p>
     <p>面向过程编程（opp）<br>
         面向对象编程（oop）<br>
