@@ -1,3 +1,12 @@
+---
+title: "python之禅"
+subtitle: "python的设计哲学：优雅，简洁。。。"
+tags: Python solution interview
+---
+
+
+
+
 <div id="cnblogs_post_body" class="blogpost-body ">
     <p><span style="font-family: 'courier new', courier; font-size: 13px;">可以在编译器里面输入如下语句来查看python语言的设计哲学：</span></p>
     <p>&nbsp;</p>

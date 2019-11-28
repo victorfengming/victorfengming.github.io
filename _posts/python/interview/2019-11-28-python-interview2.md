@@ -37,10 +37,13 @@ tags: Python solution interview
 
 
 
-<h3 style="color:inherit;line-height:inherit;font-weight:bold;border-bottom:2px solid rgb(239,112,96);font-size:1.3em;" id="-1"><a name="t0"></a><span style="font-size:inherit;line-height:inherit;font-weight:normal;background:rgb(239,112,96);color:rgb(255,255,255);">编码规范</span><span style="vertical-align:bottom;border-bottom:36px solid rgb(239,235,233);border-right:20px solid transparent;"> </span><a class="anchorjs-link " href="#-1" aria-label="Anchor link for:  1" data-anchorjs-icon="#" style="opacity: 1; padding-left: 0.375em;"></a></h3>
+<h3 style="color:inherit;line-height:inherit;font-weight:bold;border-bottom:2px solid rgb(239,112,96);font-size:1.3em;" id="-1">
+<span style="font-size:inherit;line-height:inherit;font-weight:normal;background:rgb(239,112,96);color:rgb(255,255,255);">编码规范</span>
+<span style="vertical-align:bottom;border-bottom:36px solid rgb(239,235,233);border-right:20px solid transparent;"> </span>
+</h3>
 
 7.什么是 PEP8?
-[答案在这里](https://victorfengming.github.io/2019/11/28/python-range-xrange/)
+[答案在这里](https://victorfengming.github.io/2019/11/28/python-pep8/)
 
 8.了解 Python 之禅么？
 [答案在这里](https://victorfengming.github.io/2019/11/28/python-range-xrange/)

@@ -1,5 +1,5 @@
 ---
-title: "github开源项目的协同开发流程"
+title: "github开源项目协同开发流程"
 tags: Git solution 
 ---
 
