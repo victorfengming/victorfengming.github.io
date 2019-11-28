@@ -1,3 +1,10 @@
+---
+title: "Python中@classmethod 和@staticmethod用法和区别"
+subtitle: "装饰器的高级用法"
+tags: Python solution interview decorator
+---
+
+
 <p><code>@classsmethod</code>
     类装饰器：当用此装饰器定义方法时，将类而不是类的实例作为第一个参数，这意味着可以在此方法中直接使用类的属性，而不是特定的实例的属性，因此不必进行硬编码。
 </p>
