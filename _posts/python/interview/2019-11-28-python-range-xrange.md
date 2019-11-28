@@ -1,3 +1,9 @@
+---
+title: "python range() 和xrange()的区别"
+tags: Python background interview
+---
+
+
 <div id="cnblogs_post_body" class="blogpost-body ">
     <div class="cnblogs_Highlighter sh-gutter">
         <div>
