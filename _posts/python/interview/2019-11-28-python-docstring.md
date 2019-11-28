@@ -1,3 +1,9 @@
+---
+title: "Python中的docstring"
+subtitle: "养成写文档的好习惯"
+tags: Python solution interview
+---
+
 <div style="line-height:28px;word-wrap:break-word">
     <h1 style="color:#903;line-height:36px;margin-bottom:4px">使用Python的docstring</h1>
     <p style="color:#aaa">
