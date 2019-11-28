@@ -1,8 +1,12 @@
-Mingo jr., a fraternity member, majored in python and minored in Java
-
-Here I record my IT learning path, share some learning experience, and a variety of leveling skills, notes and summary
+Hi, this is victor, a frat brother and programming enthusiast.
 
 
-Let's explore the amazing stories in the world of code!
+Here I record my IT learning path, and share some learning experience, and a variety of pit skills, notes summary
+
+
+I wrote Python/Linux/ front end /Java related articles in my blog, welcome to read and forward here.
+
+
+Let's explore the amazing story of the code world!
 
 Email:`fengming19981221@163.com`

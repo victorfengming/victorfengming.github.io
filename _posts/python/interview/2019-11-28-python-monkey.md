@@ -6,7 +6,8 @@ tags: Python solution interview decorator
 
 
 ### Python猴子补丁
- 
+推荐阅读：[python自定义对象转json串](https://www.jianshu.com/p/f1060b22aab8)
+
 <blockquote>
     <p>属性在运行时的动态替换，叫做猴子补丁（Monkey Patch）。</p>
 </blockquote>
