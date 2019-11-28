@@ -1,7 +1,7 @@
 ---
 title: "Python 的解释器种类以及相关特点"
 subtitle: "Python大法好"
-tags: Python background solution
+tags: Python background interview
 ---
 
 

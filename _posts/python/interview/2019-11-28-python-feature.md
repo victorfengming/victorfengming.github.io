@@ -1,7 +1,7 @@
 ---
 title: "谈谈对Python和其他语言的区别"
 subtitle: "从三个方面看Python"
-tags: Python background solution
+tags: Python background interview
 ---
 
 

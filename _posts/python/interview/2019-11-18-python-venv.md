@@ -1,6 +1,6 @@
 ---  
 title: "Python中的虚拟环境-virtualenv"  
-tags: Python background  
+tags: Python background interview
 ---  
   
   

@@ -1,6 +1,6 @@
 ---
 title: "简述编译型与解释型编程语言"
-tags: Python background solution
+tags: Python background interview
 ---
 
 

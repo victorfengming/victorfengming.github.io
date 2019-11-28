@@ -1,7 +1,7 @@
 ---
 title: "Python面试题"
 subtitle: "个人整理"
-tags: Python background solution
+tags: Python background interview
 ---
 
 

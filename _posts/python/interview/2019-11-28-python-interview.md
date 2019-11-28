@@ -1,7 +1,7 @@
 ---
 title: "Python 最常见的 170 道面试题全解析：2019 版(题目列表)"
 subtitle: "全是干货分享"
-tags: Python solution 
+tags: Python solution interview
 ---
 
 
