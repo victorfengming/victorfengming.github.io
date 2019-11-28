@@ -1,3 +1,10 @@
+---
+title: "​Python3新特性：类型注解"
+subtitle: "让你的代码具有灵魂"
+tags: Python solution interview
+---
+
+
 <div class="RichText ztext Post-RichText">
     <p>前几天有同学问到，这个写法是什么意思：</p>
     <div class="highlight"><pre><code class="language-python3"><span class="k">def</span> <span
