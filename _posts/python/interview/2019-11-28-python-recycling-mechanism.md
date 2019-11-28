@@ -1,3 +1,10 @@
+---
+title: "Python中的垃圾回收机制"
+subtitle: "垃圾分类,从python做起"
+tags: Python solution interview
+---
+
+
 <div class="RichText ztext Post-RichText"><h2>一、概述</h2>
     <p>python采用的是<b>引用计数</b>机制为主，<b>标记-清除</b>和<b>分代收集（隔代回收）</b>两种机制为辅的策略。<br></p>
     <blockquote>
