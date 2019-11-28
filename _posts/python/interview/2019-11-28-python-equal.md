@@ -1,3 +1,11 @@
+---
+title: "python 中None，is和==的深入探讨"
+subtitle: "简书 - 创作你的创作"
+tags: Python solution interview decorator
+---
+
+原文链接:https://www.jianshu.com/p/627232777efd
+
 <hr>
 <p>注： 运行环境：python3.6.6，win10，64位</p>
 <h2>1. None</h2>
@@ -97,7 +105,7 @@ NameError<span class="token punctuation">:</span> name <span class="token string
             class="token punctuation">)</span><span class="token punctuation">:</span>
 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>         <span
             class="token keyword">return</span> <span class="token boolean">True</span>
-<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
 <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> t<span
             class="token operator">=</span>test<span class="token punctuation">(</span><span
             class="token punctuation">)</span>
