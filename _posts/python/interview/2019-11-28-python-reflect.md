@@ -1,3 +1,10 @@
+---
+title: "python3中的反射详解"
+subtitle: "Java中是支持python3中的反射详解的。在高级的Python中当然也是支持"
+tags: Python solution interview decorator
+---
+
+
 <p>相信很多人和我一样第一次听到<code>反射</code>这个词语是特别陌生的，再次之前我最熟悉的还是c语言，但是在c语言中并没有反射这种机制。<br>
     c++中原生并不支持反射机制，但是Java中是支持的。在高级的Python中当然也是支持的。</p>
 <h1>什么是反射？</h1>
@@ -157,7 +164,7 @@ call_str <span class="token operator">=</span> <span class="token builtin">input
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"404 not Found"</span><span
             class="token punctuation">)</span>
 
-
+    
 <span class="token keyword">if</span> <span class="token builtin">hasattr</span><span class="token punctuation">(</span>s<span
             class="token punctuation">,</span> call_str<span class="token punctuation">)</span><span
             class="token punctuation">:</span>    <span class="token comment"># 判断是否存在函数 call_str，这样处理就不会报错了。</span>
@@ -177,3 +184,6 @@ call_str <span class="token operator">=</span> <span class="token builtin">input
         d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"></path></svg></i></button></pre>
 <p>当然<code>setattr</code>和<code>delattr</code>,也分别是设置和删除功能。<br>
     如果你对面对对象比较熟悉的话，你就能很容易的理解到了，这里的四个函数也是可以分别对对象进行操作的。</p>
+    
+
+原文链接:https://www.jianshu.com/p/f6d82f6226cf
