@@ -16,8 +16,7 @@ tags: Python solution interview
 
 
 
-
-<h3 style="color:inherit;line-height:inherit;font-weight:bold;border-bottom:2px solid rgb(239,112,96);font-size:1.3em;" id="-1"><span style="font-size:inherit;line-height:inherit;font-weight:normal;background:rgb(239,112,96);color:rgb(255,255,255);">语言特性</span><span style="vertical-align:bottom;border-bottom:36px solid rgb(239,235,233);border-right:20px solid transparent;"> </span><a class="anchorjs-link " href="#-1" aria-label="Anchor link for:  1" data-anchorjs-icon="#" style="opacity: 1; padding-left: 0.375em;"></a></h3>
+## 语言特性
 
 ### 1.谈谈对 Python 和其他语言的区别:
 答：Python 是一门语法简洁优美,功能强大无比,应用领域非常广泛,具有强大完备的第三方库，他是一门强类型的可移植、可扩展，可嵌入的解释型编程语言，属于动态语言。
@@ -75,11 +74,7 @@ python2中有int(整数)和long(长整数) 如果你想将int转为long可以在
 如需了解更多,你还可以去看[详情](https://victorfengming.github.io/2019/11/28/python-range-xrange/)
 
 
-
-<h3 style="color:inherit;line-height:inherit;font-weight:bold;border-bottom:2px solid rgb(239,112,96);font-size:1.3em;" id="-1">
-<span style="font-size:inherit;line-height:inherit;font-weight:normal;background:rgb(239,112,96);color:rgb(255,255,255);">编码规范</span>
-<span style="vertical-align:bottom;border-bottom:36px solid rgb(239,235,233);border-right:20px solid transparent;"> </span>
-</h3>
+## 编码规范
 
 ### 7.什么是 PEP8?
 如需了解更多,你还可以去看[详情](https://victorfengming.github.io/2019/11/28/python-pep8/)
@@ -124,7 +119,7 @@ DocStrings 文档字符串是一个重要工具，用于解释文档程序，帮
 
 
 
-你可以使用 __doc__（注意双下划线）  调用函数中的文档字符串属性
+你可以使用 `__doc__`（注意双下划线）  调用函数中的文档字符串属性
 ### 10.了解类型注解么？
 
 如需了解更多,你还可以去看[详情](https://victorfengming.github.io/2019/11/28/python-type-annotation/)
@@ -134,6 +129,8 @@ DocStrings 文档字符串是一个重要工具，用于解释文档程序，帮
 类：总是使用首字母大写单词串，如 MyClass(大驼峰命名)。
 
 内部类可以使用额外的前导下划线。 变量：小写，由下划线连接各个单词。方法名类似常量：常量名所有字母大写 等
+
+如需了解更多,你还可以去看[详情](https://victorfengming.github.io/2019/11/28/python-name-rule/)
 
 ### 12.Python 中的注释有几种？
 

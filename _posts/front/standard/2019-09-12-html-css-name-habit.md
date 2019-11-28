@@ -1,6 +1,6 @@
 ---
 title: 'CSS中id与class 命名规则及编码的6个最佳习惯'
-tags: web html solution
+tags: web html solution standard
 ---
   
 ### 一、用class_name方式写类名  
