@@ -1,3 +1,12 @@
+---
+title: "啥是猴子补丁"
+subtitle: "属性在运行时的动态替换"
+tags: Python solution interview decorator
+---
+
+
+### Python猴子补丁
+ 
 <blockquote>
     <p>属性在运行时的动态替换，叫做猴子补丁（Monkey Patch）。</p>
 </blockquote>
