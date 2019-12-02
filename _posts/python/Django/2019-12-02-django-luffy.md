@@ -1,6 +1,6 @@
 ---
 title: "Django笔记-Luffy"
-subtitle: "python五星级实战项目"
+subtitle: "Python全栈开发（第三部分）：django基础"
 tags: Python solution web django
 ---
 
