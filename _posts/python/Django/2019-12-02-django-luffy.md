@@ -81,7 +81,56 @@ tags: Python solution web django
 0. 浏览器收到响应的消息之后,按照HTML的规则渲染页面
 0. 关闭连接
 
+### form表单往后端提交数据需要注意哪三点:
+0. form不是from,所有获取用户输入的标签都得放在这里
+0. action属性控制往哪提交,Method一般都设置成post
+0. 提交按钮必须是type=submit,不能是别的类型
 
+### Django中的APP
+0. 什么是APP?以及为什么要用APP?
+    0. project  --> 项目(老男孩教育大学院)
+    0. app  --> 应用(Linux学院/Python学院/Java学院/大数据学院)
+    0. 方便我们在一个大的Django项目中,管理实现不同的业务功能
+    0. 创建APP:
+        - `python3 manage.py startapp app_name`
+    
+    
+### ORM
+- 不同的程序元写的SQL水平参差不齐
+- 执行效率也参差不齐
+
+- Python语法 -- 自动翻译--> SQl语句
+- jQuery$("#d1")  -- 自动翻译--> DOM
+
+#### 优点:
+0. 简单,不用自己写SQL语句
+0. 开发效率高
+
+#### 缺点:
+1. 记忆特殊的语法
+2. 相对于大神写的SQL语句,肯定执行效率有差距
+
+
+#### ORM的对应关系:    
+- 类   --> 数据表
+- 对象   --> 数据行
+- 属性   --> 字段
+
+#### ORM能做的事儿:
+0. 操作数据表    --> 创建表/删除表/修改表
+0. 操作数据行    --> 数据的增删改查
+不能创建数据库
+    
+### 使用django的ORM详细步骤:
+1. 自己动手创建数据库    
+2. 在django项目中设置连接数据库的相关配置(告诉django要连哪个数据库)
+3. 告诉django用pymysql代替默认mysqldb去连接数据库    
+4. 在app下面的models.py中定义一个类,这个类必须继承models.model
+5. 执行两个命令
+```shell
+python3 manage.py makemigrations
+python3 manage.py makemigrate
+```
 
 
 
