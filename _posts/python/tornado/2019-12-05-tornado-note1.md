@@ -39,32 +39,32 @@ Tornado在设计之初就考虑到了性能因素，旨在解决C10K问题，这
 ### 1.1 Tornado是为何物
 Tornado全称Tornado Web Server，是一个用Python语言写成的Web服务器兼Web应用框架，由FriendFeed公司在自己的网站FriendFeed中使用，被Facebook收购以后框架在2009年9月以开源软件形式开放给大众。
 
-特点：
+#### 特点：
 
 作为Web框架，是一个轻量级的Web框架，类似于另一个Python web框架Web.py，其拥有异步非阻塞IO的处理方式。
 
 作为Web服务器，Tornado有较为出色的抗负载能力，官方用nginx反向代理的方式部署Tornado和其它Python web应用框架进行对比，结果最大浏览量超过第二名近40%。
 
-性能： Tornado有着优异的性能。它试图解决C10k问题，即处理大于或等于一万的并发，下表是和一些其他Web框架与服务器的对比:
+#### 性能： Tornado有着优异的性能。它试图解决C10k问题，即处理大于或等于一万的并发，下表是和一些其他Web框架与服务器的对比:
 
 Tornado框架和服务器一起组成一个WSGI的全栈替代品。单独在WSGI容器中使用tornado网络框架或者tornaod http服务器，有一定的局限性，为了最大化的利用tornado的性能，推荐同时使用tornaod的网络框架和HTTP服务器
 
 
 ### 1.2 Tornado与Django
-Django
+#### Django
 Django是走大而全的方向，注重的是高效开发，它最出名的是其全自动化的管理后台：只需要使用起ORM，做简单的对象定义，它就能自动生成数据库结构、以及全功能的管理后台。
 
 Django提供的方便，也意味着Django内置的ORM跟框架内的其他模块耦合程度高，应用程序必须使用Django内置的ORM，否则就不能享受到框架内提供的种种基于其ORM的便利。
 
-session功能
-后台管理
-ORM
-Tornado
+- session功能
+- 后台管理
+- ORM
+#### Tornado
 Tornado走的是少而精的方向，注重的是性能优越，它最出名的是异步非阻塞的设计方式。
 
-HTTP服务器
-异步编程
-WebSockets
+- HTTP服务器
+- 异步编程
+- WebSockets
 
 
 ## 2 初识Tornado
