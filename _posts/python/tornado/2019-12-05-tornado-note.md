@@ -349,3 +349,100 @@ if __name__ == '__main__':
     [W 191205 17:13:54 web:2246] 404 GET /favicon.ico (127.0.0.1) 1.00ms
     '''
 ```
+
+### 创建配置文件方式
+`在linux里面,所有的东西都是文件,就算他是目录,都是文件`
+
+创建一个名为config的普通文件,位置在py文件的旁边
+
+内容如下:
+```python
+port = 7000
+list = ["good","nice","handsome"]
+```
+
+程序中这样写:
+```python
+tornado.options.parse_config_file("config")
+# 因为是同级目录,所以相对路径直接写就OK了
+```
+
+然后正常运行程序就OK了
+```shell
+D:\PycharmProjects\itcast_tornado\venv\Scripts\python.exe D:/PycharmProjects/itcast_tornado/01.py
+list-> ['good', 'nice', 'handsome']
+[I 191205 17:27:21 web:2246] 200 GET / (127.0.0.1) 0.00ms
+[W 191205 17:27:21 web:2246] 404 GET /favicon.ico (127.0.0.1) 0.00ms
+```
+
+我们现在有两种方式来获得参数,一种是命令行的一种是文件的,但是以后我们要使用哪种方式呢,???  
+
+都不是...  
+
+说明:  
+    因为这个配置文件要按照python 的语法要求来进行书写  
+    调用参数的时候,不支持字典类型  
+    
+最终版本:  
+创建一个名为config.py的文件  
+内容如下:  
+```python
+# 参数 字典类型的了
+
+options = {
+    "port": 8080,
+    "list": ["good", "nice", "handsome"]
+}
+
+```    
+
+脚本这样写:
+```python
+import tornado.web
+import tornado.ioloop
+import tornado.httpserver
+import tornado.options
+import config
+
+# 获取参数的方法
+# 好我们可以先写一个
+tornado.options.define("port", default=8000, type=int)
+# 我们要接受一个列表,列表里面的元素的字符串类型,默认给个空
+tornado.options.define("list", default=[], type=str, multiple=True)
+
+
+class IndexHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.write("main page info tornado!")
+
+
+if __name__ == '__main__':
+
+    # 可以打印一下list
+    print('list->', config.options["list"])
+    app = tornado.web.Application([(r"/", IndexHandler)])
+
+    httpServer = tornado.httpserver.HTTPServer(app)
+    # 使用变量的值
+    httpServer.bind(config.options["port"])
+
+    httpServer.start(1)
+
+    tornado.ioloop.IOLoop.current().start()
+
+```
+
+这个config可以写成模板,其中可以包含各种配置信息,不仅仅局限于这点儿
+
+### 日志
+当我们使用parse_command_line()或者parse_config_file(path)方法时
+
+tornado会默认开启logging模块功能,向我们的屏幕打印一些相关信息
+
+如果有处女座不想看这个信息,可以这样
+
+比如是从普通文件中导入的那种,要在后面再加上一句:
+```python
+tornado.options.parse_config_file("config")
+tornado.options.options.loggings = None
+```

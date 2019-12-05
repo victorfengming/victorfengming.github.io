@@ -1,3 +1,13 @@
+---
+title: "2019 Python 面试 100 问"
+subtitle: "全是干货分享"
+tags: Python solution interview
+---
+
+
+
+
+
 <meta itemprop="url" content="https://juejin.im/post/5cfd1d0d6fb9a07eaf2b844d">
 <meta itemprop="headline" content="2019 Python 面试 100 问">
 <meta itemprop="keywords" content="Python">
@@ -416,8 +426,8 @@ A,B 中不同元素:  print(set(A)^set(B))
             instances[cls] = cls(*args, **kwargs)
         <span class="hljs-keyword">return</span> instances[cls]
     <span class="hljs-keyword">return</span> wrapper
-
-
+    
+    
 <span class="hljs-meta">@singleton</span>
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span><span
         class="hljs-params">(object)</span>:</span>
@@ -436,8 +446,8 @@ print(foo1 <span class="hljs-keyword">is</span> foo2)  <span class="hljs-comment
                 class="hljs-string">'_instance'</span>):
             cls._instance = super(Singleton, cls).__new__(cls, *args, **kwargs)
         <span class="hljs-keyword">return</span> cls._instance
-
-
+    
+    
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span><span
         class="hljs-params">(Singleton)</span>:</span>
     <span class="hljs-keyword">pass</span>
@@ -621,7 +631,7 @@ print(a)
     s2 = set(a)
     ret = <span class="hljs-string">""</span>.join(sorted(s1-s2))
     <span class="hljs-keyword">return</span> ret
-
+    
 print(get_missing_letter(<span class="hljs-string">"python"</span>))
 <span class="copy-code-btn">复制代码</span></code></pre>
     <h2 class="heading" data-id="heading-53">44 可变类型和不可变类型</h2>
@@ -778,7 +788,7 @@ print(nums)
     distFunc1(a)
     distFunc2(a)
     distFunc3(a)
-
+  
 <span class="copy-code-btn">复制代码</span></code></pre>
     <h2 class="heading" data-id="heading-61">52 统计一个文本中单词频次最高的10个单词？</h2>
     <pre><code class="hljs python copyable" lang="python"><span class="hljs-keyword">import</span> re
@@ -786,7 +796,7 @@ print(nums)
 <span class="hljs-comment"># 方法一</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test</span><span
         class="hljs-params">(filepath)</span>:</span>
-
+    
     distone = {}
 
     <span class="hljs-keyword">with</span> open(filepath) <span class="hljs-keyword">as</span> f:
@@ -803,8 +813,8 @@ print(nums)
                 class="hljs-number">10</span>]
     num_ten =[x[<span class="hljs-number">0</span>] <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> num_ten]
     <span class="hljs-keyword">return</span> num_ten
-
-
+    
+ 
 <span class="hljs-comment"># 方法二 </span>
 <span class="hljs-comment"># 使用 built-in 的 Counter 里面的 most_common</span>
 <span class="hljs-keyword">import</span> re
@@ -923,7 +933,7 @@ print(<span class="hljs-string">"%s是 %s年的第%s天。"</span>%(targetDay,y,
     <span class="hljs-comment"># 直接排序，输出倒数第二个数即可</span>
     tmp_list = sorted(num_list)
     print(<span class="hljs-string">"方法一\nSecond_large_num is :"</span>, tmp_list[<span class="hljs-number">-2</span>])
-
+    
     <span class="hljs-comment"># 方法二</span>
     <span class="hljs-comment"># 设置两个标志位一个存储最大数一个存储次大数</span>
     <span class="hljs-comment"># two 存储次大值，one 存储最大值，遍历一次数组即可，先判断是否大于 one，若大于将 one 的值给 two，将 num_list[i] 的值给 one，否则比较是否大于two，若大于直接将 num_list[i] 的值给two，否则pass</span>
@@ -937,7 +947,7 @@ print(<span class="hljs-string">"%s是 %s年的第%s天。"</span>%(targetDay,y,
         <span class="hljs-keyword">elif</span> num_list[i] &gt; two:
             two = num_list[i]
     print(<span class="hljs-string">"方法二\nSecond_large_num is :"</span>, two)
-
+    
     <span class="hljs-comment"># 方法三</span>
     <span class="hljs-comment"># 用 reduce 与逻辑符号 (and, or)</span>
     <span class="hljs-comment"># 基本思路与方法二一样，但是不需要用 if 进行判断。</span>
@@ -949,8 +959,8 @@ print(<span class="hljs-string">"%s是 %s年的第%s天。"</span>%(targetDay,y,
                 class="hljs-keyword">or</span> ot, num_list, (<span class="hljs-number">0</span>, <span
                 class="hljs-number">0</span>))[<span class="hljs-number">0</span>]
     print(<span class="hljs-string">"方法三\nSecond_large_num is :"</span>, num)
-
-
+    
+    
 <span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main___'</span>:
     num_list = [<span class="hljs-number">34</span>, <span class="hljs-number">11</span>, <span
                 class="hljs-number">23</span>, <span class="hljs-number">56</span>, <span
@@ -976,7 +986,7 @@ print([m(<span class="hljs-number">3</span>) <span class="hljs-keyword">for</spa
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">count_str</span><span
         class="hljs-params">(str_data)</span>:</span>
     <span class="hljs-string">"""定义一个字符出现次数的函数"""</span>
-    dict_str = {}
+    dict_str = {} 
     <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> str_data:
         dict_str[i] = dict_str.get(i, <span class="hljs-number">0</span>) + <span class="hljs-number">1</span>
     <span class="hljs-keyword">return</span> dict_str
@@ -1004,16 +1014,16 @@ print(<span class="hljs-string">""</span>.join(map(<span class="hljs-keyword">la
             class="hljs-params">(self,name,loss)</span>:</span> <span class="hljs-comment"># loss [价格，油耗，公里数]</span>
         self.name = name
         self.loss = loss
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getName</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">return</span> self.name
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getPrice</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-comment"># 获取汽车价格</span>
         <span class="hljs-keyword">return</span> self.loss[<span class="hljs-number">0</span>]
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getLoss</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-comment"># 获取汽车损耗值</span>
@@ -1029,15 +1039,15 @@ print(dir(Bmw)) <span class="hljs-comment"># 获Bmw所有的属性和方法</spa
     <pre><code class="hljs python copyable" lang="python"><span class="hljs-class"><span
             class="hljs-keyword">class</span> <span class="hljs-title">Array</span>:</span>
     __list = []
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">print</span> <span class="hljs-string">"constructor"</span>
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__del__</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">print</span> <span class="hljs-string">"destruct"</span>
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">return</span> <span class="hljs-string">"this self-defined array class"</span>
@@ -1045,7 +1055,7 @@ print(dir(Bmw)) <span class="hljs-comment"># 获Bmw所有的属性和方法</spa
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__getitem__</span><span
             class="hljs-params">(self,key)</span>:</span>
         <span class="hljs-keyword">return</span> self.__list[key]
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__len__</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">return</span> len(self.__list)
@@ -1053,18 +1063,18 @@ print(dir(Bmw)) <span class="hljs-comment"># 获Bmw所有的属性和方法</spa
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">Add</span><span
             class="hljs-params">(self,value)</span>:</span>
         self.__list.append(value)
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">Remove</span><span
             class="hljs-params">(self,index)</span>:</span>
         <span class="hljs-keyword">del</span> self.__list[index]
-
+    
     <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">DisplayItems</span><span
             class="hljs-params">(self)</span>:</span>
         <span class="hljs-keyword">print</span> <span class="hljs-string">"show all items---"</span>
         <span class="hljs-keyword">for</span> item <span class="hljs-keyword">in</span> self.__list:
             <span class="hljs-keyword">print</span> item
-
-
+    
+        
 <span class="copy-code-btn">复制代码</span></code></pre>
     <h2 class="heading" data-id="heading-74">65 关于Python内存管理,下列说法错误的是 B</h2>
     <p>A,变量不必事先声明 B,变量无须先创建和赋值而直接使用</p>
@@ -1355,7 +1365,7 @@ res = hasattr(functiondemo, <span class="hljs-string">"addr"</span>) <span class
         end = time.clock()
         print(<span class="hljs-string">'used:'</span>,end-start)
         <span class="hljs-keyword">return</span> ret
-
+    
     <span class="hljs-keyword">return</span> wrapper
 <span class="hljs-meta">@timeit</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">foo</span><span
