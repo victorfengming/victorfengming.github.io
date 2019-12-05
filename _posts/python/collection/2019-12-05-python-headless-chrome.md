@@ -9,29 +9,7 @@ tags: Python background solution
 
 
 <h1 class="_1RuRku">用Python驱动Headless Chrome</h1>
-<div class="rEsl9f">
-    <div class="_2mYfmT"><a class="_1OhGeD" href="/u/42c47cc2c681" target="_blank" rel="noopener noreferrer"><img
-            class="_13D2Eh"
-            src="//upload.jianshu.io/users/upload_avatars/618241/5c425905-46fd-46ac-ba24-192d650f6d33.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp"
-            alt=""></a>
-        <div style="margin-left: 8px;">
-            <div class="_3U4Smb"><span class="FxYr8x"><a class="_1OhGeD" href="/u/42c47cc2c681" target="_blank"
-                                                         rel="noopener noreferrer">CC先生之简书</a></span>
-                <button data-locale="zh-CN" type="button" class="_3kba3h _1OyPqC _3Mi9q9 _34692-"><span>关注</span>
-                </button>
-            </div>
-            <div class="s-dsoj"><span class="_3tCVn5"><i aria-label="ic-diamond" class="anticon"><svg width="1em"
-                                                                                                      height="1em"
-                                                                                                      fill="currentColor"
-                                                                                                      aria-hidden="true"
-                                                                                                      focusable="false"
-                                                                                                      class=""><use
-                    xlink:href="#ic-diamond"></use></svg></i><span>0.567</span></span>
-                <time datetime="2018-01-09T08:49:12.000Z">2018.01.09 16:49:12</time>
-                <span>字数 1,066</span><span>阅读 14,984</span></div>
-        </div>
-    </div>
-</div>
+
 <article class="_2rhmJa">
     <div class="image-package">
         <div class="image-container" style="max-width: 650px; max-height: 453px; background-color: transparent;">
