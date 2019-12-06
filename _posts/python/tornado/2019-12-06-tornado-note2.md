@@ -18,7 +18,8 @@ tags: Python solution web tornado
 
 搭建一个框架的基础目录
 
-```shell script
+```
+
 D:.
 │  config.py
 │  readme.md
@@ -40,18 +41,14 @@ D:.
 ├─templates # 模板文件
 ├─upfile  # 上传文件
 │
-├─views # 视图
-│  │  index.py # 首页视图
-│  │  __init__.py
-│  │
-│  └─__pycache__
-│          index.cpython-37.pyc
-│          __init__.cpython-37.pyc
-│
-└─__pycache__
-        config.cpython-37.pyc
+└─views # 视图
+   │  index.py # 首页视图
+   └─ __init__.py
 
 ```
+
+
+
 
 ### version1.0
 创建一个`index.py`文件在`views`包下面,内容如下
@@ -155,4 +152,31 @@ settings = {
 
 成了这就
 
+然后我们再配置一个路由`home`  
+在application里面直接加就OK
+```python
+import tornado.web
+from views import index
 
+class Application(tornado.web.Application):
+    def __init__(self):
+        handlers = [
+            (r"/", index.IndexHandler),
+            (r"/home", index.HomeHandler),
+        ]
+        super(Application,self).__init__(handlers)
+```
+然后在视图中再创建一个对应的类
+```python
+from tornado.web import RequestHandler
+
+
+class IndexHandler(RequestHandler):
+    def get(self):
+        self.write("main page info tornado!")
+
+class HomeHandler(RequestHandler):
+    def get(self):
+        self.write(" this is home page content!")
+```
+重启服务即可在浏览器中访问/home看到结果
