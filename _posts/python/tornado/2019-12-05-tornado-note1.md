@@ -1,8 +1,15 @@
 ---
-title: "tornado学习笔记"
+title: "tornado学习笔记day01"
 subtitle: "高并发性能web框架"
 tags: Python solution web tornado
 ---
+
+
+* content
+{:toc}
+
+
+
 
 ## tornado的安装
 这里我使用的是[虚拟环境](https://victorfengming.github.io/2019/11/18/python-venv/)中的[pip](https://victorfengming.github.io/2019/10/12/python-install-pip/)安装,配合[清华大学镜像源](https://victorfengming.github.io/2019/11/20/pip-conf/)安装的
@@ -446,3 +453,5 @@ tornado会默认开启logging模块功能,向我们的屏幕打印一些相关�
 tornado.options.parse_config_file("config")
 tornado.options.options.loggings = None
 ```
+
+
