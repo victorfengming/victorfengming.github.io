@@ -1,6 +1,6 @@
 ---
 title: "tornado学习笔记day02"
-subtitle: "高并发性能web框架"
+subtitle: "小而精的python web框架"
 tags: Python solution web tornado
 ---
 
