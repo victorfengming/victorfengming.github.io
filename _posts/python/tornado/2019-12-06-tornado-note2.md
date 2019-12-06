@@ -491,36 +491,13 @@ class IndexHandler(RequestHandler):
     - body: 文件的数据实体
     - content-type: 上传文件的类型
 ### 文件上传
+
+
+
+首先,先要滤清一个数据结构,就是request.file对象的数据结构
+
+
 ```python
-class UpFileHandler(RequestHandler):
-
-    def get(self):
-        self.render("upfile.html")
-    def post(self):
-        self.write("上传成功!")
-        contents = self.request.files
-        for content in contents:
-            fileArr = contents[content]
-            for fileObj in fileArr:
-                file_path = os.path.join(BASE_DIR,"upfile/"+fileObj.filename)
-                with open(file_path,"wb") as f:
-                    f.write(fileObj.body)
-                print("文件写入成功")
-```
-要是看不懂就加一点批注吧!
-```python
-# 导入系统操作模块,用于存储接受的文件
-import os
-# 导入BASE_DIR,定位到服务器中的绝对路径
-from config import BASE_DIR
-from tornado.web import RequestHandler
-
-
-class IndexHandler(RequestHandler):
-    def get(self):
-        self.write("main page info tornado!")
-
-
 '''
 一个request.file对象的结构示例
 {
@@ -545,6 +522,50 @@ class IndexHandler(RequestHandler):
 }
 '''
 
+```
+
+
+然后,用循环来进行遍历!
+
+
+
+
+```python
+class UpFileHandler(RequestHandler):
+
+    def get(self):
+        self.render("upfile.html")
+    def post(self):
+        self.write("上传成功!")
+        contents = self.request.files
+        for content in contents:
+            fileArr = contents[content]
+            for fileObj in fileArr:
+                file_path = os.path.join(BASE_DIR,"upfile/"+fileObj.filename)
+                with open(file_path,"wb") as f:
+                    f.write(fileObj.body)
+                print("文件写入成功")
+```
+
+
+
+我知道,要是看不懂那就加一点批注呗!
+
+
+
+```python
+
+
+''' 导入系统操作模块,用于存储接受的文件'''
+import os
+# 导入BASE_DIR,定位到服务器中的绝对路径
+from config import BASE_DIR
+from tornado.web import RequestHandler
+
+
+class IndexHandler(RequestHandler):
+    def get(self):
+        self.write("main page info tornado!")
 
 class UpFileHandler(RequestHandler):
     '''
