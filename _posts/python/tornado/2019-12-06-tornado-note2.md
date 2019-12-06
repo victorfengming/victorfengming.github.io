@@ -15,35 +15,35 @@ tags: Python solution web tornado
 
 # tornado提升
 
-- 整理基础工程
-    - 请看第一天的配置文件目录,搭建了一个框架的基础目录
-- Application
-    - settings
-        - debug
-            - 作用:可以设置tornado是否工作在调试模式下面,默认为false,即工作在生产模式下
-            - true的特性:
-                - 自动重启:
-                    - tornado程序会监控源代码文件,会自动重启服务器,减少我们手动重启的次数,提高开发效率
-                    - 如果保存后有错误,导致重启失败,修改好后,不会再重启了,需要我们手动进行重新启动
-                    - 在debug开启后,那四个特性咱也不太会啊,咱就想着能够重启就得了,那这可咋整,这个时候我们可以通过`"autoreload" : True`设置,仅仅有第一个特性
-                - 取消缓存编译的模板:
-                    - 单独设置:`compiled_template_cache = False`
-                    - ,这个默认值为`true`,这里要注意不是说我`debug`设置默认为啥,里面就默认都是啥
-                    - 你改完了模板的内容,它得加载你改了的啊,不能还用缓存的内容,要不然你看不到修改的新结果,这可不行
-                    - 虽然出于性能考虑,老也重新加载有点儿慢,但是没事儿,毕竟开发中也不差这一点资源
-                - 取消缓存静态文件的HASH值
-                    - 单独设置:`static_hash_cache = False`
-                    - css文件每次后面都有一个哈希值,这个哈希值能缓存
-                    - 这样我们都能重新加载这个css就OK了
-                - 提供追踪信息
-                    - 如果我们的IndexHandler里面抛出了一个异常,但是他自己没有捕获这个异常,就会生成一个追踪的页面
-                    - 单独设置:`serve_traceback = True`
-        - template_path: 设置模板文件目录
-        - static_path : 设置静态文件目录
-    - 路由
-        - `(r"/", index.IndexHandler),`
-        - 传的参数在路由那嘎达的字典类型的数据
-        
+## - 整理基础工程
+- 请看第一天的配置文件目录,搭建了一个框架的基础目录
+## - Application
+### - settings
+#### - debug
+##### - 作用:可以设置tornado是否工作在调试模式下面,默认为false,即工作在生产模式下
+##### - true的特性:
+###### - 自动重启:
+- tornado程序会监控源代码文件,会自动重启服务器,减少我们手动重启的次数,提高开发效率
+- 如果保存后有错误,导致重启失败,修改好后,不会再重启了,需要我们手动进行重新启动
+- 在debug开启后,那四个特性咱也不太会啊,咱就想着能够重启就得了,那这可咋整,这个时候我们可以通过`"autoreload" : True`设置,仅仅有第一个特性
+###### - 取消缓存编译的模板:
+- 单独设置:`compiled_template_cache = False`
+- ,这个默认值为`true`,这里要注意不是说我`debug`设置默认为啥,里面就默认都是啥
+- 你改完了模板的内容,它得加载你改了的啊,不能还用缓存的内容,要不然你看不到修改的新结果,这可不行
+- 虽然出于性能考虑,老也重新加载有点儿慢,但是没事儿,毕竟开发中也不差这一点资源
+###### - 取消缓存静态文件的HASH值
+- 单独设置:`static_hash_cache = False`
+- css文件每次后面都有一个哈希值,这个哈希值能缓存
+- 这样我们都能重新加载这个css就OK了
+###### - 提供追踪信息
+- 如果我们的IndexHandler里面抛出了一个异常,但是他自己没有捕获这个异常,就会生成一个追踪的页面
+- 单独设置:`serve_traceback = True`
+#### - template_path: 设置模板文件目录
+#### - static_path : 设置静态文件目录
+### - 路由
+- `(r"/", index.IndexHandler),`
+- 传的参数在路由那嘎达的字典类型的数据
+
         
         
         
@@ -279,75 +279,78 @@ class SunckHandler(RequestHandler):
 需要重写initialize方法,来对成员属性进行定义
 
 # 响应输出
-- write:
-    - 作用:将chunk中的数据写到输出缓冲区
-    - 基础
-    - 利用write方法写json数据
-        - 注意:
-            - 我们自己手动序列化json的那种方式Content-Type 的属性值为text-html
-            - 而我们采用write自动序列化方式,我们的content-type 属性为application/json
+## - write:
+### - 作用:将chunk中的数据写到输出缓冲区
+### - 基础
+### - 利用write方法写json数据
+#### - 注意:
+- 我们自己手动序列化json的那种方式Content-Type 的属性值为text-html
+- 而我们采用write自动序列化方式,我们的content-type 属性为application/json
 
 
-- set_default_headers():
-    - 作用:
-        - 在进入HTTP响应方法之前被调用
-        - 可以重新写该方法来设置默认的headers
-    - 注意:
-        - 在这个HTTP处理方法中使用set_header设置的字段会覆盖set_default_headers()的值
-        - 这个set_header和set_default_headers()是有执行的先后顺序的,默认那个当然那先就执行了
-- set_status(status_code,reason=none):
-    - 作用:为响应设置状态码
-    - 参数:
-        - status_code:
-            - 状态码的值,为int类型
-            - 如果reason的值为none,则状态码必须为正常值
-        - reason
-            - String类型
-            - 描述状态码的词组,比如`404 not found` 中的`not found` 
+## - set_default_headers():
+### - 作用:
+- 在进入HTTP响应方法之前被调用
+- 可以重新写该方法来设置默认的headers
+### - 注意:
+- 在这个HTTP处理方法中使用set_header设置的字段会覆盖set_default_headers()的值
+- 这个set_header和set_default_headers()是有执行的先后顺序的,默认那个当然那先就执行了
+## - set_status(status_code,reason=none):
+### - 作用:为响应设置状态码
+### - 参数:
+#### - status_code:
+- 状态码的值,为int类型
+- 如果reason的值为none,则状态码必须为正常值
+#### - reason
+- String类型
+- 描述状态码的词组,比如`404 not found` 中的`not found` 
 
-- 重定向 `self.redirect(url)`:
-    - 作用:
-        - 比如你有时候写index,有时候不写,都能进到首页里面,这就是重定向的作用
-        - 重定向到url网址
-    - 示例:
-        ```python
-        class RedirectHandler(RequestHandler):
-            def get(self):
-                # 直接就重定向了
-                self.redirect("/")
-        ```
-- `self.send_error(status_code = 500,**kwargs)`:
-    - 作用:
-        - 抛出HTTP错误状态码,默认为500
-        - tornado会调用write_error()方法进行处理
-        - 对应Django里面自定义404一样
-- `write_error(status_code,**kwargs)`:
-    - 作用:
-        - 用来处理send_error抛出的错误信息,并返回给浏览器错误界面
-    - 示例:
-    ```python
-    class ErrorHandler(RequestHandler):
-        def write_error(self, status_code: int, **kwargs: Any) -> None:
-            if status_code == 500:
-                self.write("服务器内部错误500了")
-            elif status_code == 404:
-                self.write("资源不存在")
-            else:
-                self.write("我也不知道是啥错误")
-    
-        def get(self):
-            # 直接就重定向了
-            flag = self.get_query_argument("flag")
-            if flag == '0':
-                print("有错误")
-                self.send_error(500)
-                # 这里抛出错误,下面就不会执行了
-    
-            print("没毛病")
-    
-            self.write("you are right!")
-    ```    
-  
+## - 重定向 `self.redirect(url)`:
+#### - 作用:
+- 比如你有时候写index,有时候不写,都能进到首页里面,这就是重定向的作用
+- 重定向到url网址
+#### - 示例:
+
+```python
+class RedirectHandler(RequestHandler):
+    def get(self):
+        # 直接就重定向了
+        self.redirect("/")
+```
+
+## - `self.send_error(status_code = 500,**kwargs)`:
+
+- 作用:
+    - 抛出HTTP错误状态码,默认为500
+    - tornado会调用write_error()方法进行处理
+    - 对应Django里面自定义404一样
+## - `write_error(status_code,**kwargs)`:
+- 作用:
+    - 用来处理send_error抛出的错误信息,并返回给浏览器错误界面
+- 示例:
+```python
+class ErrorHandler(RequestHandler):
+    def write_error(self, status_code: int, **kwargs: Any) -> None:
+        if status_code == 500:
+            self.write("服务器内部错误500了")
+        elif status_code == 404:
+            self.write("资源不存在")
+        else:
+            self.write("我也不知道是啥错误")
+
+    def get(self):
+        # 直接就重定向了
+        flag = self.get_query_argument("flag")
+        if flag == '0':
+            print("有错误")
+            self.send_error(500)
+            # 这里抛出错误,下面就不会执行了
+
+        print("没毛病")
+
+        self.write("you are right!")
+```    
+
   
 ## 路由的反向解析
 这个tornado里面的比Django的反向解析还要简单一点 
@@ -390,106 +393,116 @@ class IndexHandler(RequestHandler):
 ``` 
 
 ## tornado.Web.RequestHandler
-- 利用HTTP协议向服务器传递参数
-- 提取uri的特定部分
-    - `http://127.0.0.1:8080/good/nice/handsome/cool`
-    - 实例代码,app部分
-    ```python
-    # (r"/good/(\w+)/(\w+)/(\w+)", index.GoodHandler),
-    (r"/good/(?P<p1>\w+)/(?P<p3>\w+)/(?P<p2>\w+)", index.GoodHandler),
-    ```
-    ```python
-    class GoodHandler(RequestHandler):
-        def get(self,p1,p3,p2):
-            self.write("GoodHandler kaige !")
-            self.write("<br>")
-            self.write(p3)
-            self.write("<br>")
-            self.write(p2)
-            self.write("<br>")
-            self.write(p1)                  
-    ```
-- 查询字符串(GET方式传递参数)
-    - `http://127.0.0.1:8080/zhangmanyu?a=1&b=2&c=4`类型
-        - 这里有一个方法
-        ```python
-        def get_query_argument(
-                self,
-                name: str,
-                default: Union[None, str, _ArgDefaultMarker] = _ARG_DEFAULT,
-                strip: bool = True,
-            ) -> Optional[str]:
-        ```
-        - 参数
-            - name:
-                - 从get请求参数中返回指定参数的值
-                - 如果出现同名参数,理论上这个方法会返回最后一个值
-            - default
-                - 如果我们设置了为未传递name参数,它会返回默认的值
-            - strip
-                - 表示是否过滤掉两边的空白字符
-                - 默认为True,过滤
-    - `http://127.0.0.1:8080/zhangmanyu?a=1&a=2&c=4`类型
-        - 一般情况下,很少出现这种情况的
-        - `def get_query_arguments(self, name: str, strip: bool = True) -> List[str]:`
-        - 参数: 同上
-- 请求体携带数据(POST方式传递参数)
-    - 这个厉害了,比Django方便,不用在定义一路由函数了,直接在类里面加一个方法就就行了
-    - 原型在这里
-    ```python
-    def get_body_argument(
-            self,
-            name: str,
-            default: Union[None, str, _ArgDefaultMarker] = _ARG_DEFAULT,
-            strip: bool = True,
-        ) -> Optional[str]:
-    ```
-- 既可以获取GET请求,也可以获取POST请求
-    - 直接就上原型就OK了,你不仅要学会举一反三,还要自己进行拓展
-    - 原型在这里
-    ```python
-    def get_argument(  # noqa: F811
+
+### 利用HTTP协议向服务器传递参数
+
+### 提取uri的特定部分
+
+`http://127.0.0.1:8080/good/nice/handsome/cool`
+
+实例代码,app部分
+
+```python
+''' (r"/good/(\w+)/(\w+)/(\w+)", index.GoodHandler),'''
+(r"/good/(?P<p1>\w+)/(?P<p3>\w+)/(?P<p2>\w+)", index.GoodHandler),
+```
+
+视图函数部分
+
+```python
+class GoodHandler(RequestHandler):
+    def get(self,p1,p3,p2):
+        self.write("GoodHandler kaige !")
+        self.write("<br>")
+        self.write(p3)
+        self.write("<br>")
+        self.write(p2)
+        self.write("<br>")
+        self.write(p1)                  
+```
+
+### 查询字符串(GET方式传递参数)
+
+#### `http://127.0.0.1:8080/zhangmanyu?a=1&b=2&c=4`类型
+##### 这里有一个方法
+```python
+def get_query_argument(
         self,
         name: str,
         default: Union[None, str, _ArgDefaultMarker] = _ARG_DEFAULT,
         strip: bool = True,
     ) -> Optional[str]:
-    ```
-    - **其实有时候,有的结构,看源码才能理解的更加的深刻**
-    - 还有一个多个的,也是这么回事儿
-    ```python
-    def get_arguments(self, name: str, strip: bool = True) -> List[str]:
-    ```
-- 在HTTP报文头中,增加自定义的字段
+```
+##### 参数
+###### - name:
+- 从get请求参数中返回指定参数的值
+- 如果出现同名参数,理论上这个方法会返回最后一个值
+###### - default
+- 如果我们设置了为未传递name参数,它会返回默认的值
+###### - strip
+- 表示是否过滤掉两边的空白字符
+- 默认为True,过滤
+#### `http://127.0.0.1:8080/zhangmanyu?a=1&a=2&c=4`类型
+- 一般情况下,很少出现这种情况的
+- `def get_query_arguments(self, name: str, strip: bool = True) -> List[str]:`
+- 参数: 同上
+### 请求体携带数据(POST方式传递参数)
+- 这个厉害了,比Django方便,不用在定义一路由函数了,直接在类里面加一个方法就就行了
+- 原型在这里
+```python
+def get_body_argument(
+        self,
+        name: str,
+        default: Union[None, str, _ArgDefaultMarker] = _ARG_DEFAULT,
+        strip: bool = True,
+    ) -> Optional[str]:
+```
+### 既可以获取GET请求,也可以获取POST请求
+- 直接就上原型就OK了,你不仅要学会举一反三,还要自己进行拓展
+- 原型在这里
+```python
+def get_argument(  # noqa: F811
+    self,
+    name: str,
+    default: Union[None, str, _ArgDefaultMarker] = _ARG_DEFAULT,
+    strip: bool = True,
+) -> Optional[str]:
+```
+- **其实有时候,有的结构,看源码才能理解的更加的深刻**
+- 还有一个多个的,也是这么回事儿
+```python
+def get_arguments(self, name: str, strip: bool = True) -> List[str]:
+```
+### 在HTTP报文头中,增加自定义的字段
 
 
 
 ## request对象
-- 作用
-    - 存储了关于请求的相关信息
-- 比如:
-    - `HTTPServerRequest(protocol='http', host='127.0.0.1:8080', method='GET', uri='/zhuyin', version='HTTP/1.1', remote_ip='127.0.0.1')`    
-- 属性
-    - method: HTTP请求的方式
-    - host: 被请求的主机名(服务器的主机名) 
-    - uri: 请求的完整资源地址,包括路径和get查询的参数部分 
-    - path: 请求的路径部分
-    - query: 请求参数部分 
-    - version: 使用的HTTP版本 
-    - headers: 请求的协议头,字典类型 
-    - body: 请求体数据(POST) 
-    - remote_ip: 客户端的ip地址 
-    - files: 用户上传的文件,字典类型 
+### 作用
+- 存储了关于请求的相关信息
+### 比如:
+- `HTTPServerRequest(protocol='http', host='127.0.0.1:8080', method='GET', uri='/zhuyin', version='HTTP/1.1', remote_ip='127.0.0.1')`    
+### 属性
+- method: HTTP请求的方式
+- host: 被请求的主机名(服务器的主机名) 
+- uri: 请求的完整资源地址,包括路径和get查询的参数部分 
+- path: 请求的路径部分
+- query: 请求参数部分 
+- version: 使用的HTTP版本 
+- headers: 请求的协议头,字典类型 
+- body: 请求体数据(POST) 
+- remote_ip: 客户端的ip地址 
+- files: 用户上传的文件,字典类型 
 
 
 ## tornado.httputil.HTTPFile对象
 - 功能:在我们上传文件中才能看到他
 - 作用:
     是收到的文件对象
-- 属性:
-    - filename: 文件的实际名字
-    - body: 文件的数据实体
-    - content-type: 上传文件的类型
+### 属性:
+- filename: 文件的实际名字
+- body: 文件的数据实体
+- content-type: 上传文件的类型
 ### 文件上传
 
 
