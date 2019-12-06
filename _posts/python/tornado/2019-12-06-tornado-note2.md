@@ -43,9 +43,11 @@ tags: Python solution web tornado
     - 路由
         - `(r"/", index.IndexHandler),`
         - 传的参数在路由那嘎达的字典类型的数据
+        
+        
+        
+        
 ```
-
-
 
 D:.
 │  config.py
@@ -327,7 +329,6 @@ class SunckHandler(RequestHandler):
     - 示例:
     ```python
     class ErrorHandler(RequestHandler):
-    
         def write_error(self, status_code: int, **kwargs: Any) -> None:
             if status_code == 500:
                 self.write("服务器内部错误500了")
