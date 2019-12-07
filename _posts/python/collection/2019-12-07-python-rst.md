@@ -7,18 +7,7 @@ tags: Python background solution
 
 原文链接:https://www.jianshu.com/p/1885d5570b37
 
-<div class="image-package">
-    <div class="image-container" style="max-width: 640px; max-height: 391px; background-color: transparent;">
-        <div class="image-container-fill" style="padding-bottom: 61.09%;"></div>
-        <div class="image-view" data-width="640" data-height="391"><img
-                data-original-src="//upload-images.jianshu.io/upload_images/1628444-8774f71a573c114b.png"
-                data-original-width="640" data-original-height="391" data-original-format="image/png"
-                data-original-filesize="340128" data-image-index="0" style="cursor: zoom-in;" class=""
-                src="//upload-images.jianshu.io/upload_images/1628444-8774f71a573c114b.png?imageMogr2/auto-orient/strip|imageView2/2/w/640/format/webp">
-        </div>
-    </div>
-    <div class="image-caption">图片来自网络/图文无关</div>
-</div>
+
 <p><strong>reStructuredText</strong> 是扩展名为.rst的纯文本文件，含义为"重新构建的文本"，也被简称为：RST或reST；是Python编程语言的Docutils项目的一部分，Python
     Doc-SIG (Documentation Special Interest Group)。该项目类似于Java的JavaDoc或Perl的POD项目。 Docutils
     能够从Python程序中提取注释和信息，格式化成程序文档。</p>

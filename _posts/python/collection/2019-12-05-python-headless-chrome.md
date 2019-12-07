@@ -1,6 +1,6 @@
 ---
-title: "用Python驱动Headless Chrome"
-subtitle: "(无头的浏览器)是什么鬼?"
+title: "(无头的浏览器)是什么鬼?"
+subtitle: "用Python驱动Headless Chrome"
 tags: Python background solution
 ---
 

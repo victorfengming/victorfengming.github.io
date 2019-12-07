@@ -15,10 +15,11 @@ tags: Python solution web tornado
 
 
 #  write:
-###  作用:将chunk中的数据写到输出缓冲区
-###  基础
+###  作用:
+将chunk中的数据写到输出缓冲区
+
 ###  利用write方法写json数据
-####  注意:
+
 - 我们自己手动序列化json的那种方式Content-Type 的属性值为text-html
 - 而我们采用write自动序列化方式,我们的content-type 属性为application/json
 

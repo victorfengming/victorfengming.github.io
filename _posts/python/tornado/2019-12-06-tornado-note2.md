@@ -19,7 +19,8 @@ tags: Python solution web tornado
 #  Application
 ##  settings
 ###  debug
-####  作用:可以设置tornado是否工作在调试模式下面,默认为false,即工作在生产模式下
+####  作用
+可以设置tornado是否工作在调试模式下面,默认为false,即工作在生产模式下
 ####  true的特性:
 #####  自动重启:
 - tornado程序会监控源代码文件,会自动重启服务器,减少我们手动重启的次数,提高开发效率
