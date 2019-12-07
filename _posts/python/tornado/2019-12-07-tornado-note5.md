@@ -66,9 +66,9 @@ class HomeIndexHandler(RequestHandler):
    <!-- 这里一定要注意,这个普通的注释会被加载到页面中 -->
    {# num: { { num } } #}
    <!-- 模板的注释才是真正的注释 -->
-   {# num: {{ num + 10 }} #}
+   {# num: { { num + 10 } } #}
    <!-- 等号的赋值的不好使的,会报错  -->
-   {# num: {{ num = 5}} #}
+   {# num: { { num = 5} } #}
 </body>
 </html>
 ```
@@ -80,7 +80,7 @@ class HomeIndexHandler(RequestHandler):
 ```angular2html
 { % if表达式 % }
 语句
-{ % end %}
+{ % end % }
 ```
 if和else的
 ```angular2html
@@ -88,7 +88,7 @@ if和else的
 语句1
 { % else % }
 语句2
-{ % end %}
+{ % end % }
 ```
 多个if 的
 
@@ -104,15 +104,15 @@ if和else的
 ```
 #### 实例
 ```angular2html
-{% if flag == 0%}
+{ % if flag == 0% }
 flag确实是0
-{% elif flag == 0 %}
+{ % elif flag == 0 % 
 语句2
-{% elif flag == 2 %}
+{ % elif flag == 2 % }
 flag bug
-{% else %}
+{ % else % }
 baiche
-{% end %}
+{ % end % }
 ```
 ### for
 这里面需要注意的是,结束模板语法都是` { % end % }`
@@ -124,9 +124,9 @@ baiche
 实例:
 ```angular2html
 <ul>
-    {% for stu in stus %}
-    <li>{{ stu }}</li>
-    {% end %}
+    { % for stu in stus % }
+    <li>{ { stu } }</li>
+    { % end % }
 </ul>
 ```
 ### while
@@ -168,7 +168,7 @@ class TranHandler(RequestHandler):
     <title>转义</title>
 </head>
 <body>
-{{str}}
+{ {str} }
 </body>
 </html>
 ```
@@ -186,7 +186,7 @@ class TranHandler(RequestHandler):
     - 当为None时关闭当前项目的自动转义
 - escape()函数
     - 这个函数能够在全局转义的条件下再不转义
-    - `{{ escape(str) }}`    
+    - `{ { escape(str) } }`    
     
 ## 继承
 ## 静态文件
