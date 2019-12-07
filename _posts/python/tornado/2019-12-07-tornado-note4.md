@@ -13,10 +13,13 @@ tags: Python solution web tornado
 
 
 
-# 响应输出
-## write
+# 响应输出 -> write
 ### 原型
-#### self.write(chunk)
+#### self.write()函数
+源码中是这样定义的
+```python
+def write(self, chunk: Union[str, bytes, dict]) -> None:
+```
 ### 作用
 将chunk数据写到缓冲区
 
@@ -32,7 +35,7 @@ tags: Python solution web tornado
 
 ### C程序演示
 这里我们需要gcc或者g++(编译C++的)
-```C
+```python
 # include<stdio.h>
 int main(){
     while(1){
@@ -62,12 +65,9 @@ class WriteHandler(RequestHandler):
         self.write("write page wonderful tornado!")
 ```
 ### 利用write方法写JSON数据
-在Django那时候是不是有JsonResponse
-
-比如在豆瓣影评
-
-当我们往下滚轮的时候请求JSON数据
-
+在Django那时候是不是有JsonResponse  
+比如在豆瓣影评  
+当我们往下滚轮的时候请求JSON数据  
 在本地通过创建DOM的方式进行加载的
 
 
@@ -84,12 +84,12 @@ class WriteHandler(RequestHandler):
     - 能够用于一些,比如反爬虫,我要是不想让你正常请求,不给你响应内容,那我这里直接来个error直接跳过write就OK了
     - 判断用户是否符合规格
 ### HTTP方法
-#### get
-参数在URL后面
+
+#### get(参数在URL后面)
 - 优点:速度快
 - 缺点:承载的数据量低,安全性相对低
-#### post
-参数单独打包
+
+#### post(参数单独打包)
 - 优点:速度慢
 - 缺点:承载的数据量高,安全性相对高了那么一丢丢
 - 一般用于修改服务器上面的数据,使用post,其他的就用get吧
@@ -143,7 +143,10 @@ class IndexHandler(RequestHandler):
         print("on_finish")
 
 ```    
+
 执行的结果顺序如下
+
+
 ```shell script
 :set_default_headers
 init_initialize
@@ -151,7 +154,11 @@ prepare
 get_start
 on_finish
 ```
+
+
 另一种方式,带有错误的情况
+
+
 ```python
 class IndexHandler(RequestHandler):
 
@@ -176,7 +183,11 @@ class IndexHandler(RequestHandler):
     def on_finish(self) -> None:
         print("on_finish")
 ```
+
+
 执行的结果顺序如下
+
+
 ```shell script
 :set_default_headers
 init_initialize
@@ -186,6 +197,9 @@ write_error
 on_finish
 get_start
 ```
+
+
+
 ## 执行的顺序总结
 - 在正常情况下,没抛出错误时
     - :set_default_headers:设置头
@@ -203,3 +217,4 @@ get_start
     - get_start:
 
 这个顺序你得记住,其实也不用,你要是忘了就回来看就行了,但是你要理解其中的每个函数的作用
+

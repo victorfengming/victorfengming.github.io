@@ -1,6 +1,6 @@
 ---
 title: "tornado学习笔记day03"
-subtitle: "请求相关"
+subtitle: "响应输出"
 tags: Python solution web tornado
 ---
 
@@ -13,8 +13,8 @@ tags: Python solution web tornado
 
 
 
-# 响应输出
-##  write:
+
+#  write:
 ###  作用:将chunk中的数据写到输出缓冲区
 ###  基础
 ###  利用write方法写json数据
@@ -23,14 +23,14 @@ tags: Python solution web tornado
 - 而我们采用write自动序列化方式,我们的content-type 属性为application/json
 
 
-##  set_default_headers():
+#  set_default_headers():
 ###  作用:
 - 在进入HTTP响应方法之前被调用
 - 可以重新写该方法来设置默认的headers
 ###  注意:
 - 在这个HTTP处理方法中使用set_header设置的字段会覆盖set_default_headers()的值
 - 这个set_header和set_default_headers()是有执行的先后顺序的,默认那个当然那先就执行了
-##  set_status(status_code,reason=none):
+#  set_status(status_code,reason=none):
 ###  作用:为响应设置状态码
 ###  参数:
 ####  status_code:
@@ -40,7 +40,7 @@ tags: Python solution web tornado
 - String类型
 - 描述状态码的词组,比如`404 not found` 中的`not found` 
 
-##  重定向 `self.redirect(url)`:
+#  重定向 `self.redirect(url)`:
 ####  作用:
 - 比如你有时候写index,有时候不写,都能进到首页里面,这就是重定向的作用
 - 重定向到url网址
@@ -53,13 +53,13 @@ class RedirectHandler(RequestHandler):
         self.redirect("/")
 ```
 
-##  `self.send_error(status_code = 500,**kwargs)`:
+#  `self.send_error(status_code = 500,**kwargs)`:
 
 - 作用:
     - 抛出HTTP错误状态码,默认为500
     - tornado会调用write_error()方法进行处理
     - 对应Django里面自定义404一样
-##  `write_error(status_code,**kwargs)`:
+#  `write_error(status_code,**kwargs)`:
 - 作用:
     - 用来处理send_error抛出的错误信息,并返回给浏览器错误界面
 - 示例:
@@ -87,7 +87,7 @@ class ErrorHandler(RequestHandler):
 ```    
 
   
-## 路由的反向解析
+# 路由的反向解析
 这个tornado里面的比Django的反向解析还要简单一点 
 
 给路由起个名字,便于url改变后,跳转链接失效
@@ -127,7 +127,7 @@ class IndexHandler(RequestHandler):
         # self.write("<a href="+url+">去另一个页面</a>")
 ``` 
 
-## tornado.Web.RequestHandler
+# tornado.Web.RequestHandler
 
 ### 利用HTTP协议向服务器传递参数
 
@@ -212,7 +212,7 @@ def get_arguments(self, name: str, strip: bool = True) -> List[str]:
 
 
 
-## request对象
+# request对象
 ### 作用
 - 存储了关于请求的相关信息
 ### 比如:
@@ -230,7 +230,7 @@ def get_arguments(self, name: str, strip: bool = True) -> List[str]:
 - files: 用户上传的文件,字典类型 
 
 
-## tornado.httputil.HTTPFile对象
+# tornado.httputil.HTTPFile对象
 - 功能:在我们上传文件中才能看到他
 - 作用:
     是收到的文件对象

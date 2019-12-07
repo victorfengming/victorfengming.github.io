@@ -223,4 +223,11 @@ class TranHandler(RequestHandler):
             }
         ),
         ``` 
- 
+    - 参数:
+        - path:用来指定访问提供静态文件根路径
+        - default_filename:用来指定访问路由中未指定文件名时,访问哪个静态中的文件
+         
+    - 注意:
+        - 最好在其他路由的最下面写
+        - 否则可能会不匹配
+        - 其中的路由可以去参考一下[百度](https://www.baidu.com/)的
