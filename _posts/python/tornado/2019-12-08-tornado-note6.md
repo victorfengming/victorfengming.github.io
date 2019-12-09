@@ -1,6 +1,6 @@
 ---
 title: "tornado学习笔记day06"
-subtitle: "tornado访问数据库"
+subtitle: "tornado访问数据库以及应用安全"
 tags: Python solution web tornado
 ---
 
@@ -14,11 +14,11 @@ tags: Python solution web tornado
 
 
 # 数据库
-概述
+### 概述
 tornado目前没有自己的数据库,需要连接数据库,还得自己去适配
 目前python3.6+tornado还没有完善的驱动  
 
-磁盘数据库和内存数据库:
+### 磁盘数据库和内存数据库:
 
 比如你以前你的爸爸,那个手机啊,欠费了好几十还不给你停机  
 因为数据还没来得及处理,那个话费单,得一条一条处理,他处理不过来,知道么,当你欠费的时候,他还不知道你欠费呢  
@@ -55,8 +55,7 @@ def set_cookie(
     expires: Union[float, Tuple, datetime.datetime] = None,
     path: str = "/",
     expires_days: int = None,
-    **kwargs: Any
-) -> None:
+    **kwargs: Any) -> None:
 ```
 - 参数
     - name:我们设置的`cookie`的名字
@@ -79,15 +78,22 @@ def get_cookie(self, name: str, default: str = None) -> Optional[str]:
     - name:要获取的cookie 的名称
     - default:如果名为name的获取的cookie不存在,就走这个默认值了
 - 示例:
+
+
+
 ```python
 cookie = self.get_cookie("suck","未登录")
 print(cookie)
 self.write("getcookie page info tornado!")
 self.write(cookie)
-
 ```
+
+
 ###### 清除
 - 原型:
+
+
+
 ```python
     def clear_cookie(self, name: str, path: str = "/", domain: str = None) -> None:
 ```
@@ -163,7 +169,11 @@ settings = {
 
 实际上是这样写的
 ```python
-
+# 安全cookie
+class SCookieHandler(RequestHandler):
+    def get(self):
+        self.set_secure_cookie("victor","nice")
+        self.write("SCookieHandler page info tornado!")
 ```
 
 然后我们在浏览器中查看一下cookie的值
@@ -266,8 +276,6 @@ class CookieNumHandler(RequestHandler):
 
 ```python
 "xsrf_cookies":True
-
-
 ```
 
 
@@ -337,25 +345,7 @@ super(Application, self).__init__(
 
 
 ```python
-
-''' PostFileHandler 用于这个那个'''
-class PostFileHandler(RequestHandler):
-    def get(self):
-        self.render("postfile.html")
-    def post(self):
-        count = self.get_cookie("count", None)
-        if count:
-            # 第n次访问
-            count = str(int(count) + 1)
-            pass
-        else:
-            # 第一次访问
-            # 设置cookie
-            count = '0'
-        self.set_cookie("count", count)
-        self.redirect("/cookienum")
-
-# 设置XsrfCookieHandler
+'''设置XsrfCookieHandler'''
 class SetXsrfCookieHandler(RequestHandler):
     def get(self):
         # 设置一个_xsrf的cookie
@@ -367,8 +357,8 @@ class SetXsrfCookieHandler(RequestHandler):
 
 ###### 第一种
 
-我们可以不在页面中写那一行代码  
-而是写一个`script`的JS代码,其中实现手动的添加一个隐藏input
+- 我们可以不在页面中写那一行代码  而是写一个`script`的JS代码,其中实现手动的添加一个隐藏`input`
+- 手动创建`input`,并设置name的属性值为`_xsrf`,`value`的属性值为名为`_xsrf`的cookie的值
 
 ```html
 <!DOCTYPE html>
@@ -394,7 +384,7 @@ class SetXsrfCookieHandler(RequestHandler):
             // 如果有,那我就拿他的第一个值,就是这个cookie值
             return cook ? cook[1] : undefined
         }
-
+        // 获取cookie
         gc = getCookie("_xsrf");
         console.log(gc);
         document.getElementById("hi").value = gc;
@@ -404,8 +394,130 @@ class SetXsrfCookieHandler(RequestHandler):
 </html>
 ```
 ###### 第二种
+发起ajax请求:  
+我们把这个表单去掉,然后在js中点击这个按钮就发起ajax请求  
+我们没有学过原生的ajax吧!那么就需要借助jQuery了吧!
+
+具体代码如下:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post page</title>
+    <!--    导入jQuery-->
+    <script type="text/javascript" charset="utf-8" src="{{static_url('js/jquery.min.js')}}"></script>
+</head>
+<body>
+
+<input id="hi" type="hidden" name="_xsrf" value="">
+姓名:<input type="text" name="username">
+<hr/>
+密码:<input type="password" name="password">
+<hr/>
+<input type="submit" value="登录">
+<button id="btn" onclick="login()">登录</button>
+<script>
+    function getCookie(name) {
+        // 这里写的就不用管他是啥意思了
+        var cook = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        // 我们要返回的是cookie,不是cook
+        // 如果有,那我就拿他的第一个值,就是这个cookie值
+        return cook ? cook[1] : undefined
+    }
+
+    function login() {
+        // 发起ajax请求我们有很多种方式
+        // 发起post请求我们有两种方式,一种是这个
+        $.post("/postfile",
+            "_xsrf=" + getCookie("_xsrf") + "&username=" + "victor" + "&passwd=" + "123456",
+            // 请求成功后的回调函数
+            function (data) {
+                alert("ok\\(^o^)/~");
+                alert(data);
+            }
+        );
+        // TODO 其实这里要通过DOM元素获取username,和passwd的值的,
+        // TODO 因为这里不是作为重点就写了
+        /**
+         * 这里主要是要带着这个xsrf防护,不然这个是不能给你响应的
+         */
+    }
+</script>
+</body>
+
+</html>
+```
 
 ###### 第三种
+其实这种才是最常用的方式,这个`$.post`仅仅只能发起post请求,所携带的参数或者说对于他的控制是比较少的  
+`$.ajax`才是最NB的方式
+
+来吧!直接就上代码
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post page</title>
+    <!--    导入jQuery-->
+    <script type="text/javascript" charset="utf-8" src="{{static_url('js/jquery.min.js')}}"></script>
+</head>
+<body>
+
+<input id="hi" type="hidden" name="_xsrf" value="">
+姓名:<input type="text" name="username">
+<hr/>
+密码:<input type="password" name="password">
+<hr/>
+<input type="submit" value="登录">
+<button id="btn" onclick="login()">登录</button>
+<script>
+    function getCookie(name) {
+        // 这里写的就不用管他是啥意思了
+        var cook = document.cookie.match("\\b" + name + "=([^;]*)\\b");
+        // 我们要返回的是cookie,不是cook
+        // 如果有,那我就拿他的第一个值,就是这个cookie值
+        return cook ? cook[1] : undefined
+    }
+
+    function login() {
+        // TODO 这块还是那么回事,数据可以通过DOM来动态获取
+        data = {
+            "username": "victor",
+            "passwd": "123456",
+            };
+        // 我们需要把我们的数据给他变成一个字符串
+        // 这个方法是JS中的东西,不是python,jQuery的
+        var data_str = JSON.stringify(data);
+        // 这个ajax怎么写呢?,他里面就一个参数,就是一个字典
+        $.ajax({
+            url: "/postfile",
+            // 这个请求方式你写啥,他就是啥,他都能发
+            method: "POST",
+            data: data_str,
+            // 你看吧这个字典中的一个键里面对应的值是函数,
+            // 虽然外面就一个字典类型的参数,但是回调函数还是有的
+            success: function () {
+                alert("ok!!!")
+            },
+            // 到这里绝壁是不能成功的,因为我这个_xsrf都没写怎么能成功呢
+            // 如果想发起请求,我们还需要添加一个headers,也就是请求头
+            headers:{
+                // 来这个跟着写就对了
+                // 这个值就设置成之前那个cookie值就行了
+                "X-XSRFToken": getCookie("_xsrf"),
+            },
+        })
+        // 以后发起ajax请求,建议使用这个,功能更加强大
+
+    }
+</script>
+</body>
+
+</html>
+```
 
 ##### 补充
 _xsrf 加一个下划线,我们把他看成是私有的,
