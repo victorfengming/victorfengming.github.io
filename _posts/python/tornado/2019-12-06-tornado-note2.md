@@ -38,9 +38,17 @@ tags: Python solution web tornado
 #####  提供追踪信息
 - 如果我们的IndexHandler里面抛出了一个异常,但是他自己没有捕获这个异常,就会生成一个追踪的页面
 - 单独设置:`serve_traceback = True`
-###  template_path: 设置模板文件目录
-###  static_path : 设置静态文件目录
-##  路由
+###  template_path: 
+设置模板文件目录
+###  static_path : 
+设置静态文件目录
+###  auto_escape : 
+当为None时,关闭项目的自动转义
+### cookie_secret:
+配置安全cookie秘钥
+### xsrf_cookie:
+当为True,开启XSRF保护
+## 路由
 - `(r"/", index.IndexHandler),`
 - 传的参数在路由那嘎达的字典类型的数据
 
