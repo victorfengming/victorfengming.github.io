@@ -48,6 +48,8 @@ tags: Python solution web tornado
 配置安全cookie秘钥
 ### xsrf_cookie:
 当为True,开启XSRF保护
+### login_url
+用于定义登录的路径,默认找这里
 ## 路由
 - `(r"/", index.IndexHandler),`
 - 传的参数在路由那嘎达的字典类型的数据

@@ -519,7 +519,157 @@ class SetXsrfCookieHandler(RequestHandler):
 </html>
 ```
 
+###### 问题
+其实帅的人是不会用第一种方式写的
+
+需要手动[设置token](https://victorfengming.github.io/2019/12/08/tornado-note6/#%E6%89%8B%E5%8A%A8%E8%AE%BE%E7%BD%AE_xsrf%E7%9A%84cookie)  
+解决:其实一般我们进入一个网站的时候,通常是不是都先进入主页啊,你进入主页的时候就把这个`xsrf`写进去了
+
+首先我们添加一个进入主页的静态默认页面
+```python
+(
+    r"/(.*)$",
+    # 系统这个我们不能用,所以我们继承,
+    # tornado.web.StaticFileHandler,
+    # 让我们自己写这个继承自系统给我们这个
+    index.MyStaticFileHandler,
+    {
+        "path": os.path.join(BASE_DIR, "static/html"),
+        "default_filename": "index.html"
+    }
+),
+```
+然后重写StaticFileHandler
+```python
+from tornado.web import StaticFileHandler
+
+# 设置静态默认
+class MyStaticFileHandler(StaticFileHandler):
+    # 我们用他的时候只需要重写他的init就可以了
+    def __init__(self,*args,**kwargs):
+        super(MyStaticFileHandler,self).__init__(*args,**kwargs)
+        self.xsrf_token
+```
 ##### 补充
-_xsrf 加一个下划线,我们把他看成是私有的,
-__xsrf就真的是私有的了
+- _xsrf 加一个下划线,我们把他看成是私有的  
+- __xsrf就真的是私有的了
 ### 用户验证
+#### 概念
+在收到用户请求后,进行一个预先判断用户的认证状态(是否登录),若验证通过正常处理,否则进入登录界面去,滚去登录
+
+#### tornado.web.authenticate 装饰器
+tornado将确保这个方法的主体(他修饰的东西)只有合法的用户才能调用
+#### get_current_user
+我们自己定义一个方法`get_current_user()`  
+功能:验证用户的逻辑,应该写在该方法中,  
+如果该方法返回的为True说明验证成功,否则验证失败  
+验证失败:访客重定向到配置中的所制定的路由(登录界面)  
+需要在配置文件`config.py`中写上配置的位置,因为你不一定要跳转到登录界面吧!
+```python
+"login_url":"/login",
+```
+这样你要是没登录,他就给你踢到那个页面中了
+
+然后直接就上代码
+
+
+
+```python
+'''首先 路由是这样的 '''
+# 登录界面
+tornado.web.url(r"/login", index.LoginHandler,name='login'),
+# home页面
+(r"/home", index.HomeHandler),
+# 一个无名的普通页面,用于测试的
+(r"/cart", index.CartHandler),
+
+(
+    r"/(.*)$",
+    # 系统这个我们不能用,所以我们继承,
+    # tornado.web.StaticFileHandler,
+    # 让我们自己写这个继承自系统给我们这个
+    index.MyStaticFileHandler,
+    {
+        "path": os.path.join(BASE_DIR, "static/html"),
+        "default_filename": "index.html"
+    }
+),
+```
+
+
+
+```python
+'''登录页面'''
+class LoginHandler(RequestHandler):
+    def get(self):
+        # 进入登录我就要知道我是从哪里进的了
+        next = self.get_argument("next","/")
+        url = "login" + "?next=" + next
+        self.render("login.html", url=url)
+
+    def post(self):
+        '''
+        咱也不用管是get还是post了
+        name = self.get_body_argument("username")
+        passwd = self.get_body_argument("passwd")
+        '''
+        # 直接我就写
+        name = self.get_argument("username")
+        passwd = self.get_argument("passwd")
+        # TODO 这里还是把账号和密码写死了
+        if name == "victor" and passwd == "123456":
+            # 这个玩意代表从哪个页面跳来的,处理完了
+            # 要是没毛病,我还得给你发到那里去
+            next = self.get_argument("next", "/")
+            # 后面"/"是默认值
+            # 重定向走你,但是光重定向不行
+            # 我们还得加一个标记
+            self.redirect(next + "?flag=logined")
+        else:
+            next = self.get_argument("next", "/")
+            '''
+            # 验证失败了,
+            # 路由的反向解析,听着挺高大上的
+            # 密码输入错误,好几次也得记着人家是从哪里过来的
+            '''
+            log = self.reverse_url("login")+"?next="+next
+            # 我还是得重定向
+            self.redirect(log)
+```
+
+
+```python
+''' 这个是主页面 '''
+class HomeHandler(RequestHandler):
+    def get_current_user(self):
+        '''
+        # 返回True代表验证成功,否则凉凉
+        # return False
+        # 然后我们这里就能通过之前的flag来判断了
+        # 这里还要设置一个默认值否则就是
+        # WARNING:tornado.general:400 GET /home (127.0.0.1):
+                  Missing argument flag
+        '''
+        flag = self.get_argument("flag", None)
+        # 如果能取到flag,就返回true
+        # 要是娶不到,自然就返回False
+        return flag
+
+    @tornado.web.authenticated
+    def get(self):
+        self.render("home.html")
+```
+
+
+
+```python
+''' 这个cart是一个普通的页面'''
+class CartHandler(RequestHandler):
+    def get_current_user(self):
+        return self.get_argument("flag", None)
+
+    @tornado.web.authenticated
+    def get(self):
+        self.render("cart.html")
+```
+
