@@ -12,7 +12,7 @@ tags: Python solution web tornado
 
 
 
-## 同步与异步
+
 ### 同步
 #### 概念
 同步就是按部就班的依次执行我们的代码  
@@ -333,6 +333,7 @@ if __name__ == '__main__':
 这个是最复杂版本,看看吧
 
 1. 文档说明,导入相关模块
+
 ```python
 '''
 #!/usr/bin/env python
@@ -349,6 +350,7 @@ import threading
 
 
 2. 定义装饰器(最重要的部分,实现异步,高效,并发的原理)
+
 ```python
 def genCoroutine(func):
     '''
@@ -381,6 +383,7 @@ def genCoroutine(func):
 ```
 
 3. 最难执行的部分
+
 ```python
 '''
 # 添加一个耗时的操作
@@ -400,6 +403,7 @@ def longIO():
 ```
 
 4. 被装饰函数定义
+
 ```python
 @genCoroutine
 def reqA():
@@ -411,6 +415,7 @@ def reqA():
 ```
 
 5. 另一个耗时函数
+
 ```python
 ''' 这个就相等于另一个客户端的请求'''
 def reqB():
@@ -420,6 +425,7 @@ def reqB():
 ```
 
 6. 程序入口函数
+
 ```python
 def main():
     reqA()

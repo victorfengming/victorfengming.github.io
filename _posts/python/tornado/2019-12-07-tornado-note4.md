@@ -1,6 +1,6 @@
 ---
 title: "tornado学习笔记day04"
-subtitle: "响应输出"
+subtitle: "执行顺序"
 tags: Python solution web tornado
 ---
 
