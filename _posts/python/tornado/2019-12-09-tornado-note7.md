@@ -19,6 +19,7 @@ tags: Python solution web tornado
 #### 进阶
 但是有些情况我们有一些比较耗时的从操作,比如去别的地方拿点资源,去其他网站请求数据,去访问数据库,上传文件等等,所以这里面优点瑕疵,有小编一一道来  
 比如这样
+
 ```python
 ''' 本模块的功能:<同步异步demo>'''
 
@@ -60,7 +61,9 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+
 结果
+
 ```shell script
 开始处理reqA
 开始耗时操作# 这里等待了5秒钟
@@ -109,6 +112,7 @@ if __name__ == '__main__':
 异步其实我们已经用了,js里面有一个很明显的异步,就是在我们发ajax的时候,当我们发完ajax就去干别的活去了,后来ajax有响应了我们才搭理他
 
 来来来,代码演示如下:
+
 ```python
 '''
 #!/usr/bin/env python
@@ -142,8 +146,6 @@ def longIO(callback):
 ```
 这个longio这部分 ,就像ajax一样都不用我们来写了
 
-
-
 ```python
 def finish(data):
     print("开始处理回调函数")
@@ -162,7 +164,6 @@ def reqB():
     time.sleep(1)
     print("结束处理reqB")
 ```
-
 ```python
 def main():
     # 这就是同步在处理
@@ -261,12 +262,14 @@ if __name__ == '__main__':
 版本1中在调用reqA的时候和reqB的调用方式可不一样的啊
 也就数不能将其视为简单的函数,而是需要作为生成器来用,我们想的时候是当成一个普通函数来对待
 ###### 现实 
+
 ```python
 global gen
 gen = reqA()    # 生成一个生成器
 next(gen)   # 执行reqA
 ```
 ###### 理想
+
 ```python
 reqA()   # 仅仅的简单的调用
 ``` 
@@ -300,7 +303,6 @@ def reqA():
 ```
 
 然后执行的时候
-
 
 ```python
 '''这个就相等于另一个客户端的请求 '''
