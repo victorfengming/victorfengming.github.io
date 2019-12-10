@@ -1,8 +1,6 @@
 今天的努力是为了明天的毫不费力
 
 
-- tornado
-
 - 数据库相关 * 数据库 数据库 数据库[!!!](https://www.bilibili.com/video/av25705756?p=59)
     - mysql 
     - Oracle 
