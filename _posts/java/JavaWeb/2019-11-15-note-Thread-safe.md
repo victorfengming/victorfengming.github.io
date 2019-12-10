@@ -28,7 +28,7 @@ import java.io.IOException;
 
 /**
  * @author victor
- * @site https://victorfengming.github.io/
+ * @site https://victorfengming.gitee.io/
  * @company XDL
  * @project xdl_javaweb
  * @package cn.xdl.demo1
