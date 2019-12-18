@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: fengming19981221@163.com
 description: "关于程序、设计以及架构 | 小明哥，Javaer ，Software Engineer"
 keyword: "小明哥, mercyblitz, victor, 小明哥的技术博客"
-url: "https://victorfengming.gitee.io"              # your host, for absolute URL
+url: http://ynvictor.xyz/              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 post:
