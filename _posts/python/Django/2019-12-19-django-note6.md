@@ -32,7 +32,7 @@ https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#custom-permissio
 
     需要在定义模型中 使用 元 选项
 
-```
+```python
     class Task(models.Model):
     ...
     class Meta:
@@ -46,6 +46,7 @@ https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#custom-permissio
 
 ### 第二步,在后台中实现 对管理员和组的管理
 
+```
     管理员添加
         from django.contrib.auth.models import User
         创建用户
@@ -87,12 +88,14 @@ https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#custom-permissio
         # 读取所有权限信息,并排除以Can开头的系统默认生成权限
         perms = Permission.objects.exclude(name__istartswith='Can')
 
-
+```
     
 
 
 
 ### 第三步,进行验证,验证是否登录,验证是否具有权限
+
+```
     login()  logout()
     https://docs.djangoproject.com/en/1.11/topics/auth/default/#how-to-log-a-user-in
 
@@ -103,38 +106,40 @@ https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#custom-permissio
     使用中间件来验证用户是否登陆
 
     使用 装饰器 来验证是否具有操作权限
-
+```
 
 
 ### 第四步,在html模板中判断当前登录的用户是否能查看
 
+```html
     在模板中操作权限
     https://docs.djangoproject.com/en/1.11/topics/auth/default/#permissions
 
 
-     {{ perms }}
+     { { perms } }
 
 
 
 
      <ul>
-         {% if request.user.is_superuser or 'demo.show_users' in perms %}
+         { % if request.user.is_superuser or 'demo.show_users' in perms % }
              <li>用户管理</li>
-         {% endif %}
+         { % endif % }
 
-         {% if request.user.is_superuser or 'demo.show_types' in perms %}
+         { % if request.user.is_superuser or 'demo.show_types' in perms % }
              <li>分类管理</li>
-         {% endif %}
+         { % endif % }
 
-         {% if request.user.is_superuser or 'demo.show_goods' in perms %}
+         { % if request.user.is_superuser or 'demo.show_goods' in perms % }
              <li>商品管理</li>
-         {% endif %}
+         { % endif % }
      </ul>
 
-
+```
 
 ###其他操作
 
+```python
     # 获取当前会话的用户对象
         obj = get_user(request)
 
@@ -145,3 +150,4 @@ https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#custom-permissio
 
     # # 检查当前用户是否具有 perm 权限
         # res = obj.has_perm('demo.add_types')
+```
