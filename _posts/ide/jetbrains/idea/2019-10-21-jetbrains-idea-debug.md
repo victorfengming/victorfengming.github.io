@@ -16,6 +16,6 @@ tags: ide solution idea jetbrains
 - f8:逐行执行程序
 - f7:进入到方法中
 - shift+f8:跳出方法
-- f9:跳到下一个断点,如果没有
+- f9:跳到下一个断点
 - ctrl+f2:退出debug模式,停止程序
 - console控制台
