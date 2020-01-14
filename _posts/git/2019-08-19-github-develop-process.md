@@ -13,8 +13,6 @@ tags: Git solution
 
 
 
-
-
 ### 合作完成开源项目流程
 1. 首先需要在github上注册账号并登陆
 2. 安装git，到github官网下载安装包。
