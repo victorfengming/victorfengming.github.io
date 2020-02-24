@@ -292,7 +292,8 @@ plt.show()
 
 ### chapter08 matplotlib绘制箱型图
 
-```python'''
+```python
+'''
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Created by victor

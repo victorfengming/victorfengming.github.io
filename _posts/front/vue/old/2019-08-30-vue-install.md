@@ -49,7 +49,7 @@ $ npm install vue
 ### 最后送你一个小彩蛋-Vue Devtools   
 在使用 Vue 时，我们推荐在你的浏览器上安装 [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools)。它允许你在一个更友好的界面中审查和调试 Vue 应用
 
-
+[vue调试工具vue-devtools安装及使用](https://www.cnblogs.com/yuqing6/p/7440549.html)
 
 
 <style type="text/css">

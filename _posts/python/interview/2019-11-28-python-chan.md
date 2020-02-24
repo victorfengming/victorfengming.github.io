@@ -82,8 +82,8 @@ Namespaces are one honking great idea -- let's do more of those!
 
 ```python
 # coding = utf-82 print ("""
-my name is zhangweigong
-my blogs url is:www.cnblogs.com/imyalost
+my name is yufengming
+my blogs url is:https://victorfengming.gitee.io/
 life is so short,I need python
 """)
 ```
