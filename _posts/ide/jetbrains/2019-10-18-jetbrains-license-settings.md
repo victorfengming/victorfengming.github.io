@@ -19,5 +19,5 @@ jetbrains系列的IDE被认为是业内最强大的集成开发环境
 
 您的支持就是我的动力
 
-需要license的同学可以来:[这里](http://idea.medeming.com/)
+需要license的同学可以来:[这里](http://idea.medeming.com/jets/)
 
