@@ -109,3 +109,50 @@ const identifier [type] = value
 
 ## 枚举类型
 使用常量组作为枚举类型,一组相关数值的数据.
+****
+
+# go语言的数据类型
+## 1. 基本数据类型
+- 布尔类型：bool
+    - 取值：true
+    - 取值：false
+- 数值类型：
+    - 整数：
+    - 浮点：生活中的小数
+    - 复数：complex，
+- 字符串：string
+## 2. 复合数据类型
+array， slice， map， function， pointer， struct， interface， channel。。。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
