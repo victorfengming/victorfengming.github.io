@@ -13,7 +13,7 @@ tags: Java Index
 [09【继承、super、this、抽象类】](http://source.yufengming.com/java/day09【继承、super、this、抽象类】.pdf)  
 [10【接口、多态】](http://source.yufengming.com/java/day10【接口、多态】.pdf)  
 [11【final、权限、内部类】](http://source.yufengming.com/java/day11【final、权限、内部类】.pdf)  
-[12【Object类、常用API】-笔记](https://victorfengming.gitee.io/2020/02/28/note05/)  
+[12【Object类、常用API】-笔记](https://victorfengming.gitee.io/2019/10/20/note05/)  
 [13【Collection、泛型】-笔记](https://victorfengming.gitee.io/2019/10/19/note05/)  
 [14【List、Set】-笔记](http://source.yufengming.com/java/day14【List、Set】-笔记.pdf)  
 [15【Map】-笔记](http://source.yufengming.com/java/day15【Map】-笔记.pdf)  
