@@ -151,7 +151,7 @@ django2.0之后，表与表之间关联的时候,必须要写on_delete参数,否
         { { name|sb:'xxx'} }
 ```
 
-- simple_tag:{% simple_tag函数名 参数1 参数2 %}
+- simple_tag:{ % simple_tag函数名 参数1 参数2 % }
 1. 可以传多个参数,没有限制
 2. 不能与if标签来连用
 
