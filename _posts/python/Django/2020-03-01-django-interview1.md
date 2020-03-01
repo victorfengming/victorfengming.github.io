@@ -187,7 +187,7 @@ django2.0之后，表与表之间关联的时候,必须要写on_delete参数,否
 1. 后端将csrftoken传到前端，发送post请求时携带这个值发送
 ```
 data: {
-        csrfmiddlewaretoken: '{{ csrf_token }}'
+        csrfmiddlewaretoken: '{ { csrf_token } }'
   },
 ```
 2. 获取form中隐藏标签的csrftoken值，加入到请求数据中传给后端
