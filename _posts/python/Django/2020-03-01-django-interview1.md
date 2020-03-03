@@ -130,6 +130,8 @@ django2.0之后，表与表之间关联的时候,必须要写on_delete参数,否
 - 自定义filter：{ { 参数1|filter函数名:参数2 } }
 1.可以与if标签来连用
 2.自定义时需要写两个形参
+
+
 ```javascript
 例子：自定义filter
     1. 在app01下创建一个叫templatetags的Python包
@@ -149,6 +151,7 @@ django2.0之后，表与表之间关联的时候,必须要写on_delete参数,否
         { % load myfilters % }
         { { name|add_sb:'xxx'} }
         { { name|sb:'xxx'} }
+
 ```
 
 - simple_tag:{ % simple_tag函数名 参数1 参数2 % }

@@ -1,5 +1,5 @@
 ---
-title: "Golang学习笔记01"
+title: "Golang学习笔记02"
 subtitle: "Go 中的变量"
 tags: Golang base
 ---
@@ -105,8 +105,7 @@ const identifier [type] = value
 ```
 ## 注意: 
 - 在变量定义好后需要进行调用才行,而这里常量不需要
-- 在一组常量中如果没有初始值,他会和上一行的值一样,厉害了
-
+2020-02-25-golang-note2.md
 ## 枚举类型
 使用常量组作为枚举类型,一组相关数值的数据.
 ****
@@ -128,6 +127,9 @@ array， slice， map， function， pointer， struct， interface， channel�
 
 
 
+- go语言出自名门正派,在go语言中可以看见C语言,Java甚至python的影子.
+
+- go通过协程(微线程)来实现更高性能的异步并发处理
 
 
 
