@@ -91,7 +91,7 @@ npm install -g gitbook-cli
 ## 怎么使用
 想象一下，现在你准备构建一本书籍，你在硬盘上新建了一个叫 mybook 的文件夹，按照以前的做法，你会新建一个 Word 文档，写上标题，然后开始巴滋巴滋地笔耕。但是现在有了 GitBook，你首先要做的是在 mybook 文件夹下执行以下命令：
 
-```shell script
+```
 gitbook init
 ```
 
@@ -107,7 +107,7 @@ gitbook init
 
 编辑 SUMMARY.md 文件，内容修改为：
 
-```shell script
+```
 # 目录
 
 * [前言](README.md)
@@ -143,7 +143,7 @@ Typora 是所见即所得（实时渲染）的 Markdown 编辑器，这时候它
 当然，build 命令可以指定路径：
 
 
-```shell script
+```
 gitbook build [书籍路径] [输出路径]
 ```
 
@@ -151,7 +151,7 @@ serve 命令也可以指定端口：
 
 
 
-```shell script
+```
 gitbook serve --port 2333
 ```
 
@@ -160,7 +160,7 @@ gitbook serve --port 2333
 
 
 
-```shell script
+```
 gitbook pdf ./ ./mybook.pdf
 ```
 
