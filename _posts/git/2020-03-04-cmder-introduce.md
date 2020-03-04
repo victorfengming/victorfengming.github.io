@@ -49,3 +49,5 @@ tags: base cmder
 Font，右键Tab栏空白处，弹出菜单选择Settings，映入眼帘的就是字体设置了。建议使用字体Input Mono、Inconsolata、Consolas、Courier New。还可以加上中文字体，"Main font"设置下方的"Alternative font"添加CJK字体，在设置"Unicode ranges"成CJK的就好了。
 Color Schemes，同样是在Settings中，左侧树形菜单中选择Features->Colors，就能来到Scheme设置界面。Cmder自带的Scheme很丰富，也可以通过自定Scheme，应用网络上简洁好看的风格。Github | joonro/ConEmu-Color-Themes提供了当前流行的Scheme安装方式。
 Quake Style， 开启后，Cmder就变成了下拉式。按住" ctrl + ` "Cmder就从屏幕上方弹出，焦点转移就收回（可修改成再次按住" ctrl + ` "收回）。开启Quake Style之后极客感很强 !( •̀ ω •́ )!
+
+

@@ -1,5 +1,6 @@
 ---
-title: "解决VSCODE(因为在此系统上禁止运行脚本)报错"
+title: "解决VSCode报错"
+subtitle: "因为在此系统上禁止运行脚本"
 tags: solution ide
 ---
 
