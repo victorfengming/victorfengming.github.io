@@ -18,7 +18,7 @@ victor@asus:~/WebstormProjects/vuejs/vue_demo2$ vue init webpack vue-playlist
 ```
 作者的信息,默认就行了,直接就一个回车
 ```
-? Author fengming <fengming19981221@163.com>
+? Author fengming <victorfm@163.com>
 ```
 ```
 ? Vue build standalone
