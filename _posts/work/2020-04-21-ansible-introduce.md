@@ -19,27 +19,27 @@ tags: base work
 #ansible
 Ansible是一款简单的运维自动化工具，只需要使用ssh协议连接就可以来进行系统管理，自动化执行命令，部署等任务。
 
-###Ansible的特点
-#####1、ansible不需要单独安装客户端，也不需要启动任何服务
-#####2、ansible是python中的一套完整的自动化执行任务模块
-#####3、ansible playbook 采用yaml配置，对于自动化任务执行过一目了然
+### Ansible的特点
+##### 1、ansible不需要单独安装客户端，也不需要启动任何服务
+##### 2、ansible是python中的一套完整的自动化执行任务模块
+##### 3、ansible playbook 采用yaml配置，对于自动化任务执行过一目了然
 
-###Ansible组成结构
+### Ansible组成结构
 
-#####Ansible
+##### Ansible
 是Ansible的命令工具，核心执行工具；一次性或临时执行的操作都是通过该命令执行。
-#####Playbook
+##### Playbook
 任务剧本（又称任务集），编排定义Ansible任务集的配置文件，由Ansible顺序依次执行，yaml格式。
-#####Inventory
+##### Inventory
 Ansible管理主机的清单，默认是/etc/ansible/hosts文件。
-#####Modules
+##### Modules
 Ansible执行命令的功能模块，Ansible2.3版本为止，共有1039个模块。还可以自定义模块。
-#####Plugins
+##### Plugins
 插件，模块功能的补充，常有连接类型插件，循环插件，变量插件，过滤插件，插件功能用的较少。
 #####API
 提供给第三方程序调用的应用程序编程接口。
 
-###安装ansible
+### 安装ansible
 ```
 yum -y install ansible	 # 使用yum源安装ansible
 ansible --version		# 查看ansible版本
@@ -57,7 +57,7 @@ ssh-keygen		#创建ssh	进行ssh免密连接
 ssh-copy-id 服务器名(或者用户名@地址)  #给控制服务器复制 ssh秘钥
 ```
 
-####常用命令参数
+#### 常用命令参数
 ```
 ansible -h
 Usage: ansible <host-group> [options]
@@ -77,7 +77,7 @@ ansible all -m ping  / ansible 组名 -m ping -k	Ping所有主机
 ansible <文件名> -m copy -a 'src=/本地路径 dest=/目标路径'		#将本机的/etc/passwd 复制到远程机子文件 /tmp/passwd
 ```
 
-####Ansible Ad-hoc模式常用模块
+#### Ansible Ad-hoc模式常用模块
 ```
 ping模块、 raw模块、yum模块、apt模块、copy模块、user模块与group模块、、fetch模块、file模块、command 模块和shell
 ```
@@ -126,7 +126,7 @@ Linux 将访问文件的用户分为 3 类，分别是文件的所有者，所�
 
 777 三组都有读写执行权限;  755 所有者读写执行权限  所属组读执行权限  其他人读执行权限
 ```
-####copy 用于管理端复制文件到远程主机，并可以设置权限，属组，属主等
+#### copy 用于管理端复制文件到远程主机，并可以设置权限，属组，属主等
 ```
  [root@ansible ~]# ansible-doc -s copy	#查看模块参数
  src      #需要copy的文件的源路径
@@ -140,7 +140,7 @@ Linux 将访问文件的用户分为 3 类，分别是文件的所有者，所�
 [root@ansible ~]# ansible 192.168.1.31 -m copy -a 'dest=/tmp/a.sh src=/root/ansible_test.sh backup=yes'
 
 ```
-####fetch 用于从被管理机器上面拉取文件，拉取下来的内容会保留目录结构，一般情况用在收集被管理机器的日志文件等
+#### fetch 用于从被管理机器上面拉取文件，拉取下来的内容会保留目录结构，一般情况用在收集被管理机器的日志文件等
 ```
 
 [root@ansible ~]# ansible-doc -s fetch		# 查看模块参数
@@ -157,7 +157,7 @@ dest     #指定从远端机器拉取下来的文件存放路径
         └── cron
 directories, 1 file
 ```
-####软件包相关的模块： yum
+#### 软件包相关的模块： yum
 
 ```
 
@@ -192,11 +192,11 @@ directories, 1 file
  #卸载软件包
  [root@ansible ~]# ansible 192.168.1.31 -m yum -a 'name=httpd state=removed'
 ```
-###Ansible之Playbook
+### Ansible之Playbook
 
 `Playbook`与`ad-hoc`相比,是一种完全不同的运用ansible的方式。
 	`playbook`是由一个或多个`play`组成的列表，`play`的主要功能在于将事先归并为一组的主机装扮成事先通过`ansible`中的`task`定义好的角色。从根本上来讲，所谓的`task`无非是调用`ansible`的一个`module`。将多个`play`组织在一个`playbook`中，即可以让它们联合起来按事先编排的机制完成某一任务 
-####Playbook核心元素
+#### Playbook核心元素
 - Hosts 执行的远程主机列表
 - Tasks 任务集
 - tags 标签，指定某条任务执行，用于选择运行playbook中的部分代码。
@@ -204,7 +204,7 @@ directories, 1 file
 - Templates 模板，即使用模板语法的文件，比如配置文件等
 - Handlers 和notity结合使用，由特定条件触发的操作，满足条件方才执行，否则不执行
 
-####Playbook语法
+#### Playbook语法
 playbook使用yaml语法格式，后缀可以是yaml,也可以是yml。
 
 在单一一个playbook文件中，可以连续三个连子号(---)区分多个play。还有选择性的连续三个点好(...)用来表示play的结尾，也可省略。
