@@ -12,3 +12,14 @@
 - 更新技术博客(gitee)
 - 每日常规总结(有道云笔记),检查上次计划的完成情况~!
 - 下一阶段计划(有道云笔记)
+
+
+https://victorfengming.gitee.io/2021/03/01/redis-memoryover/
+
+
+# 2021 
+
+
+1. 解决博客 img 加载失败问题
+
+2. 读 https://huangxuan.me/
