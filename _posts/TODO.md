@@ -15,9 +15,17 @@
 
 
 https://victorfengming.gitee.io/2021/03/01/redis-memoryover/
+- 独立部署博客
 
 
 # 2021 
+
+0. https://huangxuan.me/2017/12/12/uncomputable-funcs/
+这条他能改变背景图片
+https://huangxuan.me/2015/10/28/how-designer-learn-fe/
+https://huangxuan.me/2014/11/20/responsive-web-design/
+
+就没有clone到他这个模板的精髓
 
 
 1. 解决博客 img 加载失败问题
