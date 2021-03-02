@@ -35,3 +35,4 @@ https://huangxuan.me/2014/11/20/responsive-web-design/
 
 3. $ git clone git@github.com:Huxpro/huxblog-boilerplate.git
 
+4. 更新博客文章到 https://learnku.com/blog/victorfengming
