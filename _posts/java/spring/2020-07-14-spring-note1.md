@@ -44,6 +44,16 @@ public class BeanTest{
 }
 ```
 
+### Eclipse 使用 Spring
+在eclipse等IDE工具中,用户可以自建User Library,然后把Spring的Jar包都放入其中,当然也可以将Jar包直接放在项目的/WEB-INF/lib目录下,但是如果使用User Library,在项目发布时,需要将用户库所引用的Jar文件随应用一起发布,就是将User Library所使用的Jar复制到/WEB-INF/lib 目录下,这是因为对于一个Web应用,Eclipse部署Web应用时不会将用户库的Jar文件复制到/WEB-INF/lib下,需要手动复制.
+
+### 依赖注入
+Spring框架的核心功能有两个:
+- Spring容器作为超级大工厂,负责创建,管理所有的Java对象,这些Java对象被称为Bean.
+- Spring容器管理容器中Bean之间的依赖关系,Spring使用一种被称为"依赖注入的方式来管理Bean之间的依赖关系.
+
+使用依赖注入,不仅可以为Bean注入普通的属性值,还可以注入其他Bean的引用.依赖注入是一种优秀的解耦方式,其可以让Bean以配置文件组织在一起,而不是以硬编码的方式耦合在一起.
+
 
 
 
