@@ -21,8 +21,8 @@ tags: Python background interview
 - 优缺点?
 
 ### 学过Django么
-[Django笔记01-基础](https://victorfengming.gitee.io/2019/11/23/django-note1/)  
-[Django/Flask/Tornado三大web框架性能分析](https://victorfengming.gitee.io/2019/10/04/django-flask-tornado/)
+[Django笔记01-基础](https://victorfengming.gitee.io/victorfengming_old/2019/11/23/django-note1/)  
+[Django/Flask/Tornado三大web框架性能分析](https://victorfengming.gitee.io/victorfengming_old/2019/10/04/django-flask-tornado/)
 
 ### 你会正则表达式么?
 - 分析
@@ -38,7 +38,7 @@ tags: Python background interview
 - 以上就是我对正则表达式的理解
     
 ### 你对mysql的理解    
-[Mysql数据库简介](https://victorfengming.gitee.io/2019/09/27/mysql-introduce/)
+[Mysql数据库简介](https://victorfengming.gitee.io/victorfengming_old/2019/09/27/mysql-introduce/)
 
 ### char varchar text 区别
 首先都是mysql中的字符串类型
