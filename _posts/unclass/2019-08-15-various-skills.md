@@ -3,6 +3,7 @@ title: "送你一些小技巧"
 tags: skills entertainment 
 ---
 
+![img/assets/dubbo/spring-cloud](/img/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png)
 ![img/assets/dubbo/spring-cloud](img/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png)
 ![/assets/dubbo/spring-clou](/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png)
 ![图片pic1]({{ "/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png" | absolute_url }})
