@@ -5,8 +5,9 @@ header-img: img/home-bg.jpg
 email: victorfm@163.com
 description: "关于程序、设计以及架构 | 小明哥，Javaer ，Software Engineer"
 keyword: "小明哥, mercyblitz, victor, 小明哥的技术博客"
-url: "https://victorfengming.gitee.io/blog"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://victorfengming.gitee.io/"              # your host, for absolute URL
+# 如果不写这个,新旧博客互相跳转 就离谱
+baseurl: "/blog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 post:
   author: victor
