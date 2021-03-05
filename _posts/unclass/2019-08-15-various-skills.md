@@ -3,7 +3,9 @@ title: "送你一些小技巧"
 tags: skills entertainment 
 ---
 
-
+![img/assets/dubbo/spring-cloud](img/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png)
+![/assets/dubbo/spring-clou](/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png)
+![图片pic1]({{ "/assets/dubbo/spring-cloud/Spring-Cloue-Zookeeper.png" | absolute_url }})
 ### 这里总结一些关于平时的边边角角的一些小技巧吧
 
 可能这些东西你会，也可能你觉得这些不是很正常的东西么，甚至你想说这也能往上面写
