@@ -1,0 +1,655 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>python相关模块安装  | Victor's Blog</title><meta name="keywords" content="solution,Python,basis"><meta name="author" content="Victor"><meta name="copyright" content="Victor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="python 相关模块安装 国内镜像地址          &lt;&#x2F;h1&gt;         &lt;div class&#x3D;&quot;clear&quot;&gt;&lt;&#x2F;div&gt;         &lt;div class&#x3D;&quot;postBody&quot;&gt;                    pytho">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python相关模块安装 ">
+<meta property="og:url" content="http://victorfengming.gitee.io/python/collection/python-module-install/index.html">
+<meta property="og:site_name" content="Victor&#39;s Blog">
+<meta property="og:description" content="python 相关模块安装 国内镜像地址          &lt;&#x2F;h1&gt;         &lt;div class&#x3D;&quot;clear&quot;&gt;&lt;&#x2F;div&gt;         &lt;div class&#x3D;&quot;postBody&quot;&gt;                    pytho">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://victorfengming.gitee.io/img/lynk/93.jpg">
+<meta property="article:published_time" content="2019-11-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-12T14:00:25.602Z">
+<meta property="article:author" content="Victor">
+<meta property="article:tag" content="solution">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="basis">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://victorfengming.gitee.io/img/lynk/93.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://victorfengming.gitee.io/python/collection/python-module-install/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="050fb675d62d1e28ba844b2419cb63f1"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f36fd50ed6331016e4a5a41f3655a9af";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-12 22:00:25'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Victor's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/avatar-mecyblitz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">445</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">87</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/lynk/93.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Victor's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">python相关模块安装 </h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2019-11-02T16:00:00.000Z" title="Created 2019-11-03 00:00:00">2019-11-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-03-12T14:00:25.602Z" title="Updated 2021-03-12 22:00:25">2021-03-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="python相关模块安装 "><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="post">
+            <h1 class="postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" target="_blank" rel="noopener" href="https://www.cnblogs.com/hellojesson/p/6431398.html">python 相关模块安装 国内镜像地址</a>
+
+<pre><code>        &lt;/h1&gt;
+        &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;postBody&quot;&gt;
+            
+</code></pre>
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>python 相关模块安装 国内镜像地址</p>
+<p>pipy国内镜像目前有：</p>
+<p>http://pypi.douban.com/ &nbsp;豆瓣</p>
+<p>http://pypi.hustunique.com/ &nbsp;华中理工大学</p>
+<p>http://pypi.sdutlinux.org/ &nbsp;山东理工大学</p>
+<p>http://pypi.mirrors.ustc.edu.cn/ &nbsp;中国科学技术大学</p>
+<p>https://pypi.tuna.tsinghua.edu.cn/ 清华大学</p>
+<p>对于pip这种在线安装的方式来说，很方便，但网络不稳定的话很要命。使用国内镜像相对好一些，</p>
+<p>&nbsp;</p>
+<p>如果想手动指定源，可以在pip后面跟-i 来指定源，比如用豆瓣的源来安装web.py框架：</p>
+<p>pip install web.py -i http://pypi.douban.com/simple</p>
+<p>注意后面要有/simple目录！！！</p>
+<p>&nbsp;</p>
+<p>要配制成默认的话，需要创建或修改配置文件（linux的文件在~/.pip/pip.conf，windows在%HOMEPATH%\pip\pip.ini），修改内容为：</p>
+<p>code:</p>
+<p>[global]</p>
+<p>index-url = http://pypi.douban.com/simple</p>
+<p>&nbsp;</p>
+<p>推荐使用清华大学的源，速度快(依个人情况而定！)：</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple django</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pillow</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple paramiko</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple cryptography==1.5.2</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple django-session-security==2.4.0</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple djangorestframework==3.5.3</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple paramiko==2.0.2</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pycparser==2.16</p>
+<p>pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple PyMySQL==0.7.9</p>
+<p>&nbsp;</p>
+<p>++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+<p>Python开发 常用模块安装</p>
+<p>包括Python，eclipse，jdk，pydev，pip，setuptools，beautifulsoup，pyyaml，nltk，mysqldb的下载安装配置。<br>*************************************************<br>python<br>下载：<br>python-2.7.6.amd64.msi<br><a href="http://www.python.org/" rel="external" target="_blank">http://www.python.org/</a><br>Python 2.7.6 released<br>Python 2.7.6 is now available.<br><a href="http://www.python.org/" rel="external" target="_blank">http://www.python.org/</a>download/releases/2.7.6/<br>Windows X86-64 MSI Installer (2.7.6) [1] (sig)<br><br>安装<br>配置：<br>我的电脑-&gt;属性-&gt;高级-&gt;环境变量-&gt;系统变量中的PATH增加:C:\Python27;<br>验证：<br>在桌面建立一个文件pt.py，内容为print 'hello python'<br>在cmd中输入命令python C:\Users\***\Desktop\pt.py<br>***为电脑用户名。<br><br>C:\Users\***&gt;python C:\Users\***\Desktop\pt.py<br>hello python<br>C:\Users\***&gt;<br><br>*************************************************<br>Eclipse：<br>eclipse-java-indigo-SR2-win32-x86_64.zip<br><a href="http://www.eclipse.org/downloads/" rel="external" target="_blank">http://www.eclipse.org/downloads/</a><br>Older Versions<br><a href="http://wiki.eclipse.org/Older_Versions_Of_Eclipse" rel="external" target="_blank">http://wiki.eclipse.org/Older_Versions_Of_Eclipse</a><br>Eclipse Indigo SR2 Packages (v 3.7.2)<br><a href="http://www.eclipse.org/downloads/" rel="external" target="_blank">http://www.eclipse.org/downloads/</a>packages/release/indigo/sr2<br>Eclipse IDE for Java Developers, (128 MB)<br>Downloaded 1,226,421 TimesDetails Windows 32-bit&nbsp;&nbsp;64-bit&nbsp;<br><a href="http://www.eclipse.org/downloads/" rel="external" target="_blank">http://www.eclipse.org/downloads/</a>download.php?file=/technology/epp/downloads/release/indigo/SR2/eclipse-java-indigo-SR2-win32-x86_64.zip<br>Download eclipse-java-indigo-SR2-win32-x86_64.zip from:<br><br>*************************************************<br>jdk：<br>jdk-7u45-windows-x64.exe<br><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" rel="external" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br>Windows x64 125.31 MB&nbsp;&nbsp;&nbsp;&nbsp; jdk-7u45-windows-x64.exe<br><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" rel="external" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a><br><br>*************************************************<br>pydev<br>为了在Eclipse中进行python工程的开发。<br><a href="http://sourceforge.net/projects/pydev/files/" rel="external" target="_blank">http://sourceforge.net/projects/pydev/files/</a><br>PyDev for Eclipse<br>Looking for the latest version? Download PyDev 3.2.0.zip (8.2 MB)<br>版本一直在更新中，几天前是3.1.0.zip<br>下载完，解压缩，将features和plugins文件夹中的内容分别复制到eclipse的features和plugins文件夹下。<br>重复则替换。<br>具体方法见windows xp，32位，环境下，Eclipse+python平台搭建<br><a href="http://blog.sina.com.cn/s/blog_8af1069601019uaw.html" rel="external" target="_blank">http://blog.sina.com.cn/s/blog_8af1069601019uaw.html</a><br>“安装python插件”，打开eclipse先来配置preference-》PyDev-》Interpreter-Python-》New python的执行exe文件的目录<br><br>*************************************************<br>pip<br><a href="https://pypi.python.org/pypi/pip" rel="external" target="_blank">https://pypi.python.org/pypi/pip</a><br>Download<br>pip-1.4.1.tar.gz<br>A tool for installing and managing Python packages.<br>解压缩，在cmd中进入到pip-1.4.1目录，执行 python setup.py install<br>报错：<br>ImportError: No module named setuptools<br>所以，需要先安装setuptools<br><br>*************************************************<br>setuptools<br><a href="https://pypi.python.org/pypi/setuptools/" rel="external" target="_blank">https://pypi.python.org/pypi/setuptools/</a><br>setuptools 2.0.2<br>点击右侧Downloads按钮，跳至Downloads<br>Scroll to the very bottom of the page to find the links.<br>需要到页面底部去找链接下载。<br>File Type Py Version Uploaded on Size<br>setuptools-2.0.2-py2.py3-none-any.whl (md5)&nbsp;&nbsp;Python Wheel&nbsp;&nbsp;3.4 2013-12-29 527KB<br>setuptools-2.0.2.tar.gz (md5)&nbsp;&nbsp;Source&nbsp;&nbsp;2013-12-29 765KB<br>下载setuptools-2.0.2.tar.gz (md5)<br>解压缩<br>在cmd中进入到setuptools-2.0.2目录，执行 python setup.py install<br>成功标志：<br>Installed c:\python27\lib\site-packages\setuptools-2.0.2-py2.7.egg<br>Processing dependencies for setuptools==2.0.2<br>Finished processing dependencies for setuptools==2.0.2<br>继续安装pip<br><br>*************************************************<br>pip<br>在cmd中进入到pip-1.4.1目录，执行 python setup.py install<br>成功标记：<br>Installed c:\python27\lib\site-packages\pip-1.4.1-py2.7.egg<br>Processing dependencies for pip==1.4.1<br>Finished processing dependencies for pip==1.4.1<br>添加到系统环境变量Path：C:\Python27\Scripts;<br>在cmd测试，输入pip，输出：<br>C:\Users\***&gt;pip<br>Usage:<br>&nbsp;&nbsp;pip [options]<br>Commands:<br>&nbsp;&nbsp;install&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Install packages.<br>&nbsp;&nbsp;uninstall&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Uninstall packages.<br>&nbsp;&nbsp;freeze&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Output installed packages in requirements format.<br>&nbsp;&nbsp;list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List installed packages.<br>&nbsp;&nbsp;show&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show information about installed packages.<br>&nbsp;&nbsp;search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search PyPI for packages.<br>&nbsp;&nbsp;wheel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Build wheels from your requirements.<br>&nbsp;&nbsp;zip&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zip individual packages.<br>&nbsp;&nbsp;unzip&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Unzip individual packages.<br>&nbsp;&nbsp;bundle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create pybundles.<br>&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show help for commands.<br><br>*************************************************<br>BeautifulSoup<br>可以利用pip进行安装：<br>在cmd中敲入命令查找BeautifulSoup：<br>C:\Users\***&gt;pip search BeautifulSoup<br>BeautifulSoup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - HTML/XML parser for quick-turnaround applications<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;like screen-scraping.<br>pynliner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Python CSS-to-inline-styles conversion tool for<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML using BeautifulSoup and cssutils<br>Detextile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Convert HTML to Textile syntax using<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BeautifulSoup.<br>TreeSoup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- BeautifulSoup-like wrapper around ElementTree.<br>beautifulscraper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Python web-scraping library that wraps urllib2 and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BeautifulSoup.<br>ElementSoup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ElementTree wrapper for BeautifulSoup HTML parser<br>beautifulsoup4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Screen-scraping library<br>collective.soupstrainer&nbsp;&nbsp; - Clean up HTML using BeautifulSoup and filter<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rules.<br>在cmd中敲入命令安装BeautifulSoup<br>C:\Users\***&gt;pip install BeautifulSoup<br>Downloading/unpacking BeautifulSoup<br>&nbsp;&nbsp;Downloading BeautifulSoup-3.2.1.tar.gz<br>&nbsp;&nbsp;Running setup.py egg_info for package BeautifulSoup<br>Installing collected packages: BeautifulSoup<br>&nbsp;&nbsp;Running setup.py install for BeautifulSoup<br>Successfully installed BeautifulSoup<br>Cleaning up...<br>还可参见：安装Beautiful Soup<br><a href="http://blog.sina.com.cn/s/blog_8af1069601019vr2.html" rel="external" target="_blank">http://blog.sina.com.cn/s/blog_8af1069601019vr2.html</a><br><br>*************************************************<br>PyYAML&nbsp;<br>可以利用pip进行安装<br>C:\Users\***&gt;pip search pyyaml<br>PyYAML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- YAML parser and emitter for Python<br>pyaml&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - PyYAML-based module to produce pretty and readable<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YAML-serialized data<br>yamly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - pyyaml wrapper<br>enhancedyaml&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- It makes it more convenient to use PyYAML.<br>C:\Users\***&gt;pip install PyYAML<br>Downloading/unpacking PyYAML<br>&nbsp;&nbsp;Downloading PyYAML-3.10.tar.gz (241kB): 241kB downloaded<br>&nbsp;&nbsp;Running setup.py egg_info for package PyYAML<br>Installing collected packages: PyYAML<br>&nbsp;&nbsp;Running setup.py install for PyYAML<br>&nbsp;&nbsp;&nbsp;&nbsp;checking if libyaml is compilable<br>&nbsp;&nbsp;&nbsp;&nbsp;Unable to find vcvarsall.bat<br>&nbsp;&nbsp;&nbsp;&nbsp;skipping build_ext<br>Successfully installed PyYAML<br>Cleaning up...<br><br>*************************************************<br>nltk<br><a href="https://pypi.python.org/pypi/nltk/" rel="external" target="_blank">https://pypi.python.org/pypi/nltk/</a><br>nltk 2.0.4<br>File Type Py Version Uploaded on Size<br>nltk-2.0.4.tar.gz (md5)&nbsp;&nbsp;Source&nbsp;&nbsp;2012-11-07 933KB<br>nltk-2.0.4.win32.exe (md5)&nbsp;&nbsp;MS Windows installer&nbsp;&nbsp;2.5 2012-11-07 1MB<br>nltk-2.0.4.zip (md5)&nbsp;&nbsp;Source&nbsp;&nbsp;2012-11-07 1MB<br>下载nltk-2.0.4.tar.gz<br>解压缩，在cmd中进入到nltk-2.0.4目录，执行 python setup.py install<br>成功标志：<br>Installed c:\python27\lib\site-packages\nltk-2.0.4-py2.7.egg<br>Processing dependencies for nltk==2.0.4<br>Searching for PyYAML==3.10<br>Best match: PyYAML 3.10<br>Adding PyYAML 3.10 to easy-install.pth file<br>Using c:\python27\lib\site-packages<br>Finished processing dependencies for nltk==2.0.4<br>打开python Idle：<br>输入import nltk<br>输入nltk.download()<br>出现一个NLTK Downloader对话框，修改Download Diretory（E盘或其他盘符下）。点击all开始下载。<br>下载慢还可以到NLTK Corpora&nbsp;<a href="http://nltk.org/nltk_data/" rel="external" target="_blank">http://nltk.org/nltk_data/</a>手工下载缺失的，然后放到Download Diretory，zip别删。<br>重装系统后nltk_data文件夹可以保留，避免重复下载。<br><br>*************************************************<br>mysqldb<br><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/" rel="external" target="_blank">http://www.lfd.uci.edu/~gohlke/pythonlibs/</a>#mysql-python<br>MySQL-python-1.2.4.win-amd64-py2.7.exe<br>直接双击安装。<br>成功验证：<br>py文件：<br>import MySQLdb<br>connection = MySQLdb.connect(host="127.0.0.1",user="root",passwd="root",db="dbtest")<br>cursor = connection.cursor()<br>cursor.execute( "Select id,content FROM tabletest&nbsp;&nbsp;")<br>print "Rows selected:", cursor.rowcount<br>运行结果输出dbtest数据库中tabletest表的行数。&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+
+
+<pre><code>&lt;div id=&quot;blog_post_info&quot;&gt;
+</code></pre>
+<div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(6431398,cb_blogId,1);green_channel_success(this,'谢谢推荐！');">好文要顶</a>
+        <a id="green_channel_follow" onclick="follow('2449c41d-c738-e311-8d02-90b11c0b17d6');" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src= "/img/loading.gif" data-lazy-src="https://common.cnblogs.com/img/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src= "/img/loading.gif" data-lazy-src="https://common.cnblogs.com/img/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/hellojesson/" target="_blank"><img src= "/img/loading.gif" data-lazy-src="https://pic.cnblogs.com/face/575577/20150707101005.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a target="_blank" rel="noopener" href="https://home.cnblogs.com/u/hellojesson/">hello-Jesson</a><br>
+            <a target="_blank" rel="noopener" href="https://home.cnblogs.com/u/hellojesson/followees/">关注 - 22</a><br>
+            <a target="_blank" rel="noopener" href="https://home.cnblogs.com/u/hellojesson/followers/">粉丝 - 32</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow('2449c41d-c738-e311-8d02-90b11c0b17d6');return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(6431398,'Digg')">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(6431398,'Bury')">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<pre><code>&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;post_next_prev&quot;&gt;
+
+&lt;a href=&quot;https://www.cnblogs.com/hellojesson/p/6429024.html&quot; class=&quot;p_n_p_prefix&quot;&gt;« &lt;/a&gt; 上一篇：    &lt;a href=&quot;https://www.cnblogs.com/hellojesson/p/6429024.html&quot; title=&quot;发布于 2017-02-22 15:02&quot;&gt;Celery启动Django项目：Client sent AUTH, but no password is set 错误处理&lt;/a&gt;
+&lt;br&gt;
+&lt;a href=&quot;https://www.cnblogs.com/hellojesson/p/6432149.html&quot; class=&quot;p_n_p_prefix&quot;&gt;» &lt;/a&gt; 下一篇：    &lt;a href=&quot;https://www.cnblogs.com/hellojesson/p/6432149.html&quot; title=&quot;发布于 2017-02-23 10:09&quot;&gt;数据库默认端口&lt;/a&gt;
+</code></pre>
+</div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2017-02-22 22:43</span>&nbsp;<a target="_blank" rel="noopener" href="https://www.cnblogs.com/hellojesson/">hello-Jesson</a> 阅读(<span id="post_view_count">7283</span>) 评论(<span id="post_comment_count">0</span>) <a target="_blank" href="https://i.cnblogs.com/EditPosts.aspx?postid=6431398" rel="nofollow noopener"> 编辑</a> <a href="javascript:void(0)" onclick="AddToWz(6431398); return false;">收藏</a>
+</div>
+        </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Victor</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://victorfengming.gitee.io/python/collection/python-module-install/">http://victorfengming.gitee.io/python/collection/python-module-install/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/solution/">solution</a><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/basis/">basis</a></div><div class="post_share"><div class="social-share" data-image="/img/lynk/93.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/java/JDBC/note1/"><img class="prev-cover" data-lazy-src="/img/lynk/77.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">JDBC笔记01</div></div></a></div><div class="next-post pull-right"><a href="/python/GUI/pyqt5/pyqt5-socket/"><img class="next-cover" data-lazy-src="/img/lynk/62.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">CS架构的建议聊天室</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/python/base/python-jupyter/" title="jupyter浅析"><img class="cover" data-lazy-src="/img/lynk/2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">jupyter浅析</div></div></a></div><div><a href="/python/base/python-single-mode/" title="python中的单例模式"><img class="cover" data-lazy-src="/img/lynk/62.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">python中的单例模式</div></div></a></div><div><a href="/python/data_analysis/excel/" title="数据分析之Excel笔记"><img class="cover" data-lazy-src="/img/lynk/22.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">数据分析之Excel笔记</div></div></a></div><div><a href="/python/data_analysis/pandas/" title="数据分析之pandas笔记"><img class="cover" data-lazy-src="/img/lynk/34.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">数据分析之pandas笔记</div></div></a></div><div><a href="/python/data_analysis/pre/" title="数据分析基础-概述"><img class="cover" data-lazy-src="/img/lynk/17.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">数据分析基础-概述</div></div></a></div><div><a href="/python/collection/pip-conf/" title="pip配置"><img class="cover" data-lazy-src="/img/lynk/93.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">pip配置</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar-mecyblitz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Victor</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">445</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">87</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://gitee.com/victorfengming"><i class="fab fa-gitee"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/victorfengming" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/victorfengming" target="_blank" title="Gitee"><i class="fab fa-gitee"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">
+                
+python 相关模块安装 国内镜像地址
+
+        &lt;&#x2F;h1&gt;
+        &lt;div class&#x3D;&quot;clear&quot;&gt;&lt;&#x2F;div&gt;
+        &lt;div class&#x3D;&quot;postBody&quot;&gt;
+            
+
+
+    python 相关模块安装 国内镜像地址
+pipy国内镜像目前有：
+http:&#x2F;&#x2F;pypi.douban.com&#x2F; &amp;nbsp;豆瓣
+http:&#x2F;&#x2F;pypi.hustunique.com&#x2F; &amp;nbsp;华中理工大学
+http:&#x2F;&#x2F;pypi.sdutlinux.org&#x2F; &amp;nbsp;山东理工大学
+http:&#x2F;&#x2F;pypi.mirrors.ustc.edu.cn&#x2F; &amp;nbsp;中国科学技术大学
+https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F; 清华大学
+对于pip这种在线安装的方式来说，很方便，但网络不稳定的话很要命。使用国内镜像相对好一些，
+&amp;nbsp;
+如果想手动指定源，可以在pip后面跟-i 来指定源，比如用豆瓣的源来安装web.py框架：
+pip install web.py -i http:&#x2F;&#x2F;pypi.douban.com&#x2F;simple
+注意后面要有&#x2F;simple目录！！！
+&amp;nbsp;
+要配制成默认的话，需要创建或修改配置文件（linux的文件在~&#x2F;.pip&#x2F;pip.conf，windows在%HOMEPATH%\pip\pip.ini），修改内容为：
+code:
+[global]
+index-url &#x3D; http:&#x2F;&#x2F;pypi.douban.com&#x2F;simple
+&amp;nbsp;
+推荐使用清华大学的源，速度快(依个人情况而定！)：
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple django
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple pillow
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple paramiko
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple cryptography&#x3D;&#x3D;1.5.2
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple django-session-security&#x3D;&#x3D;2.4.0
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple djangorestframework&#x3D;&#x3D;3.5.3
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple paramiko&#x3D;&#x3D;2.0.2
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple pycparser&#x3D;&#x3D;2.16
+pip3 install -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple PyMySQL&#x3D;&#x3D;0.7.9
+&amp;nbsp;
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Python开发 常用模块安装
+包括Python，eclipse，jdk，pydev，pip，setuptools，beautifulsoup，pyyaml，nltk，mysqldb的下载安装配置。
+*************************************************
+python
+下载：
+python-2.7.6.amd64.msi
+http:&#x2F;&#x2F;www.python.org&#x2F;
+Python 2.7.6 released
+Python 2.7.6 is now available.
+http:&#x2F;&#x2F;www.python.org&#x2F;download&#x2F;releases&#x2F;2.7.6&#x2F;
+Windows X86-64 MSI Installer (2.7.6) [1] (sig)
+
+安装
+配置：
+我的电脑-&gt;属性-&gt;高级-&gt;环境变量-&gt;系统变量中的PATH增加:C:\Python27;
+验证：
+在桌面建立一个文件pt.py，内容为print &#39;hello python&#39;
+在cmd中输入命令python C:\Users\***\Desktop\pt.py
+***为电脑用户名。
+
+C:\Users\***&gt;python C:\Users\***\Desktop\pt.py
+hello python
+C:\Users\***&gt;
+
+*************************************************
+Eclipse：
+eclipse-java-indigo-SR2-win32-x86_64.zip
+http:&#x2F;&#x2F;www.eclipse.org&#x2F;downloads&#x2F;
+Older Versions
+http:&#x2F;&#x2F;wiki.eclipse.org&#x2F;Older_Versions_Of_Eclipse
+Eclipse Indigo SR2 Packages (v 3.7.2)
+http:&#x2F;&#x2F;www.eclipse.org&#x2F;downloads&#x2F;packages&#x2F;release&#x2F;indigo&#x2F;sr2
+Eclipse IDE for Java Developers, (128 MB)
+Downloaded 1,226,421 TimesDetails Windows 32-bit&amp;nbsp;&amp;nbsp;64-bit&amp;nbsp;
+http:&#x2F;&#x2F;www.eclipse.org&#x2F;downloads&#x2F;download.php?file&#x3D;&#x2F;technology&#x2F;epp&#x2F;downloads&#x2F;release&#x2F;indigo&#x2F;SR2&#x2F;eclipse-java-indigo-SR2-win32-x86_64.zip
+Download eclipse-java-indigo-SR2-win32-x86_64.zip from:
+
+*************************************************
+jdk：
+jdk-7u45-windows-x64.exe
+http:&#x2F;&#x2F;www.oracle.com&#x2F;technetwork&#x2F;java&#x2F;javase&#x2F;downloads&#x2F;index.html
+Windows x64 125.31 MB&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; jdk-7u45-windows-x64.exe
+http:&#x2F;&#x2F;www.oracle.com&#x2F;technetwork&#x2F;java&#x2F;javase&#x2F;downloads&#x2F;jdk7-downloads-1880260.html
+
+*************************************************
+pydev
+为了在Eclipse中进行python工程的开发。
+http:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;pydev&#x2F;files&#x2F;
+PyDev for Eclipse
+Looking for the latest version? Download PyDev 3.2.0.zip (8.2 MB)
+版本一直在更新中，几天前是3.1.0.zip
+下载完，解压缩，将features和plugins文件夹中的内容分别复制到eclipse的features和plugins文件夹下。
+重复则替换。
+具体方法见windows xp，32位，环境下，Eclipse+python平台搭建
+http:&#x2F;&#x2F;blog.sina.com.cn&#x2F;s&#x2F;blog_8af1069601019uaw.html
+“安装python插件”，打开eclipse先来配置preference-》PyDev-》Interpreter-Python-》New python的执行exe文件的目录
+
+*************************************************
+pip
+https:&#x2F;&#x2F;pypi.python.org&#x2F;pypi&#x2F;pip
+Download
+pip-1.4.1.tar.gz
+A tool for installing and managing Python packages.
+解压缩，在cmd中进入到pip-1.4.1目录，执行 python setup.py install
+报错：
+ImportError: No module named setuptools
+所以，需要先安装setuptools
+
+*************************************************
+setuptools
+https:&#x2F;&#x2F;pypi.python.org&#x2F;pypi&#x2F;setuptools&#x2F;
+setuptools 2.0.2
+点击右侧Downloads按钮，跳至Downloads
+Scroll to the very bottom of the page to find the links.
+需要到页面底部去找链接下载。
+File Type Py Version Uploaded on Size
+setuptools-2.0.2-py2.py3-none-any.whl (md5)&amp;nbsp;&amp;nbsp;Python Wheel&amp;nbsp;&amp;nbsp;3.4 2013-12-29 527KB
+setuptools-2.0.2.tar.gz (md5)&amp;nbsp;&amp;nbsp;Source&amp;nbsp;&amp;nbsp;2013-12-29 765KB
+下载setuptools-2.0.2.tar.gz (md5)
+解压缩
+在cmd中进入到setuptools-2.0.2目录，执行 python setup.py install
+成功标志：
+Installed c:\python27\lib\site-packages\setuptools-2.0.2-py2.7.egg
+Processing dependencies for setuptools&#x3D;&#x3D;2.0.2
+Finished processing dependencies for setuptools&#x3D;&#x3D;2.0.2
+继续安装pip
+
+*************************************************
+pip
+在cmd中进入到pip-1.4.1目录，执行 python setup.py install
+成功标记：
+Installed c:\python27\lib\site-packages\pip-1.4.1-py2.7.egg
+Processing dependencies for pip&#x3D;&#x3D;1.4.1
+Finished processing dependencies for pip&#x3D;&#x3D;1.4.1
+添加到系统环境变量Path：C:\Python27\Scripts;
+在cmd测试，输入pip，输出：
+C:\Users\***&gt;pip
+Usage:
+&amp;nbsp;&amp;nbsp;pip [options]
+Commands:
+&amp;nbsp;&amp;nbsp;install&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Install packages.
+&amp;nbsp;&amp;nbsp;uninstall&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Uninstall packages.
+&amp;nbsp;&amp;nbsp;freeze&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Output installed packages in requirements format.
+&amp;nbsp;&amp;nbsp;list&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;List installed packages.
+&amp;nbsp;&amp;nbsp;show&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Show information about installed packages.
+&amp;nbsp;&amp;nbsp;search&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Search PyPI for packages.
+&amp;nbsp;&amp;nbsp;wheel&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Build wheels from your requirements.
+&amp;nbsp;&amp;nbsp;zip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Zip individual packages.
+&amp;nbsp;&amp;nbsp;unzip&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Unzip individual packages.
+&amp;nbsp;&amp;nbsp;bundle&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Create pybundles.
+&amp;nbsp;&amp;nbsp;help&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Show help for commands.
+
+*************************************************
+BeautifulSoup
+可以利用pip进行安装：
+在cmd中敲入命令查找BeautifulSoup：
+C:\Users\***&gt;pip search BeautifulSoup
+BeautifulSoup&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - HTML&#x2F;XML parser for quick-turnaround applications
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;like screen-scraping.
+pynliner&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Python CSS-to-inline-styles conversion tool for
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HTML using BeautifulSoup and cssutils
+Detextile&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - Convert HTML to Textile syntax using
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;BeautifulSoup.
+TreeSoup&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- BeautifulSoup-like wrapper around ElementTree.
+beautifulscraper&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Python web-scraping library that wraps urllib2 and
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;BeautifulSoup.
+ElementSoup&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - ElementTree wrapper for BeautifulSoup HTML parser
+beautifulsoup4&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- Screen-scraping library
+collective.soupstrainer&amp;nbsp;&amp;nbsp; - Clean up HTML using BeautifulSoup and filter
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;rules.
+在cmd中敲入命令安装BeautifulSoup
+C:\Users\***&gt;pip install BeautifulSoup
+Downloading&#x2F;unpacking BeautifulSoup
+&amp;nbsp;&amp;nbsp;Downloading BeautifulSoup-3.2.1.tar.gz
+&amp;nbsp;&amp;nbsp;Running setup.py egg_info for package BeautifulSoup
+Installing collected packages: BeautifulSoup
+&amp;nbsp;&amp;nbsp;Running setup.py install for BeautifulSoup
+Successfully installed BeautifulSoup
+Cleaning up...
+还可参见：安装Beautiful Soup
+http:&#x2F;&#x2F;blog.sina.com.cn&#x2F;s&#x2F;blog_8af1069601019vr2.html
+
+*************************************************
+PyYAML&amp;nbsp;
+可以利用pip进行安装
+C:\Users\***&gt;pip search pyyaml
+PyYAML&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- YAML parser and emitter for Python
+pyaml&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - PyYAML-based module to produce pretty and readable
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;YAML-serialized data
+yamly&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; - pyyaml wrapper
+enhancedyaml&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;- It makes it more convenient to use PyYAML.
+C:\Users\***&gt;pip install PyYAML
+Downloading&#x2F;unpacking PyYAML
+&amp;nbsp;&amp;nbsp;Downloading PyYAML-3.10.tar.gz (241kB): 241kB downloaded
+&amp;nbsp;&amp;nbsp;Running setup.py egg_info for package PyYAML
+Installing collected packages: PyYAML
+&amp;nbsp;&amp;nbsp;Running setup.py install for PyYAML
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;checking if libyaml is compilable
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Unable to find vcvarsall.bat
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;skipping build_ext
+Successfully installed PyYAML
+Cleaning up...
+
+*************************************************
+nltk
+https:&#x2F;&#x2F;pypi.python.org&#x2F;pypi&#x2F;nltk&#x2F;
+nltk 2.0.4
+File Type Py Version Uploaded on Size
+nltk-2.0.4.tar.gz (md5)&amp;nbsp;&amp;nbsp;Source&amp;nbsp;&amp;nbsp;2012-11-07 933KB
+nltk-2.0.4.win32.exe (md5)&amp;nbsp;&amp;nbsp;MS Windows installer&amp;nbsp;&amp;nbsp;2.5 2012-11-07 1MB
+nltk-2.0.4.zip (md5)&amp;nbsp;&amp;nbsp;Source&amp;nbsp;&amp;nbsp;2012-11-07 1MB
+下载nltk-2.0.4.tar.gz
+解压缩，在cmd中进入到nltk-2.0.4目录，执行 python setup.py install
+成功标志：
+Installed c:\python27\lib\site-packages\nltk-2.0.4-py2.7.egg
+Processing dependencies for nltk&#x3D;&#x3D;2.0.4
+Searching for PyYAML&#x3D;&#x3D;3.10
+Best match: PyYAML 3.10
+Adding PyYAML 3.10 to easy-install.pth file
+Using c:\python27\lib\site-packages
+Finished processing dependencies for nltk&#x3D;&#x3D;2.0.4
+打开python Idle：
+输入import nltk
+输入nltk.download()
+出现一个NLTK Downloader对话框，修改Download Diretory（E盘或其他盘符下）。点击all开始下载。
+下载慢还可以到NLTK Corpora&amp;nbsp;http:&#x2F;&#x2F;nltk.org&#x2F;nltk_data&#x2F;手工下载缺失的，然后放到Download Diretory，zip别删。
+重装系统后nltk_data文件夹可以保留，避免重复下载。
+
+*************************************************
+mysqldb
+http:&#x2F;&#x2F;www.lfd.uci.edu&#x2F;~gohlke&#x2F;pythonlibs&#x2F;#mysql-python
+MySQL-python-1.2.4.win-amd64-py2.7.exe
+直接双击安装。
+成功验证：
+py文件：
+import MySQLdb
+connection &#x3D; MySQLdb.connect(host&#x3D;&quot;127.0.0.1&quot;,user&#x3D;&quot;root&quot;,passwd&#x3D;&quot;root&quot;,db&#x3D;&quot;dbtest&quot;)
+cursor &#x3D; connection.cursor()
+cursor.execute( &quot;Select id,content FROM tabletest&amp;nbsp;&amp;nbsp;&quot;)
+print &quot;Rows selected:&quot;, cursor.rowcount
+运行结果输出dbtest数据库中tabletest表的行数。&amp;nbsp;
+&amp;nbsp;
+
+
+
+
+
+
+&lt;div id&#x3D;&quot;blog_post_info&quot;&gt;
+
+
+        好文要顶
+        关注我
+    收藏该文
+    
+    
+
+
+    
+            
+        
+            hello-Jesson
+
+            关注 - 22
+
+            粉丝 - 32
+        
+    
+    
+    
+    
+                +加关注
+    
+
+
+    
+        0
+    
+    
+        0
+    
+    
+    
+    
+
+
+
+    currentDiggType &#x3D; 0;
+
+&lt;div class&#x3D;&quot;clear&quot;&gt;&lt;&#x2F;div&gt;
+&lt;div id&#x3D;&quot;post_next_prev&quot;&gt;
+
+&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;hellojesson&#x2F;p&#x2F;6429024.html&quot; class&#x3D;&quot;p_n_p_prefix&quot;&gt;« &lt;&#x2F;a&gt; 上一篇：    &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;hellojesson&#x2F;p&#x2F;6429024.html&quot; title&#x3D;&quot;发布于 2017-02-22 15:02&quot;&gt;Celery启动Django项目：Client sent AUTH, but no password is set 错误处理&lt;&#x2F;a&gt;
+&lt;br&gt;
+&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;hellojesson&#x2F;p&#x2F;6432149.html&quot; class&#x3D;&quot;p_n_p_prefix&quot;&gt;» &lt;&#x2F;a&gt; 下一篇：    &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;hellojesson&#x2F;p&#x2F;6432149.html&quot; title&#x3D;&quot;发布于 2017-02-23 10:09&quot;&gt;数据库默认端口&lt;&#x2F;a&gt;
+
+</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/index/gitbook/" title="Gitbook文档索引"><img data-lazy-src="/img/lynk/11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gitbook文档索引"/></a><div class="content"><a class="title" href="/index/gitbook/" title="Gitbook文档索引">Gitbook文档索引</a><time datetime="2022-12-20T22:07:08.000Z" title="Created 2022-12-21 06:07:08">2022-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/linux/deepin-colemak/" title="deepin系统开机自动切换colemak键盘布局"><img data-lazy-src="/img/lynk/16.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="deepin系统开机自动切换colemak键盘布局"/></a><div class="content"><a class="title" href="/linux/deepin-colemak/" title="deepin系统开机自动切换colemak键盘布局">deepin系统开机自动切换colemak键盘布局</a><time datetime="2021-10-07T16:00:00.000Z" title="Created 2021-10-08 00:00:00">2021-10-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/middleware/mq/rabbitmq/" title="RabbitMQ面试题"><img data-lazy-src="/img/lynk/97.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RabbitMQ面试题"/></a><div class="content"><a class="title" href="/middleware/mq/rabbitmq/" title="RabbitMQ面试题">RabbitMQ面试题</a><time datetime="2021-09-24T16:00:00.000Z" title="Created 2021-09-25 00:00:00">2021-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/comic/git-server/" title="在自己的服务器上搭建git服务"><img data-lazy-src="/img/lynk/72.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在自己的服务器上搭建git服务"/></a><div class="content"><a class="title" href="/comic/git-server/" title="在自己的服务器上搭建git服务">在自己的服务器上搭建git服务</a><time datetime="2021-09-08T16:00:00.000Z" title="Created 2021-09-09 00:00:00">2021-09-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/develop/gradle/" title="Gradle配置阿里云镜像"><img data-lazy-src="/img/lynk/45.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gradle配置阿里云镜像"/></a><div class="content"><a class="title" href="/develop/gradle/" title="Gradle配置阿里云镜像">Gradle配置阿里云镜像</a><time datetime="2021-08-30T16:00:00.000Z" title="Created 2021-08-31 00:00:00">2021-08-31</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Victor</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz',
+      appKey: 'nWerbwV2WMAxOEmAMkJKvXzs',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '//i0.hdslb.com/bfs/emote/',
+      emojiMaps: {"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_親親":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再見":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_發怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_發財":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可愛":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_嘔吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_壞笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尷尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_驚嚇":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png"},
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  //- // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

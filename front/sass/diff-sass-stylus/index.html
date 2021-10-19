@@ -1,0 +1,936 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sass、LESS 和 Stylus区别总结 | Victor's Blog</title><meta name="keywords" content="solution,summer,web,sass"><meta name="author" content="Victor"><meta name="copyright" content="Victor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="CSS 预处理器技术已经非常的成熟了，而且也涌现出了越来越多的 CSS 的预处理器框架。本文便总结下 Sass、Less CSS、St">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sass、LESS 和 Stylus区别总结">
+<meta property="og:url" content="http://victorfengming.gitee.io/front/sass/diff-sass-stylus/index.html">
+<meta property="og:site_name" content="Victor&#39;s Blog">
+<meta property="og:description" content="CSS 预处理器技术已经非常的成熟了，而且也涌现出了越来越多的 CSS 的预处理器框架。本文便总结下 Sass、Less CSS、St">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://victorfengming.gitee.io/img/lynk/62.jpg">
+<meta property="article:published_time" content="2019-09-22T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-12T14:00:23.495Z">
+<meta property="article:author" content="Victor">
+<meta property="article:tag" content="solution">
+<meta property="article:tag" content="summer">
+<meta property="article:tag" content="web">
+<meta property="article:tag" content="sass">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://victorfengming.gitee.io/img/lynk/62.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://victorfengming.gitee.io/front/sass/diff-sass-stylus/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="050fb675d62d1e28ba844b2419cb63f1"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f36fd50ed6331016e4a5a41f3655a9af";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-03-12 22:00:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Victor's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/avatar-mecyblitz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">445</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">87</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/lynk/62.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Victor's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Sass、LESS 和 Stylus区别总结</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2019-09-22T16:00:00.000Z" title="Created 2019-09-23 00:00:00">2019-09-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-03-12T14:00:23.495Z" title="Updated 2021-03-12 22:00:23">2021-03-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Sass、LESS 和 Stylus区别总结"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div id="content_views" class="markdown_views">
+                    <!-- flowchart 箭头图标 勿删 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    </svg>
+                                            <p>CSS 预处理器技术已经非常的成熟了，而且也涌现出了越来越多的 CSS 的预处理器框架。本文便总结下 Sass、Less CSS、Stylus这三个预处理器的区别和各自的基本语法。</p>
+
+
+
+<h2 id="1什么是-css-预处理器"><a name="t0"></a>1.什么是 CSS 预处理器</h2>
+
+<p>CSS 预处理器是一种语言用来为 CSS 增加一些编程的的特性，无需考虑浏览器的兼容性问题，例如你可以在 CSS 中使用变量、简单的程序逻辑、函数等等在编程语言中的一些基本技巧，可以让CSS 更见简洁，适应性更强，代码更直观等诸多好处。</p>
+
+
+
+<h2 id="2基本语法区别"><a name="t1"></a>2.基本语法区别:</h2>
+
+<p>在使用 CSS 预处理器之前最重要的是理解语法，幸运的是基本上大多数预处理器的语法跟 CSS 都差不多。</p>
+
+<p>首先 Sass 和 Less 都使用的是标准的 CSS 语法，因此如果可以很方便的将已有的 CSS 代码转为预处理器代码，默认 Sass 使用 .sass 扩展名，而 Less 使用 .less 扩展名。</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-comment">/* style.scss or style.less */</span>
+<span class="hljs-tag">h1</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0982C1</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+
+<p>这是一个再普通不过的，不过 Sass 同时也支持老的语法，就是不包含花括号和分号的方式：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs rsl has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-comment">/* style.sass */</span>
+h1
+  <span class="hljs-keyword">color</span>: <span class="hljs-preprocessor">#0982c1</span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li></ul></pre>
+
+<p>而 Stylus 支持的语法要更多样性一点，它默认使用 .styl 的文件扩展名，下面是 Stylus 支持的语法：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-comment">/* style.styl */</span>
+<span class="hljs-tag">h1</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0982C1</span></span></span>;
+<span class="hljs-rule">&#125;</span></span>
+
+<span class="hljs-comment">/* omit brackets */</span>
+<span class="hljs-tag">h1</span>
+  <span class="hljs-tag">color</span>: <span class="hljs-id">#0982C1</span>;
+
+<span class="hljs-comment">/* omit colons and semi-colons */</span>
+<span class="hljs-tag">h1</span>
+  <span class="hljs-tag">color</span> <span class="hljs-id">#0982C1</span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li></ul></pre>
+
+<p>可以在同一个样式单中使用不同的变量，例如下面的写法也不会报错：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs rsl has-numbering" onclick="mdcp.signin(event)" style="position: unset;">h1 &#123;
+  <span class="hljs-keyword">color</span> <span class="hljs-preprocessor">#0982c1</span>
+&#125;
+h2
+  font-size: <span class="hljs-number">1.2</span>em<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+
+
+<h2 id="3变量"><a name="t2"></a>3.变量</h2>
+
+<p><strong>1. sass：</strong></p>
+
+<p>Sass让人们受益的一个重要特性就是它为css引入了变量。你可以把反复使用的css属性值 定义成变量，然后通过变量名来引用它们，而无需重复书写这一属性值。</p>
+
+<pre class="prettyprint"><code class="has-numbering" onclick="mdcp.signin(event)" style="position: unset;">     sass变量必须是以$开头的，然后变量和值之间使用冒号（：）隔开，和css属性是一样的，例如：
+<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;">$<span class="hljs-tag">maincolor</span> : <span class="hljs-id">#092873</span>;
+$<span class="hljs-tag">siteWidth</span> : 1024<span class="hljs-tag">px</span>;
+$<span class="hljs-tag">borderStyle</span> : <span class="hljs-tag">dotted</span>;
+<span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> $maincolor</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1</span>px $borderStyle $mainColor</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> $siteWidth</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+
+<p><strong>2.less css ：</strong></p>
+
+<p>在less文件中，当一个值需要反复使用时，可以通过@符号定义变量。已经被赋值的变量以及其他的常量（如像素、颜色等）都可以参与运算。</p>
+
+<pre class="prettyprint"><code class="has-numbering" onclick="mdcp.signin(event)" style="position: unset;"> Less css中变量都是用@开头的，其余与sass都是一样的，例如：
+<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-at_rule">@<span class="hljs-keyword">maincolor</span> : #<span class="hljs-number">092873</span></span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">siteWidth</span> : <span class="hljs-number">1024</span>px</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">borderStyle</span> : dotted</span>;
+<span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> @maincolor</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1</span>px @borderStyle @mainColor</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> @siteWidth</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+
+<p><strong>3.stylus：</strong></p>
+
+<pre class="prettyprint"><code class="has-numbering" onclick="mdcp.signin(event)" style="position: unset;"> stylus对变量是没有任何设定的，可以是以$开头，或者任何的字符，而且与变量之间可以用冒号，空格隔开，
+ 但是在stylus中不能用@开头，例如：    
+<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li></ul></pre>
+
+<pre class="prettyprint" name="code"><code class="hljs rsl has-numbering" onclick="mdcp.signin(event)" style="position: unset;">maincolor = <span class="hljs-preprocessor">#092873</span>
+siteWidth = <span class="hljs-number">1024</span>px
+borderStyle = dotted
+body 
+  <span class="hljs-keyword">color</span> maincolor
+  border <span class="hljs-number">1</span>px borderStyle mainColor
+  <span class="hljs-built_in">max</span>-width siteWidth<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li></ul></pre>
+
+<p>以上三种写法都如同一下这种css：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#092873</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1</span>px dotted <span class="hljs-hexcolor">#092873</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">max-width</span>:<span class="hljs-value"> <span class="hljs-number">1024</span>px</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p>这样做的好处也是显而易见的，在修改多处相同颜色的时候，这时就只需要修改变量值即可。</p>
+
+<h2 id="4嵌套"><a name="t3"></a>4.嵌套</h2>
+
+<p>如果我们需要在CSS中相同的 parent 引用多个元素，这将是非常乏味的，你需要一遍又一遍地写 parent。例如：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-tag">div</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">10</span>px</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-tag">div</span> <span class="hljs-tag">nav</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">height</span>:<span class="hljs-value"> <span class="hljs-number">25</span>px</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-tag">div</span> <span class="hljs-tag">nav</span> <span class="hljs-tag">a</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0982C1</span></span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-tag">div</span> <span class="hljs-tag">nav</span> <span class="hljs-tag">a</span><span class="hljs-pseudo">:hover</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">text-decoration</span>:<span class="hljs-value"> underline</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li></ul></pre>
+
+<p>如果用 CSS 预处理器，就可以少写很多单词，而且父子节点关系一目了然，并且sass，Less，stylus都支持下面这样的写法，且都是相同的：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-comment">//scss style //----------------------------------- </span>
+<span class="hljs-tag">nav</span> &#123; 
+    <span class="hljs-tag">ul</span> &#123; 
+       <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span> 
+       <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span> 
+    &#125; 
+    <span class="hljs-tag">li</span> &#123; 
+       <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span> 
+    &#125; 
+    <span class="hljs-tag">a</span> &#123; 
+       <span class="hljs-attribute">display</span><span class="hljs-value">: block;</span> 
+       <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">6</span>px <span class="hljs-number">12</span>px;</span> 
+       <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span> 
+    &#125; 
+&#125;
+<span class="hljs-comment">//css style //----------------------------------- </span>
+<span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> &#123; 
+    <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span> 
+    <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">0</span>;</span> 
+    <span class="hljs-attribute">list-style</span><span class="hljs-value">: none;</span> 
+&#125; 
+<span class="hljs-tag">nav</span> <span class="hljs-tag">li</span> &#123; 
+    <span class="hljs-attribute">display</span><span class="hljs-value">: inline-block;</span> 
+&#125; 
+<span class="hljs-tag">nav</span> <span class="hljs-tag">a</span> &#123; 
+    <span class="hljs-attribute">display</span><span class="hljs-value">: block;</span> 
+    <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">6</span>px <span class="hljs-number">12</span>px;</span> 
+    <span class="hljs-attribute">text-decoration</span><span class="hljs-value">: none;</span> 
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li><li style="color: rgb(153, 153, 153);">17</li><li style="color: rgb(153, 153, 153);">18</li><li style="color: rgb(153, 153, 153);">19</li><li style="color: rgb(153, 153, 153);">20</li><li style="color: rgb(153, 153, 153);">21</li><li style="color: rgb(153, 153, 153);">22</li><li style="color: rgb(153, 153, 153);">23</li><li style="color: rgb(153, 153, 153);">24</li><li style="color: rgb(153, 153, 153);">25</li><li style="color: rgb(153, 153, 153);">26</li><li style="color: rgb(153, 153, 153);">27</li><li style="color: rgb(153, 153, 153);">28</li><li style="color: rgb(153, 153, 153);">29</li></ul></pre>
+
+<p>这样做是非常方便的，也很直观。</p>
+
+<h2 id="5运算符"><a name="t4"></a>5.运算符</h2>
+
+<p>在 CSS 预处理器中还是可以进行样式的计算如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> (<span class="hljs-number">14</span>px/<span class="hljs-number">2</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">50</span>px + <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">right</span>:<span class="hljs-value"> <span class="hljs-number">80</span> * <span class="hljs-number">10</span>%</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p>在sass，Less与stylus中都是可以这样做的。</p>
+
+<h2 id="6颜色函数"><a name="t5"></a>6.颜色函数</h2>
+
+<p>CSS 预处理器一般都会内置一些颜色处理函数用来对颜色值进行处理，例如加亮、变暗、颜色梯度等。</p>
+
+<p><strong>1.sass的颜色处理函数：</strong></p>
+
+<pre class="prettyprint" name="code"><code class="hljs mel has-numbering" onclick="mdcp.signin(event)" style="position: unset;">lighten(<span class="hljs-variable">$color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>; 
+darken(<span class="hljs-variable">$color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>;  
+saturate(<span class="hljs-variable">$color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>;   
+desaturate(<span class="hljs-variable">$color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>;
+grayscale(<span class="hljs-variable">$color</span>);  
+complement(<span class="hljs-variable">$color</span>); 
+invert(<span class="hljs-variable">$color</span>); 
+mix(<span class="hljs-variable">$color1</span>, <span class="hljs-variable">$color2</span>, <span class="hljs-number">50</span><span class="hljs-variable">%)</span>; <div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+
+<p>实例如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;">$<span class="hljs-tag">color</span>: <span class="hljs-id">#0982C1</span>;
+<span class="hljs-tag">h1</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> $color</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3</span>px solid <span class="hljs-function">darken($color, <span class="hljs-number">50</span>%)</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p><strong>2.Less css颜色处理函数：</strong></p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-tag">lighten</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color,</span> <span class="hljs-number">10</span>%)</span>; 
+<span class="hljs-tag">darken</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color,</span> <span class="hljs-number">10</span>%)</span>;  
+<span class="hljs-tag">saturate</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color,</span> <span class="hljs-number">10</span>%)</span>;  
+<span class="hljs-tag">desaturate</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color,</span> <span class="hljs-number">10</span>%)</span>; 
+<span class="hljs-tag">spin</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color,</span> <span class="hljs-number">10</span>)</span>; 
+<span class="hljs-tag">spin</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color,</span> -<span class="hljs-number">10</span>)</span>; 
+<span class="hljs-tag">mix</span>(<span class="hljs-at_rule">@<span class="hljs-keyword">color1,</span> @color2)</span>;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li></ul></pre>
+
+<p>示例如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-at_rule">@<span class="hljs-keyword">color:</span> #<span class="hljs-number">0982</span>C1</span>;
+<span class="hljs-tag">h1</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> @color</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">3</span>px solid <span class="hljs-function">darken(@color, <span class="hljs-number">50</span>%)</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p><strong>3.Stylus颜色处理函数：</strong></p>
+
+<pre class="prettyprint" name="code"><code class="hljs mel has-numbering" onclick="mdcp.signin(event)" style="position: unset;">lighten(<span class="hljs-keyword">color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>; 
+darken(<span class="hljs-keyword">color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>;  
+saturate(<span class="hljs-keyword">color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>;  
+desaturate(<span class="hljs-keyword">color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>; <div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+
+<p>示例如下;</p>
+
+<pre class="prettyprint" name="code"><code class="hljs rsl has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-keyword">color</span> = <span class="hljs-preprocessor">#0982C1 </span>
+h1
+  background <span class="hljs-keyword">color</span>
+  border <span class="hljs-number">3</span>px solid darken(<span class="hljs-keyword">color</span>, <span class="hljs-number">50</span>%)<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre>
+
+<h2 id="7导入-import"><a name="t6"></a>7.导入 (Import)</h2>
+
+<p>很多 CSS 开发者对导入的做法都不太感冒，因为它需要多次的 HTTP 请求。但是在 CSS 预处理器中的导入操作则不同，它只是在语义上包含了不同的文件，但最终结果是一个单一的 CSS 文件，如果你是通过 @ import “file.css”; 导入 CSS 文件，那效果跟普通的 CSS 导入一样。</p>
+
+<p><strong>注意：</strong>导入文件中定义的混入、变量等信息也将会被引入到主样式文件中，因此需要避免它们互相冲突。 <br>
+例如： <br>
+1.css:</p>
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-comment">//1.css</span>
+<span class="hljs-comment">/* file.&#123;type&#125; */</span>
+<span class="hljs-tag">body</span> &#123;
+  <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-hexcolor">#000</span>;</span>
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p>2.XXX:</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-at_rule">@ import <span class="hljs-string">"1.css"</span></span>;
+<span class="hljs-at_rule">@ import <span class="hljs-string">"file.&#123;type&#125;"</span></span>;
+
+<span class="hljs-tag">p</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#092873</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li></ul></pre>
+
+<p>最终生成的 CSS：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-at_rule">@ import <span class="hljs-string">"1.css"</span></span>;
+<span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#000</span></span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-tag">p</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#092873</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li></ul></pre>
+
+<h2 id="8继承"><a name="t7"></a>8.继承</h2>
+
+<p>当我们需要为多个元素定义相同样式的时候，我们可以考虑使用继承的做法.</p>
+
+<p><strong>1.sass：</strong> <br>
+sass可通过@extend来实现代码组合声明，使代码更加优越简洁。</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.message</span> &#123;
+  <span class="hljs-attribute">border</span><span class="hljs-value">: <span class="hljs-number">1</span>px solid <span class="hljs-hexcolor">#ccc</span>;</span>
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">10</span>px;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#333</span>;</span>
+&#125;
+<span class="hljs-class">.success</span> &#123;
+  <span class="hljs-at_rule">@<span class="hljs-keyword">extend</span><span class="hljs-preprocessor"> .message</span>;</span>
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: green;</span>
+&#125;
+<span class="hljs-class">.error</span> &#123;
+  <span class="hljs-at_rule">@<span class="hljs-keyword">extend</span><span class="hljs-preprocessor"> .message</span>;</span>
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: red;</span>
+&#125;
+<span class="hljs-class">.warning</span> &#123;
+  <span class="hljs-at_rule">@<span class="hljs-keyword">extend</span><span class="hljs-preprocessor"> .message</span>;</span>
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: yellow;</span>
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li><li style="color: rgb(153, 153, 153);">17</li></ul></pre>
+
+<p><strong>2.Less css：</strong></p>
+
+<p>但是在这方面 Less 表现的稍微弱一些，更像是混入写法：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.message</span> &#123;
+  <span class="hljs-attribute">border</span><span class="hljs-value">: <span class="hljs-number">1</span>px solid <span class="hljs-hexcolor">#ccc</span>;</span>
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">10</span>px;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#333</span>;</span>
+&#125;
+<span class="hljs-class">.success</span> &#123;
+  <span class="hljs-class">.message</span>;
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: green;</span>
+&#125;
+<span class="hljs-class">.error</span> &#123;
+  <span class="hljs-class">.message</span>;
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: red;</span>
+&#125;
+<span class="hljs-class">.warning</span> &#123;
+  <span class="hljs-class">.message</span>;
+  <span class="hljs-attribute">border-color</span><span class="hljs-value">: yellow;</span>
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li><li style="color: rgb(153, 153, 153);">17</li></ul></pre>
+
+<p>上面两种写法其最终呈现的css样式都如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.message</span>, <span class="hljs-class">.success</span>, <span class="hljs-class">.error</span>, <span class="hljs-class">.warning</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">1</span>px solid <span class="hljs-hexcolor">#cccccc</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">10</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#333</span></span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.success</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> green</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.error</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> red</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.warning</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">border-color</span>:<span class="hljs-value"> yellow</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li></ul></pre>
+
+<p>.message的样式将会被插入到相应的你想要继承的选择器中，但需要注意的是优先级的问题。</p>
+
+<h2 id="9mixins混入"><a name="t8"></a>9.Mixins（混入）</h2>
+
+<p>Mixins 有点像是函数或者是宏，当某段 CSS 经常需要在多个元素中使用时，可以为这些共用的 CSS 定义一个 Mixin，然后只需要在需要引用这些 CSS 地方调用该 Mixin 即可。</p>
+
+<p><strong>1.Sass 的混入语法：</strong></p>
+
+<p>sass中可用mixin定义一些代码片段，且可传参数，方便日后根据需求调用。比如说处理css3浏览器前缀：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-at_rule">@<span class="hljs-keyword">mixin</span><span class="hljs-preprocessor"> error</span>($borderWidth:<span class="hljs-preprocessor"> 2px</span>) &#123;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: $borderWidth solid <span class="hljs-hexcolor">#F00</span>;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#F00</span>;</span>
+&#125;
+<span class="hljs-class">.generic-error</span> &#123;
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">4</span>px;</span>
+  <span class="hljs-at_rule">@<span class="hljs-preprocessor"> include</span><span class="hljs-preprocessor"> error</span>();</span> <span class="hljs-comment">//这里调用默认 border: 2px solid #F00;</span>
+&#125;
+<span class="hljs-class">.login-error</span> &#123;
+  <span class="hljs-attribute">left</span><span class="hljs-value">: <span class="hljs-number">12</span>px;</span>
+  <span class="hljs-attribute">position</span><span class="hljs-value">: absolute;</span>
+  <span class="hljs-attribute">top</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-at_rule">@<span class="hljs-preprocessor"> include</span><span class="hljs-preprocessor"> error</span>(<span class="hljs-number">5</span>px);</span> <span class="hljs-comment">//这里调用 border:5px solid #F00;</span>
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li></ul></pre>
+
+<p><strong>2.Less CSS 的混入语法：</strong> <br>
+less也支持带参数的混合以及有默认参数值的混合，如下面的例子所示：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.error</span>(<span class="hljs-at_rule">@borderWidth:<span class="hljs-preprocessor"> 2px</span>) &#123;</span>
+  <span class="hljs-attribute">border</span><span class="hljs-value">: @borderWidth solid <span class="hljs-hexcolor">#F00</span>;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#F00</span>;</span>
+&#125;
+<span class="hljs-class">.generic-error</span> &#123;
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">4</span>px;</span>
+  <span class="hljs-class">.error</span>(); <span class="hljs-comment">//这里调用默认 border: 2px solid #F00;</span>
+&#125;
+<span class="hljs-class">.login-error</span> &#123;
+  <span class="hljs-attribute">left</span><span class="hljs-value">: <span class="hljs-number">12</span>px;</span>
+  <span class="hljs-attribute">position</span><span class="hljs-value">: absolute;</span>
+  <span class="hljs-attribute">top</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-class">.error</span>(5px); <span class="hljs-comment">//这里调用 border:5px solid #F00;</span>
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li></ul></pre>
+
+<p><strong>3.Stylus 的混入语法：</strong></p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-function">error(borderWidth= <span class="hljs-number">2</span>px)</span> &#123;
+  <span class="hljs-attribute">border</span><span class="hljs-value">: borderWidth solid <span class="hljs-hexcolor">#F00</span>;</span>
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#F00</span>;</span>
+&#125;
+<span class="hljs-class">.generic-error</span> &#123;
+  <span class="hljs-attribute">padding</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">4</span>px;</span>
+  <span class="hljs-function">error()</span>; 
+&#125;
+<span class="hljs-class">.login-error</span> &#123;
+  <span class="hljs-attribute">left</span><span class="hljs-value">: <span class="hljs-number">12</span>px;</span>
+  <span class="hljs-attribute">position</span><span class="hljs-value">: absolute;</span>
+  <span class="hljs-attribute">top</span><span class="hljs-value">: <span class="hljs-number">20</span>px;</span>
+  <span class="hljs-function">error(<span class="hljs-number">5</span>px)</span>; 
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li></ul></pre>
+
+<p>他们最终呈现的效果都如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.generic-error</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">padding</span>:<span class="hljs-value"> <span class="hljs-number">20</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">4</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">2</span>px solid <span class="hljs-hexcolor">#f00</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#f00</span></span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.login-error</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">left</span>:<span class="hljs-value"> <span class="hljs-number">12</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> absolute</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">20</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">border</span>:<span class="hljs-value"> <span class="hljs-number">5</span>px solid <span class="hljs-hexcolor">#f00</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#f00</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li></ul></pre>
+
+<h2 id="103d文本"><a name="t9"></a>10.3D文本</h2>
+
+<p>要生成具有 3D 效果的文本可以使用 text-shadows ，唯一的问题就是当要修改颜色的时候就非常的麻烦，而通过 mixin 和颜色函数可以很轻松的实现：</p>
+
+<p><strong>1.sass：</strong></p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs mel has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-variable">@mixin</span> text3d(<span class="hljs-variable">$color</span>) &#123;
+  <span class="hljs-keyword">color</span>: <span class="hljs-variable">$color</span>;
+  <span class="hljs-keyword">text</span>-shadow: <span class="hljs-number">1</span>px <span class="hljs-number">1</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">$color</span>, <span class="hljs-number">5</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">2</span>px <span class="hljs-number">2</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">$color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">3</span>px <span class="hljs-number">3</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">$color</span>, <span class="hljs-number">15</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">$color</span>, <span class="hljs-number">20</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">2</span>px #<span class="hljs-number">000</span>;
+&#125;
+
+h1 &#123;
+  font-<span class="hljs-keyword">size</span>: <span class="hljs-number">32</span>pt;
+  @ include text3d(#<span class="hljs-number">0982</span>c1);
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li></ul></pre>
+
+<p><strong>2.Less CSS：</strong></p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs mel has-numbering" onclick="mdcp.signin(event)" style="position: unset;">.text3d(<span class="hljs-variable">@color</span>) &#123;
+  <span class="hljs-keyword">color</span>: <span class="hljs-variable">@color</span>;
+  <span class="hljs-keyword">text</span>-shadow: <span class="hljs-number">1</span>px <span class="hljs-number">1</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">@color</span>, <span class="hljs-number">5</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">2</span>px <span class="hljs-number">2</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">@color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">3</span>px <span class="hljs-number">3</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">@color</span>, <span class="hljs-number">15</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-variable">@color</span>, <span class="hljs-number">20</span><span class="hljs-variable">%)</span>,
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">2</span>px #<span class="hljs-number">000</span>;
+&#125;
+
+span &#123;
+  font-<span class="hljs-keyword">size</span>: <span class="hljs-number">32</span>pt;
+  .text3d(#<span class="hljs-number">0982</span>c1);
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li></ul></pre>
+
+<p><strong>3.Stylus：</strong></p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs mel has-numbering" onclick="mdcp.signin(event)" style="position: unset;">text3d(<span class="hljs-keyword">color</span>)
+  <span class="hljs-keyword">color</span>: <span class="hljs-keyword">color</span>
+  <span class="hljs-keyword">text</span>-shadow: <span class="hljs-number">1</span>px <span class="hljs-number">1</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-keyword">color</span>, <span class="hljs-number">5</span><span class="hljs-variable">%)</span>, 
+               <span class="hljs-number">2</span>px <span class="hljs-number">2</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-keyword">color</span>, <span class="hljs-number">10</span><span class="hljs-variable">%)</span>, 
+               <span class="hljs-number">3</span>px <span class="hljs-number">3</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-keyword">color</span>, <span class="hljs-number">15</span><span class="hljs-variable">%)</span>, 
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">0</span>px darken(<span class="hljs-keyword">color</span>, <span class="hljs-number">20</span><span class="hljs-variable">%)</span>, 
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">2</span>px #<span class="hljs-number">000</span>
+span
+  font-<span class="hljs-keyword">size</span>: <span class="hljs-number">32</span>pt
+  text3d(#<span class="hljs-number">0982</span>c1)<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li></ul></pre>
+
+<p>其生成的css最终的效果如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-tag">span</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">font-size</span>:<span class="hljs-value"> <span class="hljs-number">32</span>pt</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#0982c1</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-shadow</span>:<span class="hljs-value"> <span class="hljs-number">1</span>px <span class="hljs-number">1</span>px <span class="hljs-number">0</span>px <span class="hljs-hexcolor">#097bb7</span>,
+               <span class="hljs-number">2</span>px <span class="hljs-number">2</span>px <span class="hljs-number">0</span>px <span class="hljs-hexcolor">#0875ae</span>,
+               <span class="hljs-number">3</span>px <span class="hljs-number">3</span>px <span class="hljs-number">0</span>px <span class="hljs-hexcolor">#086fa4</span>,
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">0</span>px <span class="hljs-hexcolor">#07689a</span>,
+               <span class="hljs-number">4</span>px <span class="hljs-number">4</span>px <span class="hljs-number">2</span>px <span class="hljs-hexcolor">#000</span></span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li></ul></pre>
+
+<h2 id="11列-columns"><a name="t10"></a>11.列 (Columns)</h2>
+
+<p>使用数值操作和变量可以很方便的实现适应屏幕大小的布局处理。 <br>
+<strong>1.Sass：</strong></p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;">$<span class="hljs-tag">siteWidth</span>: 1024<span class="hljs-tag">px</span>;
+$<span class="hljs-tag">gutterWidth</span>: 20<span class="hljs-tag">px</span>;
+$<span class="hljs-tag">sidebarWidth</span>: 300<span class="hljs-tag">px</span>;
+<span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> $siteWidth</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.content</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> $siteWidth - ($sidebarWidth+$gutterWidth)</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.sidebar</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> $gutterWidth</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> $sidebarWidth</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li></ul></pre>
+
+<p>2.Less CSS：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-at_rule">@<span class="hljs-keyword">siteWidth:</span> <span class="hljs-number">1024</span>px</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">gutterWidth:</span> <span class="hljs-number">20</span>px</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">sidebarWidth:</span> <span class="hljs-number">300</span>px</span>;
+
+<span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> @siteWidth</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.content</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> @siteWidth - (@sidebarWidth+@gutterWidth)</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.sidebar</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> @gutterWidth</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> @sidebarWidth</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li><li style="color: rgb(153, 153, 153);">17</li></ul></pre>
+
+<p><strong>3.Stylus：</strong></p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs d has-numbering" onclick="mdcp.signin(event)" style="position: unset;">siteWidth = <span class="hljs-number">1024</span>px;
+gutterWidth = <span class="hljs-number">20</span>px;
+sidebarWidth = <span class="hljs-number">300</span>px;
+
+<span class="hljs-keyword">body</span> &#123;
+  margin: <span class="hljs-number">0</span> <span class="hljs-keyword">auto</span>;
+  width: siteWidth;
+&#125;
+.content &#123;
+  <span class="hljs-built_in">float</span>: left;
+  width: siteWidth - (sidebarWidth+gutterWidth);
+&#125;
+.sidebar &#123;
+  <span class="hljs-built_in">float</span>: left;
+  margin-left: gutterWidth;
+  width: sidebarWidth;
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li><li style="color: rgb(153, 153, 153);">17</li></ul></pre>
+
+<p>其最终生成的css效果如下：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-tag">body</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">1024</span>px</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.content</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">704</span>px</span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.sidebar</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">float</span>:<span class="hljs-value"> left</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin-left</span>:<span class="hljs-value"> <span class="hljs-number">20</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">300</span>px</span></span>;
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li></ul></pre>
+
+<h2 id="12高级语法"><a name="t11"></a>12.高级语法</h2>
+
+<p>1.在sass中，还支持条件语句：</p>
+
+<pre class="prettyprint"><code class="has-numbering" onclick="mdcp.signin(event)" style="position: unset;">    @if可一个条件单独使用，也可以和@else结合多条件使用
+<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li></ul></pre>
+
+<p>代码如下：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs scss has-numbering" onclick="mdcp.signin(event)" style="position: unset;">$lte7<span class="hljs-value">: true;</span>
+$type<span class="hljs-value">: monster;</span>
+<span class="hljs-class">.ib</span>&#123;
+    <span class="hljs-attribute">display</span><span class="hljs-value">:inline-block;</span>
+    <span class="hljs-at_rule">@<span class="hljs-keyword">if</span> $lte7 &#123;</span>
+        *<span class="hljs-attribute">display</span><span class="hljs-value">:inline;</span>
+        *zoom<span class="hljs-value">:<span class="hljs-number">1</span>;</span>
+    &#125;
+&#125;
+<span class="hljs-tag">p</span> &#123;
+  <span class="hljs-at_rule">@<span class="hljs-keyword">if</span> $type ==<span class="hljs-preprocessor"> ocean</span> &#123;</span>
+    <span class="hljs-attribute">color</span><span class="hljs-value">: blue;</span>
+  &#125; <span class="hljs-at_rule">@<span class="hljs-keyword">else</span><span class="hljs-preprocessor"> if</span> $type ==<span class="hljs-preprocessor"> matador</span> &#123;</span>
+    <span class="hljs-attribute">color</span><span class="hljs-value">: red;</span>
+  &#125; <span class="hljs-at_rule">@<span class="hljs-keyword">else</span><span class="hljs-preprocessor"> if</span> $type ==<span class="hljs-preprocessor"> monster</span> &#123;</span>
+    <span class="hljs-attribute">color</span><span class="hljs-value">: green;</span>
+  &#125; <span class="hljs-at_rule">@<span class="hljs-keyword">else</span> &#123;</span>
+    <span class="hljs-attribute">color</span><span class="hljs-value">: black;</span>
+  &#125;
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li style="color: rgb(153, 153, 153);">14</li><li style="color: rgb(153, 153, 153);">15</li><li style="color: rgb(153, 153, 153);">16</li><li style="color: rgb(153, 153, 153);">17</li><li style="color: rgb(153, 153, 153);">18</li><li style="color: rgb(153, 153, 153);">19</li><li style="color: rgb(153, 153, 153);">20</li></ul></pre>
+
+<p>其最终的css代码如下：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.ib</span><span class="hljs-rules">&#123;
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value">inline-block</span></span>;
+    <span class="hljs-rule">*<span class="hljs-attribute">display</span>:<span class="hljs-value">inline</span></span>;
+    <span class="hljs-rule">*<span class="hljs-attribute">zoom</span>:<span class="hljs-value"><span class="hljs-number">1</span></span></span>;
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-tag">p</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> green</span></span>; 
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre>
+
+<p>2.除却条件语句，sass还支持for循环：</p>
+
+<p>for循环有两种形式，分别为：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs livecodeserver has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-number">1.</span>@<span class="hljs-keyword">for</span> $var <span class="hljs-built_in">from</span> &lt;start&gt; through &lt;<span class="hljs-function"><span class="hljs-keyword">end</span>&gt;</span>
+<span class="hljs-number">2.</span>@<span class="hljs-keyword">for</span> $var <span class="hljs-built_in">from</span> &lt;start&gt; <span class="hljs-built_in">to</span> &lt;<span class="hljs-function"><span class="hljs-keyword">end</span>&gt;。</span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li></ul></pre>
+
+<p>其中$i表示变量，start表示起始值，end表示结束值，这两个的区别是关键字through表示包括end这个数，而to则不包括end这个数。</p>
+
+<pre class="prettyprint" name="code"><code class="hljs haml has-numbering" onclick="mdcp.signin(event)" style="position: unset;">@for $i from 1 to 10 &#123;
+  .border-#&#123;<span class="ruby"><span class="hljs-variable">$i</span>&#125;</span> &#123;
+    border: #&#123;<span class="ruby"><span class="hljs-variable">$i</span>&#125;</span>px solid blue;
+  &#125;
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p>同时也支持while循环：</p>
+
+<pre class="prettyprint" name="code"><code class="hljs mel has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-variable">$i</span>: <span class="hljs-number">6</span>;
+<span class="hljs-variable">@while</span> <span class="hljs-variable">$i</span> &gt; <span class="hljs-number">0</span> &#123;
+  .item-#&#123;<span class="hljs-variable">$i</span>&#125; &#123; width: <span class="hljs-number">2</span>em * <span class="hljs-variable">$i</span>; &#125;
+  <span class="hljs-variable">$i</span>: <span class="hljs-variable">$i</span> - <span class="hljs-number">2</span>;
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre>
+
+<p>最后，同时支持each命令，作用与for类似：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs ruby has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-variable">$animal</span>-<span class="hljs-symbol">list:</span> puma, sea-slug, egret, salamander;
+<span class="hljs-variable">@each</span> <span class="hljs-variable">$animal</span> <span class="hljs-keyword">in</span> <span class="hljs-variable">$animal</span>-list &#123;
+  .<span class="hljs-comment">#&#123;$animal&#125;-icon &#123;</span>
+    background-<span class="hljs-symbol">image:</span> url(<span class="hljs-string">'/img/<span class="hljs-subst">#&#123;<span class="hljs-variable">$animal</span>&#125;</span>.png'</span>);
+  &#125;
+&#125;<div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li></ul></pre>
+
+<p>其css最终效果如下：</p>
+
+
+
+<pre class="prettyprint" name="code"><code class="hljs css has-numbering" onclick="mdcp.signin(event)" style="position: unset;"><span class="hljs-class">.puma-icon</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/puma.png'</span>)</span></span></span>; 
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.sea-slug-icon</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/sea-slug.png'</span>)</span></span></span>; 
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.egret-icon</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/egret.png'</span>)</span></span></span>; 
+<span class="hljs-rule">&#125;</span></span>
+<span class="hljs-class">.salamander-icon</span> <span class="hljs-rules">&#123;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'/img/salamander.png'</span>)</span></span></span>; 
+<span class="hljs-rule">&#125;</span></span><div class="hljs-button signin" data-title="登录后复制"></div></code><ul class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li style="color: rgb(153, 153, 153);">12</li></ul></pre>
+
+<p>以上就是sass，Less css与stylus的最显著的区别。</p>                                    </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Victor</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://victorfengming.gitee.io/front/sass/diff-sass-stylus/">http://victorfengming.gitee.io/front/sass/diff-sass-stylus/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/solution/">solution</a><a class="post-meta__tags" href="/tags/summer/">summer</a><a class="post-meta__tags" href="/tags/web/">web</a><a class="post-meta__tags" href="/tags/sass/">sass</a></div><div class="post_share"><div class="social-share" data-image="/img/lynk/62.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/front/sass/diff-sass-less/"><img class="prev-cover" data-lazy-src="/img/lynk/55.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">关于Sass和less的奇妙故事</div></div></a></div><div class="next-post pull-right"><a href="/python/spider/pear-spider/"><img class="next-cover" data-lazy-src="/img/lynk/76.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">python爬取梨视频</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/front/sass/diff-sass-less/" title="关于Sass和less的奇妙故事"><img class="cover" data-lazy-src="/img/lynk/55.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">关于Sass和less的奇妙故事</div></div></a></div><div><a href="/front/sass/sass-Silent comment/" title="啥是静默注释"><img class="cover" data-lazy-src="/img/lynk/91.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">啥是静默注释</div></div></a></div><div><a href="/front/sass/sass-group-select/" title="Sass中群组选择器的嵌套"><img class="cover" data-lazy-src="/img/lynk/45.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">Sass中群组选择器的嵌套</div></div></a></div><div><a href="/front/sass/sass-father-select-and/" title="Sass中父选择器的标识符&"><img class="cover" data-lazy-src="/img/lynk/89.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">Sass中父选择器的标识符&</div></div></a></div><div><a href="/front/sass/sass-name-style/" title="关于Sass变量名用中划线还是下划线分隔问题"><img class="cover" data-lazy-src="/img/lynk/90.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">关于Sass变量名用中划线还是下划线分隔问题</div></div></a></div><div><a href="/front/sass/sass-nested attribute/" title="Sass中嵌套属性"><img class="cover" data-lazy-src="/img/lynk/87.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2021-03-12</div><div class="title">Sass中嵌套属性</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar-mecyblitz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Victor</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">445</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">87</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://gitee.com/victorfengming"><i class="fab fa-gitee"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/victorfengming" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/victorfengming" target="_blank" title="Gitee"><i class="fab fa-gitee"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E4%BB%80%E4%B9%88%E6%98%AF-css-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">1.什么是 CSS 预处理器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E5%8C%BA%E5%88%AB"><span class="toc-number">2.</span> <span class="toc-text">2.基本语法区别:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E5%8F%98%E9%87%8F"><span class="toc-number">3.</span> <span class="toc-text">3.变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E5%B5%8C%E5%A5%97"><span class="toc-number">4.</span> <span class="toc-text">4.嵌套</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">5.</span> <span class="toc-text">5.运算符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E9%A2%9C%E8%89%B2%E5%87%BD%E6%95%B0"><span class="toc-number">6.</span> <span class="toc-text">6.颜色函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%E5%AF%BC%E5%85%A5-import"><span class="toc-number">7.</span> <span class="toc-text">7.导入 (Import)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E7%BB%A7%E6%89%BF"><span class="toc-number">8.</span> <span class="toc-text">8.继承</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9mixins%E6%B7%B7%E5%85%A5"><span class="toc-number">9.</span> <span class="toc-text">9.Mixins（混入）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#103d%E6%96%87%E6%9C%AC"><span class="toc-number">10.</span> <span class="toc-text">10.3D文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E5%88%97-columns"><span class="toc-number">11.</span> <span class="toc-text">11.列 (Columns)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95"><span class="toc-number">12.</span> <span class="toc-text">12.高级语法</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/index/gitbook/" title="Gitbook文档索引"><img data-lazy-src="/img/lynk/11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gitbook文档索引"/></a><div class="content"><a class="title" href="/index/gitbook/" title="Gitbook文档索引">Gitbook文档索引</a><time datetime="2022-12-20T22:07:08.000Z" title="Created 2022-12-21 06:07:08">2022-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/linux/deepin-colemak/" title="deepin系统开机自动切换colemak键盘布局"><img data-lazy-src="/img/lynk/16.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="deepin系统开机自动切换colemak键盘布局"/></a><div class="content"><a class="title" href="/linux/deepin-colemak/" title="deepin系统开机自动切换colemak键盘布局">deepin系统开机自动切换colemak键盘布局</a><time datetime="2021-10-07T16:00:00.000Z" title="Created 2021-10-08 00:00:00">2021-10-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/middleware/mq/rabbitmq/" title="RabbitMQ面试题"><img data-lazy-src="/img/lynk/97.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RabbitMQ面试题"/></a><div class="content"><a class="title" href="/middleware/mq/rabbitmq/" title="RabbitMQ面试题">RabbitMQ面试题</a><time datetime="2021-09-24T16:00:00.000Z" title="Created 2021-09-25 00:00:00">2021-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/comic/git-server/" title="在自己的服务器上搭建git服务"><img data-lazy-src="/img/lynk/72.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在自己的服务器上搭建git服务"/></a><div class="content"><a class="title" href="/comic/git-server/" title="在自己的服务器上搭建git服务">在自己的服务器上搭建git服务</a><time datetime="2021-09-08T16:00:00.000Z" title="Created 2021-09-09 00:00:00">2021-09-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/develop/gradle/" title="Gradle配置阿里云镜像"><img data-lazy-src="/img/lynk/45.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Gradle配置阿里云镜像"/></a><div class="content"><a class="title" href="/develop/gradle/" title="Gradle配置阿里云镜像">Gradle配置阿里云镜像</a><time datetime="2021-08-30T16:00:00.000Z" title="Created 2021-08-31 00:00:00">2021-08-31</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Victor</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz',
+      appKey: 'nWerbwV2WMAxOEmAMkJKvXzs',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '//i0.hdslb.com/bfs/emote/',
+      emojiMaps: {"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_親親":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再見":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_發怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_發財":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可愛":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_嘔吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_壞笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尷尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_驚嚇":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png"},
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  //- // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
