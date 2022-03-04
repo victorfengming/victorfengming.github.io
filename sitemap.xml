@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://victorfengming.gitee.io/comic/nginx/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/link/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -653,6 +660,20 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/demo/pyqt5-demo1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/demo/pyqt5-demo2/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/note/pyqt5-note1-5/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -675,20 +696,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/note/pyqt5-note6-10/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/demo/pyqt5-demo1/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/demo/pyqt5-demo2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -758,14 +765,14 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/Django/note/django-note6/</loc>
+    <loc>http://victorfengming.gitee.io/python/Django/note/django-note5/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/Django/note/django-note5/</loc>
+    <loc>http://victorfengming.gitee.io/python/Django/note/django-note6/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1087,14 +1094,14 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note12/</loc>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note11/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note11/</loc>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note12/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1164,14 +1171,14 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note09/</loc>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note08/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note08/</loc>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note09/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3055,13 +3062,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/comic/messy-code/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/comic/nginx/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
