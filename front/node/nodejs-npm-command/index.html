@@ -142,7 +142,7 @@
 <h3 id="npm常用命令"><a href="#npm常用命令" class="headerlink" title="npm常用命令"></a>npm常用命令</h3><p>1、npm install moduleNames：安装Node模块<br>安装完毕后会产生一个node_modules目录，其目录下就是安装的各个node模块。</p>
 <p>node的安装分为全局模式和本地模式。<br>一般情况下会以本地模式运行，包会被安装到和你的应用程序代码的本地node_modules目录下。<br>在全局模式下，Node包会被安装到Node的安装目录下的node_modules下。</p>
 <p>全局安装命令为$npm install -g moduleName。<br>获知使用$npm set global=true来设定安装模式，$npm get global可以查看当前使用的安装模式。</p>
-<p>示例：<br>npm install express<br>默认会安装express的最新版本，也可以通过在后面加版本号的方式安装指定版本，如npm install <a href="mailto:&#101;&#120;&#x70;&#114;&#x65;&#115;&#x73;&#64;&#x33;&#46;&#48;&#x2e;&#54;">&#101;&#120;&#x70;&#114;&#x65;&#115;&#x73;&#64;&#x33;&#46;&#48;&#x2e;&#54;</a></p>
+<p>示例：<br>npm install express<br>默认会安装express的最新版本，也可以通过在后面加版本号的方式安装指定版本，如npm install <a href="mailto:&#101;&#120;&#112;&#114;&#101;&#115;&#115;&#x40;&#x33;&#x2e;&#x30;&#46;&#54;">&#101;&#120;&#112;&#114;&#101;&#115;&#115;&#x40;&#x33;&#x2e;&#x30;&#46;&#54;</a></p>
 <p>npm install <name> -g<br>将包安装到全局环境中</p>
 <p>但是代码中，直接通过require()的方式是没有办法调用全局安装的包的。全局的安装是供命令行使用的，就好像全局安装了vmarket后，就可以在命令行中直接运行vm命令</p>
 <p>npm install <name> –save<br>安装的同时，将信息写入package.json中项目路径中如果有package.json文件时，直接使用npm install方法就可以根据dependencies配置安装所有的依赖包，这样代码提交到github时，就不用提交node_modules这个文件夹了。</p>
