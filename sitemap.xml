@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://victorfengming.gitee.io/index/gitbook/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/comic/nginx/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -667,6 +674,13 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/demo/pyqt5-demo2/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/note/pyqt5-note1-5/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -689,13 +703,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/note/pyqt5-note6-10/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/demo/pyqt5-demo2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1431,13 +1438,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/index/file/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/index/gitbook/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
