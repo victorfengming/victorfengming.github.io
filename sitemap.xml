@@ -2,20 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://victorfengming.gitee.io/index/gitbook/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/comic/nginx/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/link/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -44,13 +30,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/unclass/various-skills/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/about/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -59,20 +38,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/categories/index.html</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/unclass/data_algorithm/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/unclass/design_pattern/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -128,6 +93,13 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/unclass/various-skills/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/unclass/beat/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -156,6 +128,20 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/unclass/data_algorithm/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/unclass/design_pattern/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/unclass/algorithm-tmp/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -178,20 +164,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/unclass/algorithm-tanxin/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/tornado/tornado-note8/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/tornado/curl/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -254,6 +226,13 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/python/tornado/tornado-note8/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/python/spider/selenium/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -275,6 +254,13 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/python/tornado/curl/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/python/spider/pear-spider/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -283,6 +269,13 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/python/spider/python-youdao-spider/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/spider/XPath/xpath-re-bs4/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -303,13 +296,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/spider/XPath/xpath-re-bs4/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/python/self_tool/python-re-blog-date/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -318,27 +304,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/python/self_tool/regex-replace-tags/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/flask/django-flask-tornado/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/flask/flask-blueprint/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/flask/flask-introduction/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -436,27 +401,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/collection/python-rst/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/collection/python-shuiyin/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/collection/python-venv/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/python/collection/python-virus/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -492,28 +436,21 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/collection/pip-conf/</loc>
+    <loc>http://victorfengming.gitee.io/python/flask/django-flask-tornado/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/collection/python-colemak/</loc>
+    <loc>http://victorfengming.gitee.io/python/flask/flask-blueprint/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/collection/python-faker/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/collection/python-frame/</loc>
+    <loc>http://victorfengming.gitee.io/python/flask/flask-introduction/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -562,21 +499,21 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/base/python-base-index/</loc>
+    <loc>http://victorfengming.gitee.io/python/collection/python-rst/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/base/python-copy/</loc>
+    <loc>http://victorfengming.gitee.io/python/collection/python-shuiyin/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/base/python-jupyter/</loc>
+    <loc>http://victorfengming.gitee.io/python/collection/python-venv/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -639,6 +576,55 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/python/collection/pip-conf/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/collection/python-colemak/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/collection/python-faker/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/collection/python-frame/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/base/python-base-index/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/base/python-copy/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/base/python-jupyter/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/python/GUI/tkinter/tkinter-calculator/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -661,6 +647,41 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/python/GUI/tkinter/mzitu-spider/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/note/pyqt5-note6-10/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/Django/pycharm-config-django/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/Django/python-wsgi/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/Django/python-xadmin/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/Django/note/django-note6/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -702,7 +723,21 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/GUI/pyqt5/note/pyqt5-note6-10/</loc>
+    <loc>http://victorfengming.gitee.io/python/Django/django-mvt/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/Django/django-mxonline/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/python/Django/django-project/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -717,27 +752,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/python/Django/gmooc-edu-platform/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/Django/pycharm-config-django/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/Django/python-wsgi/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/Django/python-xadmin/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -779,7 +793,35 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/Django/note/django-note6/</loc>
+    <loc>http://victorfengming.gitee.io/operation/kibana/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/operation/logstash/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/php/deepin-install-xampp/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/php/php-grammer-sum/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/php/php-magic-constant/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -828,56 +870,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/python/Django/django-mvt/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/Django/django-mxonline/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/python/Django/django-project/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/operation/kibana/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/operation/logstash/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/php/deepin-install-xampp/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/php/php-grammer-sum/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/php/php-magic-constant/</loc>
+    <loc>http://victorfengming.gitee.io/operation/install-collectd/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -899,13 +892,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/operation/hash/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/operation/install-collectd/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -961,21 +947,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/linux/deepin-designcompiler/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/linux/deepin-window-audio/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/linux/linux-frequent-command/</loc>
+    <loc>http://victorfengming.gitee.io/middleware/mq/rabbitmq/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1031,6 +1003,27 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/linux/deepin-designcompiler/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/linux/deepin-window-audio/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/linux/linux-frequent-command/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/linux/deepin-bug/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1046,20 +1039,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/linux/deepin-bluetooth/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/spring/spring-note1/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/springboot/collection-solve/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1094,6 +1073,55 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/java/spring/spring-note1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/springboot/collection-solve/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note14/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note06/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note07/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note08/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javase/note/note09/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/java/javase/note/note10/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1122,7 +1150,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note14/</loc>
+    <loc>http://victorfengming.gitee.io/java/javase/java-lambda/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1164,69 +1192,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note06/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note07/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note08/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javase/note/note09/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javase/java-lambda/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/java-route/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/java-single-case/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/java-web/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/servlet/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/java/javaold/thread-lambda/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1256,34 +1221,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/java/javase/java-dup-inheritance/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/byte/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/cushion/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/file/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/java/javaold/java-Collection/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1339,28 +1276,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/JDBC/druid.properties/</loc>
+    <loc>http://victorfengming.gitee.io/java/javaold/java-route/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/JDBC/note1/</loc>
+    <loc>http://victorfengming.gitee.io/java/javaold/java-single-case/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/JDBC/note2/</loc>
+    <loc>http://victorfengming.gitee.io/java/javaold/java-web/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/JDBC/note3/</loc>
+    <loc>http://victorfengming.gitee.io/java/javaold/servlet/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1416,6 +1353,118 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/java/javaold/byte/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javaold/cushion/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javaold/file/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/javaold/java-Collection/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/index/file/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/index/gitbook/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/index/interview/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/index/java/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/index/todo/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/index/train/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/JDBC/c3p0-config/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/JDBC/druid.properties/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/JDBC/note1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/JDBC/note2/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/java/JDBC/note3/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/ide/notepad-run-python/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/ide/vscode-change-sublime-theme/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1437,28 +1486,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/index/file/</loc>
+    <loc>http://victorfengming.gitee.io/index/colemak/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/index/interview/</loc>
+    <loc>http://victorfengming.gitee.io/ide/sublime/deepin-sublime/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/index/todo/</loc>
+    <loc>http://victorfengming.gitee.io/ide/sublime/sublime-format-htmlcssjs/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/index/train/</loc>
+    <loc>http://victorfengming.gitee.io/ide/sublime/sublime-input/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1500,14 +1549,56 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/java/JDBC/c3p0-config/</loc>
+    <loc>http://victorfengming.gitee.io/ide/jetbrains/pycharm/jetbrains-pycharm-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/ide/notepad-run-python/</loc>
+    <loc>http://victorfengming.gitee.io/ide/jetbrains/pycharm/pycharm-install/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/ide/jetbrains/webstrom/webstrom-port/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/ide/jetbrains/webstrom/webstrom-view-chrome/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/ide/deepin-eclipse/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/ide/deepin-vscode/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/golang/note/golang-note1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/golang/note/golang-server/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1528,21 +1619,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/ide/sublime/deepin-sublime/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/ide/sublime/sublime-format-htmlcssjs/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/ide/sublime/sublime-input/</loc>
+    <loc>http://victorfengming.gitee.io/ide/jetbrains/datagrip/jetbrains-datagrip-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1584,28 +1661,14 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/ide/jetbrains/pycharm/jetbrains-pycharm-introduce/</loc>
+    <loc>http://victorfengming.gitee.io/golang/goland-install/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/ide/jetbrains/pycharm/pycharm-install/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/ide/jetbrains/webstrom/webstrom-port/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/ide/jetbrains/webstrom/webstrom-view-chrome/</loc>
+    <loc>http://victorfengming.gitee.io/golang/golang-99/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1668,105 +1731,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/ide/deepin-eclipse/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/ide/deepin-vscode/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/golang/note/golang-note1/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/golang/note/golang-server/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/ide/jetbrains/datagrip/jetbrains-datagrip-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/golang/goland-install/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/golang/golang-99/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/golang/fiber/jwt-bug/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/scoop-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/gitbook/comment/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/git-list/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/git-log-analysis/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/git-svn/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/gitbook-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/gitbook-introduce2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1822,6 +1787,69 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/git/scoop-introduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/gitbook/comment/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/git-list/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/git-log-analysis/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/git-svn/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/gitbook-introduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/gitbook-introduce2/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/cmder-introduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/git/cmder-use/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/git/git-clear/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1843,27 +1871,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/git/cmder-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/git/cmder-use/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/vue-g2/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/front/vue/vue-interview1/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1879,6 +1886,48 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/front/webpack/webpack-intorduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/vue-g2/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/vue-command/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/vue-concept/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/vue-helloworld/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/vue-index/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/vue-init-run/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1921,111 +1970,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/front/vue/old/vue-pro-dir-analysis/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/standard/html-css-name-standard/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/note/vue-note1/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/axios/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/vue-cli-install/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/vue-command/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/vue-concept/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/vue-helloworld/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/vue-index/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/vue/old/vue-init-run/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/diff-sass-stylus/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/sass-Silent%20comment/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/sass-father-select-and/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/sass-group-select/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/sass-name-style/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/sass-nested%20attribute/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2081,7 +2025,147 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/front/standard/html-css-name-standard/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/note/vue-note1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/axios/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/vue/old/vue-cli-install/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/quickly/emmet-html-grammer/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/quickly/sublime-regex/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/react/react-intorduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/diff-sass-less/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/diff-sass-stylus/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/sass-Silent%20comment/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/sass-father-select-and/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/sass-group-select/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/sass-name-style/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/sass/sass-nested%20attribute/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/node/nodejs-summary/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/front/mustache/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/js/js-map/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/js/js-out-others/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/js/js-prototype%20chain/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/js/js-select-get-index/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/front/layui/layui-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2151,35 +2235,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/node/nodejs-summary/</loc>
+    <loc>http://victorfengming.gitee.io/front/jquery/jquery-base-note/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/quickly/emmet-html-grammer/</loc>
+    <loc>http://victorfengming.gitee.io/front/jquery/jquery-effect/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/quickly/sublime-regex/</loc>
+    <loc>http://victorfengming.gitee.io/front/jquery/jquery-event/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/react/react-intorduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/sass/diff-sass-less/</loc>
+    <loc>http://victorfengming.gitee.io/front/jquery/jquery-selector/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2242,83 +2319,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/js/js-map/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/js/js-out-others/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/js/js-prototype%20chain/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/js/js-select-get-index/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/layui/layui-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/jquery/jquery-base-note/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/jquery/jquery-effect/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/jquery/jquery-event/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/jquery/jquery-selector/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/html-css-js/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/html-pdf/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/front/jquery/jq-animation/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2361,28 +2361,14 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-Responsive.md/</loc>
+    <loc>http://victorfengming.gitee.io/front/html-css-js/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-cdn/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-practice/</loc>
+    <loc>http://victorfengming.gitee.io/front/html-pdf/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2445,20 +2431,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/redis/redis-interview-01/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/redis/redis-interview/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/database/redis/redis-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2501,28 +2473,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/navicat-linux/</loc>
+    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-Responsive.md/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/nosql-introduce/</loc>
+    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-cdn/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/oracle-introduce/</loc>
+    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/oracle-knowledge/</loc>
+    <loc>http://victorfengming.gitee.io/front/bootstrap/bootstrap-practice/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2550,6 +2522,20 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/database/redis/redis-interview-01/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/database/redis/redis-interview/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/database/redis/2020/redis-note1/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2571,28 +2557,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/mysql/mysql-knowledge/</loc>
+    <loc>http://victorfengming.gitee.io/database/navicat-linux/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/mysql/mysql-output/</loc>
+    <loc>http://victorfengming.gitee.io/database/nosql-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/mysql/mysql-paging-query/</loc>
+    <loc>http://victorfengming.gitee.io/database/oracle-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/mysql/mysql-set/</loc>
+    <loc>http://victorfengming.gitee.io/database/oracle-knowledge/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2641,49 +2627,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/database/deepin-lamp/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/diff-mysql-mariadb/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/diff-of-relational-database/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/lamp-intorduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/mongodb/mongodb-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/mongodb/mongodb-note1/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/database/mysql/deepin-install-mysql/</loc>
+    <loc>http://victorfengming.gitee.io/database/mysql/geek-45/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2732,6 +2676,34 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/database/mysql/mysql-knowledge/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/database/mysql/mysql-output/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/database/mysql/mysql-paging-query/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/database/mysql/mysql-set/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/cp/why-kafka-fast/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2753,28 +2725,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-range-xrange/</loc>
+    <loc>http://victorfengming.gitee.io/database/deepin-lamp/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-read-about/</loc>
+    <loc>http://victorfengming.gitee.io/database/diff-mysql-mariadb/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-recycling-mechanism/</loc>
+    <loc>http://victorfengming.gitee.io/database/diff-of-relational-database/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-reflect/</loc>
+    <loc>http://victorfengming.gitee.io/database/lamp-intorduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2816,7 +2788,21 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-interview4/</loc>
+    <loc>http://victorfengming.gitee.io/database/mongodb/mongodb-introduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/database/mongodb/mongodb-note1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/database/mysql/deepin-install-mysql/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2858,14 +2844,28 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-interview/</loc>
+    <loc>http://victorfengming.gitee.io/cp/python/python-range-xrange/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-interview2/</loc>
+    <loc>http://victorfengming.gitee.io/cp/python/python-read-about/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-recycling-mechanism/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-reflect/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2879,28 +2879,7 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-change-var/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-check-function/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-class-decorator/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/cp/python/python-data-type/</loc>
+    <loc>http://victorfengming.gitee.io/cp/python/python-interview4/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2956,7 +2935,14 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/cp/aop/</loc>
+    <loc>http://victorfengming.gitee.io/cp/python/python-interview/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-interview2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2998,6 +2984,48 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-change-var/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-check-function/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-class-decorator/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/python/python-data-type/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/comic/wechat/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/cp/aop/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/comic/useful-link/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -3012,20 +3040,6 @@
   </url>
   
   <url>
-    <loc>http://victorfengming.gitee.io/comic/ttk1907/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/comic/use-obsidian/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://victorfengming.gitee.io/comic/tex/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -3034,6 +3048,20 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/comic/thread-process-coroutines/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/comic/ttk1907/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/comic/use-obsidian/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3068,6 +3096,13 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/comic/nginx/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/comic/php-vs-java/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -3076,6 +3111,20 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/comic/python-gitbook-tools/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/comic/centos_dev/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://victorfengming.gitee.io/comic/git-server/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3104,13 +3153,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/comic/cdn-explain/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/comic/git-server/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3196,6 +3238,13 @@
   </url>
   
   <url>
+    <loc>http://victorfengming.gitee.io/tags/node/</loc>
+    <lastmod>2022-03-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://victorfengming.gitee.io/tags/git/</loc>
     <lastmod>2022-03-04</lastmod>
     <changefreq>daily</changefreq>
@@ -3232,13 +3281,6 @@
   
   <url>
     <loc>http://victorfengming.gitee.io/tags/Python/</loc>
-    <lastmod>2022-03-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://victorfengming.gitee.io/tags/node/</loc>
     <lastmod>2022-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
