@@ -1,0 +1,768 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PEP8 Python 编码规范 | Victor's Blog</title><meta name="keywords" content="interview,Python,background,standard"><meta name="author" content="Victor"><meta name="copyright" content="Victor"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="&lt;h1 id&#x3D;&quot;1-pep8&quot;&gt;&lt;a name&#x3D;&quot;t0&quot;&gt;&lt;&#x2F;a&gt;1. PEP8&lt;&#x2F;h1&gt;      &lt;p&gt;&lt;strong&gt;什么是PEP&lt;&#x2F;strong&gt; &lt;br&gt;         PEP是 Python Enhancement Propos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PEP8 Python 编码规范">
+<meta property="og:url" content="http://victorfengming.gitee.io/cp/python/python-pep8/index.html">
+<meta property="og:site_name" content="Victor&#39;s Blog">
+<meta property="og:description" content="&lt;h1 id&#x3D;&quot;1-pep8&quot;&gt;&lt;a name&#x3D;&quot;t0&quot;&gt;&lt;&#x2F;a&gt;1. PEP8&lt;&#x2F;h1&gt;      &lt;p&gt;&lt;strong&gt;什么是PEP&lt;&#x2F;strong&gt; &lt;br&gt;         PEP是 Python Enhancement Propos">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://victorfengming.gitee.io/img/lynk/37.jpg">
+<meta property="article:published_time" content="2019-11-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-03-04T06:31:00.997Z">
+<meta property="article:author" content="Victor">
+<meta property="article:tag" content="interview">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="background">
+<meta property="article:tag" content="standard">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://victorfengming.gitee.io/img/lynk/37.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://victorfengming.gitee.io/cp/python/python-pep8/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="050fb675d62d1e28ba844b2419cb63f1"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f36fd50ed6331016e4a5a41f3655a9af";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-03-04 14:31:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Victor's Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/img/avatar-mecyblitz.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">431</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">87</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/lynk/37.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Victor's Blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">PEP8 Python 编码规范</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2019-11-27T16:00:00.000Z" title="Created 2019-11-28 00:00:00">2019-11-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-03-04T06:31:00.997Z" title="Updated 2022-03-04 14:31:00">2022-03-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="PEP8 Python 编码规范"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div id="article_content" class="article_content clearfix">
+    <div id="content_views" class="markdown_views">
+
+<pre><code>    &lt;h1 id=&quot;1-pep8&quot;&gt;&lt;a name=&quot;t0&quot;&gt;&lt;/a&gt;1. PEP8&lt;/h1&gt;
+
+    &lt;p&gt;&lt;strong&gt;什么是PEP&lt;/strong&gt; &lt;br&gt;
+        PEP是 Python Enhancement Proposal 的缩写，翻译过来就是 Python增强建议书 。 &lt;br&gt;
+        &lt;strong&gt;PEP8&lt;/strong&gt; &lt;br&gt;
+        译者：本文基于 2013-08-02 最后修改的 PEP8 版本翻译，若要查看英文原文，请参考&lt;a href=&quot;http://www.python.org/dev/peps/pep-0008/&quot;
+                                                          rel=&quot;nofollow&quot;&gt;PEP8&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;许多项目都有一套专有的编码风格指南，当冲突发生时，应以项目编码规范为优先。 &lt;br&gt;
+        当以下情况发生时，也是忽略某个风格指南的好理由：&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;当遵守指南会降低代码可读性，甚至对于那些依循 PEP 去阅读代码的人也是这样时。&lt;/li&gt;
+        &lt;li&gt;当遵守指南会与其他部分的代码风格背离时 — 当然也许这是一个修正某些混乱代码的机会。&lt;/li&gt;
+        &lt;li&gt;当那些并没有遵循指南的旧代码已无法修改时。&lt;/li&gt;
+        &lt;li&gt;当你的代码需要与旧版本的 Python 保持兼容，而旧版本的 Python 不支持指南中提到的特性时。&lt;/li&gt;
+    &lt;/ul&gt;
+
+
+    &lt;h1 id=&quot;2-代码布局&quot;&gt;&lt;a name=&quot;t1&quot;&gt;&lt;/a&gt;2. 代码布局&lt;/h1&gt;
+    &lt;h2 id=&quot;21-缩进&quot;&gt;&lt;a name=&quot;t2&quot;&gt;&lt;/a&gt;2.1 缩进&lt;/h2&gt;
+
+    &lt;p&gt;每次缩进使用 4 个空格。&lt;/p&gt;
+
+    &lt;p&gt;续行应该与被圆括号、方括号、花括号包裹起来的其他元素对齐，或者使用悬挂式缩进。当使用悬挂式缩进时，应该遵循这些注意事项：第一行不能有参数，应该使用进一步的缩进来将续行与其他行区分开。&lt;/p&gt;
+
+    &lt;p&gt;符合本约定的代码：&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# Aligned with opening delimiter&lt;/span&gt;
+</code></pre>
+<p>foo = long_function_name(var_one, var_two,<br>                 var_three, var_four)</p>
+<p><span class="hljs-comment"># More indentation included to distinguish this from the rest.</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span
+        class="hljs-title">long_function_name</span><span class="hljs-params">(<br>var_one, var_two, var_three,<br>var_four)</span>:</span><br>print(var_one)<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li
+                style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li
+                style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li
+                style="color: rgb(153, 153, 153);">9</li></ul></pre></p>
+<pre><code>    &lt;p&gt;不符合本约定的代码：&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;# Arguments on first line forbidden when not using vertical alignment&lt;/span&gt;
+</code></pre>
+<p>foo = long_function_name(var_one, var_two,<br>var_three, var_four)</p>
+<p><span class="hljs-comment"># Further indentation required as indentation is not distinguishable</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span
+        class="hljs-title">long_function_name</span><span class="hljs-params">(<br>var_one, var_two, var_three,<br>var_four)</span>:</span><br>print(var_one)<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li
+                style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li
+                style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li><li
+                style="color: rgb(153, 153, 153);">9</li></ul></pre></p>
+<pre><code>    &lt;p&gt;可选的符合约定的代码：&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs vala has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt;# Extra indentation is not necessary.&lt;/span&gt;
+</code></pre>
+<p>foo = long_function_name(<br>var_one, var_two,<br>var_three, var_four)<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre></p>
+<pre><code>    &lt;p&gt;结尾的括号另起一行，如下所示：&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs livecodeserver has-numbering&quot;
+                                               onclick=&quot;mdcp.copyCode(event)&quot; style=&quot;position: unset;&quot;&gt;my_list = [
+</code></pre>
+<p><span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>,<br><span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>,<br>]<br><span class="hljs-built_in">result</span> = some_function_that_takes_arguments(<br><span class="hljs-string">‘a’</span>, <span class="hljs-string">‘b’</span>, <span class="hljs-string">‘c’</span>,<br><span class="hljs-string">‘d’</span>, <span class="hljs-string">‘e’</span>, <span class="hljs-string">‘f’</span>,<br>)<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li
+                style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li
+                style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre></p>
+<pre><code>    &lt;p&gt;or&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs livecodeserver has-numbering&quot;
+                                               onclick=&quot;mdcp.copyCode(event)&quot; style=&quot;position: unset;&quot;&gt;my_list = [
+</code></pre>
+<p><span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>,<br><span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>,<br>]<br><span class="hljs-built_in">result</span> = some_function_that_takes_arguments(<br><span class="hljs-string">‘a’</span>, <span class="hljs-string">‘b’</span>, <span class="hljs-string">‘c’</span>,<br><span class="hljs-string">‘d’</span>, <span class="hljs-string">‘e’</span>, <span class="hljs-string">‘f’</span>,<br>)<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li
+                style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li><li
+                style="color: rgb(153, 153, 153);">7</li><li style="color: rgb(153, 153, 153);">8</li></ul></pre></p>
+<pre><code>    &lt;h2 id=&quot;22-制表符&quot;&gt;&lt;a name=&quot;t3&quot;&gt;&lt;/a&gt;2.2 制表符&lt;/h2&gt;
+
+    &lt;p&gt;不使用Tap，更不能混合使用Tap和空格&lt;/p&gt;
+
+    &lt;blockquote&gt;
+        &lt;p&gt;Python 3 不支持空格缩进与制表符缩进混用。 &lt;br&gt;
+            Python 2 中的混用缩进代码也应该被转换为统一使用空格。 &lt;br&gt;
+            当使用 -t 选项来调用 Python 2 命令行工具时，运行混用缩进的代码会报出警告，当使用 -tt 选项时，运行混用缩进的代码会报出错误。强力建议使用这两个选项。&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+
+    &lt;h2 id=&quot;23-单行最大长度&quot;&gt;&lt;a name=&quot;t4&quot;&gt;&lt;/a&gt;2.3 单行最大长度&lt;/h2&gt;
+
+    &lt;p&gt;每行最大长度79，换行可以使用反斜杠，最好使用圆括号。 &lt;br&gt;
+        文档字符串、注释等最大行宽72 &lt;br&gt;
+        换行点要在操作符的后边敲回车。 &lt;br&gt;
+        确保使用适当的行续缩进。在二元操作符两端，换行的推荐位置是在操作符之后，而不是操作符之前。&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-class&quot;&gt;&lt;span
+            class=&quot;hljs-keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;Rectangle&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(Blob)&lt;/span&gt;:&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title"><strong>init</strong></span><span
+        class="hljs-params">(self, width, height,<br>         color=<span class="hljs-string">‘black’</span>, emphasis=None, highlight=<span
+            class="hljs-number">0</span>)</span>:</span><br><span class="hljs-keyword">if</span> (width == <span class="hljs-number">0</span> <span
+                    class="hljs-keyword">and</span> height == <span class="hljs-number">0</span> <span
+                    class="hljs-keyword">and</span><br>        color == <span class="hljs-string">‘red’</span> <span class="hljs-keyword">and</span> emphasis == <span
+                    class="hljs-string">‘strong’</span> <span class="hljs-keyword">or</span><br>        highlight &gt; <span class="hljs-number">100</span>):<br>    <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">“sorry, you lose”</span>)<br><span class="hljs-keyword">if</span> width == <span class="hljs-number">0</span> <span
+                    class="hljs-keyword">and</span> height == <span class="hljs-number">0</span> <span
+                    class="hljs-keyword">and</span> (color == <span class="hljs-string">‘red’</span> <span
+                    class="hljs-keyword">or</span><br>                                   emphasis <span class="hljs-keyword">is</span> <span
+                    class="hljs-keyword">None</span>):<br>    <span class="hljs-keyword">raise</span> ValueError(<span
+                    class="hljs-string">“I don’t think so – values are %s, %s”</span> %<br>                     (width, height))<br>Blob.<strong>init</strong>(self, width, height,<br>              color, emphasis, highlight)<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li
+                style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li
+                style="color: rgb(153, 153, 153);">8</li><li style="color: rgb(153, 153, 153);">9</li><li
+                style="color: rgb(153, 153, 153);">10</li><li style="color: rgb(153, 153, 153);">11</li><li
+                style="color: rgb(153, 153, 153);">12</li><li style="color: rgb(153, 153, 153);">13</li><li
+                style="color: rgb(153, 153, 153);">14</li></ul></pre></p>
+<pre><code>    &lt;h2 id=&quot;24-空白行&quot;&gt;&lt;a name=&quot;t5&quot;&gt;&lt;/a&gt;2.4 空白行&lt;/h2&gt;
+
+    &lt;p&gt;使用两个空白行来分隔顶级函数定义、类定义。 &lt;br&gt;
+        使用单个空白行来分隔类内的方法定义。 &lt;br&gt;
+        额外的空白行可以被（尽量少的）用来分隔几组相关的函数。在一堆相关的单行代码之间，空白行应该被省略。 &lt;br&gt;
+        在函数中（尽量少的）使用空白行来区分逻辑代码块。&lt;/p&gt;
+
+
+    &lt;h2 id=&quot;25-文档编排&quot;&gt;&lt;a name=&quot;t6&quot;&gt;&lt;/a&gt;2.5 文档编排&lt;/h2&gt;
+
+    &lt;p&gt;&lt;strong&gt;（1）模块内容的顺序&lt;/strong&gt; &lt;br&gt;
+        模块说明和docstring—import—globals&amp;amp;constants—其他定义。其中import部分，又按标准、三方和自己编写顺序依次排放，之间空一行。 &lt;br&gt;
+        &lt;strong&gt;（2）不要在一句import中多个库，比如import os, sys不推荐。&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span
+            class=&quot;hljs-comment&quot;&gt;#符合约定的代码：     &lt;/span&gt;
+</code></pre>
+<p><span class="hljs-keyword">import</span> os<br><span class="hljs-keyword">import</span> sys</p>
+<p><span class="hljs-keyword">from</span> subprocess <span class="hljs-keyword">import</span> Popen, PIPE</p>
+<p><span class="hljs-comment">#不符合本约定的代码：  </span><br><span class="hljs-keyword">import</span> os,sys<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li
+                style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li
+                style="color: rgb(153, 153, 153);">8</li></ul></pre></p>
+<pre><code>    &lt;p&gt;&lt;strong&gt;（3）如果采用from XX import XX引用库，可以省略‘module.’，都是可能出现命名冲突，这时就要采用import XX。&lt;/strong&gt; &lt;br&gt;
+        &lt;strong&gt;（4）多条 Import 语句总应该遵循这样的顺序书写：&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;标准库的导入&lt;/li&gt;
+        &lt;li&gt;相关第三方库导入&lt;/li&gt;
+        &lt;li&gt;本地应用/库的相关导入&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;strong&gt;（5）当在某个包含类的模块中导入类时，这样的书写方式是合理的：&lt;/strong&gt;&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;from&lt;/span&gt; myclass &lt;span
+            class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; MyClass
+</code></pre>
+<p><span class="hljs-keyword">from</span> foo.bar.yourclass <span class="hljs-keyword">import</span> YourClass<div
+                    class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;但如果这样的书写方式引起类名冲突，则请这样书写：&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs java has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;import&lt;/span&gt; myclass
+</code></pre>
+<p><span class="hljs-keyword">import</span> foo.bar.yourclass<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;并使用 “myclass.MyClass” 和 “foo.bar.yourclass.YourClass” 来对其进行引用。&lt;/p&gt;
+
+    &lt;h1 id=&quot;3-空格的使用&quot;&gt;&lt;a name=&quot;t7&quot;&gt;&lt;/a&gt;3. 空格的使用&lt;/h1&gt;
+
+    &lt;p&gt;总体原则，避免不必要的空格。 &lt;br&gt;
+        （1）各种右括号前不要加空格。&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs css has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;#符合约定的代码
+</code></pre>
+<p><span class="hljs-tag">spam</span>(<span class="hljs-tag">ham</span><span class="hljs-attr_selector">[1]</span>, <span
+                    class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">eggs</span>:<span
+                    class="hljs-value"> <span class="hljs-number">2</span></span></span></span>})<br>#不符合约定的代码<br><span class="hljs-tag">spam</span>( <span class="hljs-tag">ham</span><span
+                    class="hljs-attr_selector">[ 1 ]</span>, <span class="hljs-rules">{ <span class="hljs-rule"><span
+                    class="hljs-attribute">eggs</span>:<span class="hljs-value"> <span
+                    class="hljs-number">2</span> </span></span></span>} )<div class="hljs-button {2}"
+                                                                              data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li></ul></pre></p>
+<pre><code>    &lt;p&gt;（2）逗号、冒号、分号前不要加空格。&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs php has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;#符合约定的代码&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-keyword">if</span> x == <span class="hljs-number">4</span>: <span class="hljs-keyword">print</span> x, y; x, y = y, x<br><span class="hljs-comment">#不符合约定的代码</span><br><span class="hljs-keyword">if</span> x == <span class="hljs-number">4</span> : <span class="hljs-keyword">print</span> x , y ; x , y = y , x<div
+                    class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre></p>
+<pre><code>    &lt;p&gt;（3）函数的左括号前不要加空格。如Func(1)。&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs vala has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span
+            class=&quot;hljs-preprocessor&quot;&gt;#符合约定代码&lt;/span&gt;
+</code></pre>
+<p>spam(<span class="hljs-number">1</span>)<br><span class="hljs-preprocessor">#不符合约定的代码</span><br>spam (<span class="hljs-number">1</span>)<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li></ul></pre></p>
+<pre><code>    &lt;p&gt;（4）序列的左括号前不要加空格。如list[2]。&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs php has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;#符合约定的代码&lt;/span&gt;
+</code></pre>
+<p>dict[<span class="hljs-string">‘key’</span>] = <span class="hljs-keyword">list</span>[index]<br><span class="hljs-comment">#不符合约定的代码</span><br>dict [<span class="hljs-string">‘key’</span>] = <span class="hljs-keyword">list</span> [index]<div
+                    class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li></ul></pre></p>
+<pre><code>    &lt;p&gt;（5） 操作符左右各加一个空格，不要为了对齐增加空格。&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs makefile has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;#符合约定的代码&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-constant">x</span> = 1<br><span class="hljs-constant">y</span> = 2<br><span class="hljs-constant">long_variable</span> = 3<br><span class="hljs-comment">#不符合约定的代码</span><br><span class="hljs-constant">x</span>             = 1<br><span class="hljs-constant">y</span>             = 2<br><span class="hljs-constant">long_variable</span> = 3<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li
+                style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li
+                style="color: rgb(153, 153, 153);">8</li></ul></pre></p>
+<pre><code>    &lt;p&gt;（6） 函数默认参数使用的赋值符左右省略空格。&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-comment&quot;&gt;#符合约定的代码&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">complex</span><span
+        class="hljs-params">(real, imag=<span class="hljs-number">0.0</span>)</span>:</span><br><span class="hljs-keyword">return</span> magic(r=real, i=imag)<br><span class="hljs-comment">#不符合约定的代码</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">complex</span><span
+        class="hljs-params">(real, imag = <span class="hljs-number">0.0</span>)</span>:</span><br><span class="hljs-keyword">return</span> magic(r = real, i = imag)<div class="hljs-button {2}"
+                                                                       data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li
+                style="color: rgb(153, 153, 153);">6</li></ul></pre></p>
+<pre><code>    &lt;p&gt;（7） 不要将多句语句写在同一行，尽管使用‘；’允许。 &lt;br&gt;
+        （8） if/for/while语句中，即使执行语句只有一句，也必须另起一行。&lt;/p&gt;
+
+    &lt;h1 id=&quot;4-注释&quot;&gt;&lt;a name=&quot;t8&quot;&gt;&lt;/a&gt;4. 注释&lt;/h1&gt;
+
+    &lt;p&gt;&lt;strong&gt;总体原则，错误的注释不如没有注释。所以当一段代码发生变化时，第一件事就是要修改注释！&lt;/strong&gt; &lt;br&gt;
+        注释必须使用英文，最好是完整的句子，首字母大写，句后要有结束符，结束符后跟两个空格，开始下一句。如果是短语，可以省略结束符。 &lt;br&gt;
+        &lt;strong&gt;（1）块注释&lt;/strong&gt; &lt;br&gt;
+        在一段代码前增加的注释。在‘#’后加一空格。段落之间以只有‘#’的行间隔。比如：&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs vala has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-preprocessor&quot;&gt;# Description : Module config.&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-preprocessor"># </span><br><span class="hljs-preprocessor"># Input : None</span><br><span class="hljs-preprocessor">#</span><br><span class="hljs-preprocessor"># Output : None</span><div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li></ul></pre></p>
+<pre><code>    &lt;p&gt;&lt;strong&gt;（2）行注释&lt;/strong&gt; &lt;br&gt;
+        在一句代码后加注释。比如：&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs bash has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;x = x + &lt;span class=&quot;hljs-number&quot;&gt;1&lt;/span&gt;           &lt;span
+            class=&quot;hljs-comment&quot;&gt;# Increment x&lt;/span&gt;&lt;div class=&quot;hljs-button &#123;2&#125;&quot; data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul
+            class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;但是这种方式尽量少使用。 &lt;br&gt;
+        &lt;strong&gt;（3）避免无谓的注释。&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;h1 id=&quot;5-文档描述&quot;&gt;&lt;a name=&quot;t9&quot;&gt;&lt;/a&gt;5. 文档描述&lt;/h1&gt;
+
+    &lt;p&gt;（1）为所有的共有模块、函数、类、方法写docstrings；非共有的没有必要，但是可以写注释（在def的下一行）。 &lt;br&gt;
+        （2）如果docstring要换行，参考如下例子,详见&lt;a href=&quot;http://www.python.org/dev/peps/pep-0257/&quot; rel=&quot;nofollow&quot;&gt;PEP 257&lt;/a&gt;&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-string&quot;&gt;&quot;&quot;&quot;Return a foobang
+</code></pre>
+<p>Optional plotz says to frobnicate the bizbaz first.</p>
+<p>“””</span><div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li
+                style="color: rgb(153, 153, 153);">5</li></ul></pre></p>
+<pre><code>    &lt;h1 id=&quot;6-命名规范&quot;&gt;&lt;a name=&quot;t10&quot;&gt;&lt;/a&gt;6. 命名规范&lt;/h1&gt;
+
+    &lt;p&gt;&lt;strong&gt;总体原则，新编代码必须按下面命名风格进行，现有库的编码尽量保持风格。&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;blockquote&gt;
+        &lt;p&gt;1 尽量单独使用小写字母‘l’，大写字母‘O’等容易混淆的字母。 &lt;br&gt;
+            2 模块命名尽量短小，使用全部小写的方式，可以使用下划线。 &lt;br&gt;
+            3 包命名尽量短小，使用全部小写的方式，不可以使用下划线。 &lt;br&gt;
+            4 类的命名使用CapWords的方式，模块内部使用的类采用_CapWords的方式。 &lt;br&gt;
+            5 异常命名使用CapWords+Error后缀的方式。 &lt;br&gt;
+            6 全局变量尽量只在模块内有效，类似C语言中的static。实现方法有两种，一是&lt;strong&gt;all&lt;/strong&gt;机制;二是前缀一个下划线。 &lt;br&gt;
+            7 函数命名使用全部小写的方式，可以使用下划线。 &lt;br&gt;
+            8 常量命名使用全部大写的方式，可以使用下划线。 &lt;br&gt;
+            9 类的属性（方法和变量）命名使用全部小写的方式，可以使用下划线。 &lt;br&gt;
+            9 类的属性有3种作用域public、non-public和subclass API，可以理解成C++中的public、private、protected，non-public属性前，前缀一条下划线。
+            &lt;br&gt;
+            11 类的属性若与关键字名字冲突，后缀一下划线，尽量不要使用缩略等其他方式。 &lt;br&gt;
+            12 为避免与子类属性命名冲突，在类的一些属性前，前缀两条下划线。比如：类Foo中声明__a,访问时，只能通过Foo._Foo__a，避免歧义。如果子类也叫Foo，那就无能为力了。 &lt;br&gt;
+            13 类的方法第一个参数必须是self，而静态方法第一个参数必须是cls。&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;&lt;strong&gt;（1）变量&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;常量 : 大写加下划线&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs  has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;USER_CONSTANT&lt;div class=&quot;hljs-button &#123;2&#125;&quot;
+                                                                                          data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul
+            class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;对于不会发生改变的全局变量，使用大写加下划线。&lt;/p&gt;
+
+    &lt;p&gt;私有变量 : 小写和一个前导下划线&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs  has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;_private_value&lt;div class=&quot;hljs-button &#123;2&#125;&quot;
+                                                                                           data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul
+            class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;Python 中不存在私有变量一说，若是遇到需要保护的变量，使用小写和一个前导下划线。但这只是程序员之间的一个约定，用于警告说明这是一个私有变量，外部类不要去访问它。但实际上，外部类还是可以访问到这个变量。&lt;/p&gt;
+
+    &lt;p&gt;内置变量 : 小写，两个前导下划线和两个后置下划线&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs markdown has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-strong&quot;&gt;__class__&lt;/span&gt;&lt;div
+            class=&quot;hljs-button &#123;2&#125;&quot; data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li
+            style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;两个前导下划线会导致变量在解释期间被更名。这是为了避免内置变量和其他变量产生冲突。用户定义的变量要严格避免这种风格。以免导致混乱。&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;（2）函数和方法&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;总体而言应该使用，小写和下划线。但有些比较老的库使用的是混合大小写，即首单词小写，之后每个单词第一个字母大写，其余小写。但现在，小写和下划线已成为规范。&lt;/p&gt;
+
+    &lt;p&gt;私有方法 ： 小写和一个前导下划线&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span
+            class=&quot;hljs-keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;_secrete&lt;/span&gt;&lt;span
+            class=&quot;hljs-params&quot;&gt;(self)&lt;/span&gt;:&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-keyword">print</span> <span class="hljs-string">“don’t test me.”</span><div
+                    class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;这里和私有变量一样，并不是真正的私有访问权限。同时也应该注意一般函数不要使用两个前导下划线(当遇到两个前导下划线时，Python 的名称改编特性将发挥作用)。特殊函数后面会提及。&lt;/p&gt;
+
+    &lt;p&gt;特殊方法 ： 小写和两个前导下划线，两个后置下划线&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span
+            class=&quot;hljs-keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;__add__&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(self, other)&lt;/span&gt;:&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-keyword">return</span> int.<strong>add</strong>(other)<div class="hljs-button {2}"
+                                                                data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;这种风格只应用于特殊函数，比如操作符重载等。&lt;/p&gt;
+
+    &lt;p&gt;函数参数 : 小写和下划线，缺省值等号两边无空格&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span
+            class=&quot;hljs-keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;hljs-title&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(self, user=None)&lt;/span&gt;:&lt;/span&gt;
+</code></pre>
+<p>self._user = user<div class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;&lt;strong&gt;（3）类&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;类总是使用驼峰格式命名，即所有单词首字母大写其余字母小写。类名应该简明，精确，并足以从中理解类所完成的工作。常见的一个方法是使用表示其类型或者特性的后缀，例如: &lt;br&gt;
+        SQLEngine &lt;br&gt;
+        MimeTypes&lt;/p&gt;
+
+    &lt;p&gt;对于基类而言，可以使用一个 Base 或者 Abstract 前缀&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs python has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;BaseCookie
+</code></pre>
+<p>AbstractGroup<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UserProfile</span><span
+        class="hljs-params">(object)</span>:</span><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title"><strong>init</strong></span><span
+        class="hljs-params">(self, profile)</span>:</span><br><span class="hljs-keyword">return</span> self._profile = profile</p>
+<p><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">profile</span><span
+        class="hljs-params">(self)</span>:</span><br><span class="hljs-keyword">return</span> self._profile<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li
+                style="color: rgb(153, 153, 153);">6</li><li style="color: rgb(153, 153, 153);">7</li><li
+                style="color: rgb(153, 153, 153);">8</li></ul></pre></p>
+<pre><code>    &lt;h1 id=&quot;7-编码建议&quot;&gt;&lt;a name=&quot;t11&quot;&gt;&lt;/a&gt;7. 编码建议&lt;/h1&gt;
+
+    &lt;p&gt;1 编码中考虑到其他python实现的效率等问题，比如运算符‘+’在CPython（Python）中效率很高，都是Jython中却非常低，所以应该采用.join()的方式。 &lt;br&gt;
+        2 尽可能使用‘is’‘is not’取代‘==’，比如if x is not None 要优于if x。 &lt;br&gt;
+        3 使用基于类的异常，每个模块或包都有自己的异常类，此异常类继承自Exception。 &lt;br&gt;
+        4 异常中不要使用裸露的except，except后跟具体的exceptions。 &lt;br&gt;
+        5 异常中try的代码尽可能少。比如：&lt;/p&gt;
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs cs has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt;:
+</code></pre>
+<p><span class="hljs-keyword">value</span> = collection[key]<br>except KeyError:<br><span class="hljs-keyword">return</span> key_not_found(key)<br><span class="hljs-keyword">else</span>:<br><span class="hljs-keyword">return</span> handle_value(<span class="hljs-keyword">value</span>)<div
+                    class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li><li
+                style="color: rgb(153, 153, 153);">3</li><li style="color: rgb(153, 153, 153);">4</li><li
+                style="color: rgb(153, 153, 153);">5</li><li style="color: rgb(153, 153, 153);">6</li></ul></pre></p>
+<pre><code>    &lt;p&gt;要优于&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs vala has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;try&lt;/span&gt;:
+</code></pre>
+<p><span class="hljs-preprocessor"># Too broad!</span><br><span class="hljs-keyword">return</span> handle_value(collection[key])<br>except KeyError:<br><span class="hljs-preprocessor"># Will also catch KeyError raised by handle_value()</span><br><span class="hljs-keyword">return</span> key_not_found(key)<div class="hljs-button {2}" data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li><li style="color: rgb(153, 153, 153);">3</li><li
+                style="color: rgb(153, 153, 153);">4</li><li style="color: rgb(153, 153, 153);">5</li><li
+                style="color: rgb(153, 153, 153);">6</li></ul></pre></p>
+<pre><code>    &lt;p&gt;6 使用startswith() and endswith()代替切片进行序列前缀或后缀的检查。比如：&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs bash has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; foo.startswith(&lt;span
+            class=&quot;hljs-string&quot;&gt;&#39;bar&#39;&lt;/span&gt;):&lt;div class=&quot;hljs-button &#123;2&#125;&quot; data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul
+            class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;优于&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs bash has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt; &lt;span
+            class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; foo[:&lt;span class=&quot;hljs-number&quot;&gt;3&lt;/span&gt;] == &lt;span class=&quot;hljs-string&quot;&gt;&#39;bar&#39;&lt;/span&gt;:&lt;div
+            class=&quot;hljs-button &#123;2&#125;&quot; data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li
+            style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;7 使用isinstance()比较对象的类型。比如&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs cs has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; isinstance(obj, &lt;span
+            class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt;): &lt;div class=&quot;hljs-button &#123;2&#125;&quot; data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul
+            class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;优于&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs haskell has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt; &lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; &lt;span
+            class=&quot;hljs-typedef&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;hljs-container&quot;&gt;(&lt;span
+            class=&quot;hljs-title&quot;&gt;obj&lt;/span&gt;)&lt;/span&gt; is &lt;span class=&quot;hljs-keyword&quot;&gt;type&lt;/span&gt;&lt;span
+            class=&quot;hljs-container&quot;&gt;(1)&lt;/span&gt;:&lt;/span&gt;&lt;div class=&quot;hljs-button &#123;2&#125;&quot; data-title=&quot;复制&quot;&gt;&lt;/div&gt;&lt;/code&gt;&lt;ul
+            class=&quot;pre-numbering&quot; style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(153, 153, 153);&quot;&gt;1&lt;/li&gt;&lt;/ul&gt;&lt;/pre&gt;
+
+    &lt;p&gt;8 判断序列空或不空，有如下规则&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs ruby has-numbering&quot; onclick=&quot;mdcp.copyCode(event)&quot;
+                                               style=&quot;position: unset;&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; &lt;span
+            class=&quot;hljs-keyword&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;hljs-symbol&quot;&gt;seq:&lt;/span&gt;
+</code></pre>
+<p><span class="hljs-keyword">if</span> <span class="hljs-symbol">seq:</span><div class="hljs-button {2}"
+                                                                               data-title="复制"></div></code><ul
+                class="pre-numbering" style=""><li style="color: rgb(153, 153, 153);">1</li><li
+                style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;优于&lt;/p&gt;
+
+
+    &lt;pre class=&quot;prettyprint&quot; name=&quot;code&quot;&gt;&lt;code class=&quot;hljs livecodeserver has-numbering&quot;
+                                               onclick=&quot;mdcp.copyCode(event)&quot; style=&quot;position: unset;&quot;&gt;&lt;span
+            class=&quot;hljs-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;hljs-built_in&quot;&gt;len&lt;/span&gt;(seq)
+</code></pre>
+<p><span class="hljs-keyword">if</span> <span class="hljs-operator">not</span> <span class="hljs-built_in">len</span>(seq)<div
+                    class="hljs-button {2}" data-title="复制"></div></code><ul class="pre-numbering" style=""><li
+                style="color: rgb(153, 153, 153);">1</li><li style="color: rgb(153, 153, 153);">2</li></ul></pre></p>
+<pre><code>    &lt;p&gt;9 字符串不要以空格收尾。 &lt;br&gt;
+        10 二进制数据判断使用 if boolvalue的方式。&lt;/p&gt;
+
+
+    &lt;h1 id=&quot;8-参考文献&quot;&gt;&lt;a name=&quot;t12&quot;&gt;&lt;/a&gt;8. 参考文献&lt;/h1&gt;
+
+    &lt;p&gt;[1] PEP8中文翻译 &lt;a href=&quot;http://wiki.hiaero.net/doku.php?id=python:pep8&quot; rel=&quot;nofollow&quot;&gt;http://wiki.hiaero.net/doku.php?id=python:pep8&lt;/a&gt;
+        &lt;br&gt;
+        [2] PEP8 Python 编码规范整理 &lt;a href=&quot;https://www.douban.com/note/134971609/&quot; rel=&quot;nofollow&quot;&gt;https://www.douban.com/note/134971609/&lt;/a&gt;
+        &lt;br&gt;
+        [3] Python 代码风格 和 PEP8 &lt;a href=&quot;http://www.blogjava.net/lincode/archive/2011/02/02/343859.html&quot;
+                                  rel=&quot;nofollow&quot;&gt;http://www.blogjava.net/lincode/archive/2011/02/02/343859.html&lt;/a&gt;
+    &lt;/p&gt;&lt;/div&gt;
+&lt;link href=&quot;https://csdnimg.cn/release/phoenix/mdeditor/markdown_views-b6c3c6d139.css&quot; rel=&quot;stylesheet&quot;&gt;
+</code></pre>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Victor</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://victorfengming.gitee.io/cp/python/python-pep8/">http://victorfengming.gitee.io/cp/python/python-pep8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/interview/">interview</a><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/background/">background</a><a class="post-meta__tags" href="/tags/standard/">standard</a></div><div class="post_share"><div class="social-share" data-image="/img/lynk/37.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/cp/python/python-name-rule/"><img class="prev-cover" data-lazy-src="/img/lynk/66.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Python的编码命名规则</div></div></a></div><div class="next-post pull-right"><a href="/cp/python/python-range-xrange/"><img class="next-cover" data-lazy-src="/img/lynk/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">python range() 和xrange()的区别</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> Related Articles</span></div><div class="relatedPosts-list"><div><a href="/cp/compile-explain/" title="简述编译型与解释型编程语言"><img class="cover" data-lazy-src="/img/lynk/58.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-03-04</div><div class="title">简述编译型与解释型编程语言</div></div></a></div><div><a href="/cp/python/python-feature/" title="谈谈对Python和其他语言区别"><img class="cover" data-lazy-src="/img/lynk/14.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-03-04</div><div class="title">谈谈对Python和其他语言区别</div></div></a></div><div><a href="/cp/python/python-interpreter-type/" title="Python 的解释器种类以及相关特点"><img class="cover" data-lazy-src="/img/lynk/82.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-03-04</div><div class="title">Python 的解释器种类以及相关特点</div></div></a></div><div><a href="/cp/python/python-range-xrange/" title="python range() 和xrange()的区别"><img class="cover" data-lazy-src="/img/lynk/1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-03-04</div><div class="title">python range() 和xrange()的区别</div></div></a></div><div><a href="/cp/python/python-venv/" title="Python中的虚拟环境-virtualenv"><img class="cover" data-lazy-src="/img/lynk/72.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-03-04</div><div class="title">Python中的虚拟环境-virtualenv</div></div></a></div><div><a href="/cp/python/python-yield/" title="Python中的yield详解"><img class="cover" data-lazy-src="/img/lynk/10.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2022-03-04</div><div class="title">Python中的yield详解</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar-mecyblitz.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Victor</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">431</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">87</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://gitee.com/victorfengming"><i class="fab fa-gitee"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/victorfengming" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/victorfengming" target="_blank" title="Gitee"><i class="fab fa-gitee"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/index/colemak/" title="Github文档索引"><img data-lazy-src="/img/lynk/91.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github文档索引"/></a><div class="content"><a class="title" href="/index/colemak/" title="Github文档索引">Github文档索引</a><time datetime="2021-12-20T21:03:08.000Z" title="Created 2021-12-21 05:03:08">2021-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/comic/centos_dev/" title="Centos部署前端命令汇总"><img data-lazy-src="/img/lynk/72.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Centos部署前端命令汇总"/></a><div class="content"><a class="title" href="/comic/centos_dev/" title="Centos部署前端命令汇总">Centos部署前端命令汇总</a><time datetime="2021-11-02T16:00:00.000Z" title="Created 2021-11-03 00:00:00">2021-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/linux/deepin-colemak/" title="deepin系统开机自动切换colemak键盘布局"><img data-lazy-src="/img/lynk/16.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="deepin系统开机自动切换colemak键盘布局"/></a><div class="content"><a class="title" href="/linux/deepin-colemak/" title="deepin系统开机自动切换colemak键盘布局">deepin系统开机自动切换colemak键盘布局</a><time datetime="2021-10-07T16:00:00.000Z" title="Created 2021-10-08 00:00:00">2021-10-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/middleware/mq/rabbitmq/" title="RabbitMQ面试题"><img data-lazy-src="/img/lynk/97.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RabbitMQ面试题"/></a><div class="content"><a class="title" href="/middleware/mq/rabbitmq/" title="RabbitMQ面试题">RabbitMQ面试题</a><time datetime="2021-09-24T16:00:00.000Z" title="Created 2021-09-25 00:00:00">2021-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/comic/git-server/" title="在自己的服务器上搭建git服务"><img data-lazy-src="/img/lynk/72.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="在自己的服务器上搭建git服务"/></a><div class="content"><a class="title" href="/comic/git-server/" title="在自己的服务器上搭建git服务">在自己的服务器上搭建git服务</a><time datetime="2021-09-08T16:00:00.000Z" title="Created 2021-09-09 00:00:00">2021-09-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Victor</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="Increase font size"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="Decrease font size"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'CHjATxRcQrXst8eJrdwX0vjz-gzGzoHsz',
+      appKey: 'nWerbwV2WMAxOEmAMkJKvXzs',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '//i0.hdslb.com/bfs/emote/',
+      emojiMaps: {"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_親親":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再見":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_發怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_發財":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可愛":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_嘔吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_壞笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尷尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_驚嚇":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png"},
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  //- // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
