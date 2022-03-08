@@ -184,14 +184,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/tornado/epoll/</loc>
+    <loc>http://blog.colemak.cn/python/tornado/tornado-note1/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/tornado/tornado-note1/</loc>
+    <loc>http://blog.colemak.cn/python/tornado/epoll/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/tornado/tornado-note3/</loc>
+    <loc>http://blog.colemak.cn/python/tornado/tornado-note4/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/tornado/tornado-note4/</loc>
+    <loc>http://blog.colemak.cn/python/tornado/tornado-note3/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -296,14 +296,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/spider/Scrapy/python-scrapy/</loc>
+    <loc>http://blog.colemak.cn/python/spider/Scrapy/scrapy-note2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/spider/Scrapy/scrapy-note2/</loc>
+    <loc>http://blog.colemak.cn/python/spider/Scrapy/python-scrapy/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -338,14 +338,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/install/python-install-pip/</loc>
+    <loc>http://blog.colemak.cn/python/install/python-install-ubuntu/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/install/python-install-ubuntu/</loc>
+    <loc>http://blog.colemak.cn/python/install/python-install-pip/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -457,14 +457,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/flask/flask-blueprint/</loc>
+    <loc>http://blog.colemak.cn/python/flask/flask-introduction/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/flask/flask-introduction/</loc>
+    <loc>http://blog.colemak.cn/python/flask/flask-blueprint/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -709,13 +709,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/GUI/pyqt5/demo/pyqt5-demo2/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/python/GUI/pyqt5/note/pyqt5-note1-5/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -724,6 +717,13 @@
   
   <url>
     <loc>http://blog.colemak.cn/python/GUI/pyqt5/note/pyqt5-note11-15/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/GUI/pyqt5/demo/pyqt5-demo2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1129,14 +1129,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/java/javase/note/note09/</loc>
+    <loc>http://blog.colemak.cn/java/javase/note/note10/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/java/javase/note/note10/</loc>
+    <loc>http://blog.colemak.cn/java/javase/note/note09/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1605,13 +1605,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/ide/jetbrains/idea/jetbrains-ide-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/ide/jetbrains/idea/jetbrains-idea-debug/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -1619,7 +1612,7 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/ide/jetbrains/idea/jetbrains-idea-introduce/</loc>
+    <loc>http://blog.colemak.cn/ide/jetbrains/idea/jetbrains-ide-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1627,6 +1620,13 @@
   
   <url>
     <loc>http://blog.colemak.cn/ide/jetbrains/idea/jetbrains-idea-serialID/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/ide/jetbrains/idea/jetbrains-idea-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1780,14 +1780,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/git/git-log-analysis/</loc>
+    <loc>http://blog.colemak.cn/git/git-svn/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/git/git-svn/</loc>
+    <loc>http://blog.colemak.cn/git/git-log-analysis/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1892,14 +1892,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/vue-init-run/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/vue-install/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/vue-install/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/vue-init-run/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1990,14 +1990,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/axios/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/vue-cli-install/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/vue-cli-install/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/axios/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
