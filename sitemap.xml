@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/music/index.html</loc>
+    <loc>http://blog.colemak.cn/movies/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/movies/index.html</loc>
+    <loc>http://blog.colemak.cn/music/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -65,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/categories/index.html</loc>
+    <loc>http://blog.colemak.cn/about/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/about/index.html</loc>
+    <loc>http://blog.colemak.cn/categories/index.html</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3329,6 +3329,13 @@
   </url>
   
   <url>
+    <loc>http://blog.colemak.cn/tags/valine/</loc>
+    <lastmod>2022-03-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.colemak.cn/tags/Golang/</loc>
     <lastmod>2022-03-16</lastmod>
     <changefreq>daily</changefreq>
@@ -3442,13 +3449,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/tags/jvm/</loc>
-    <lastmod>2022-03-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/valine/</loc>
     <lastmod>2022-03-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3581,6 +3581,13 @@
   </url>
   
   <url>
+    <loc>http://blog.colemak.cn/tags/SpringBoot/</loc>
+    <lastmod>2022-03-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.colemak.cn/tags/django/</loc>
     <lastmod>2022-03-16</lastmod>
     <changefreq>daily</changefreq>
@@ -3631,13 +3638,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/tags/tornado/</loc>
-    <lastmod>2022-03-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/SpringBoot/</loc>
     <lastmod>2022-03-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
