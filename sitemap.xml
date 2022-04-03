@@ -807,14 +807,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/Django/note/django-note4/</loc>
+    <loc>http://blog.colemak.cn/python/Django/note/django-note5/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/Django/note/django-note5/</loc>
+    <loc>http://blog.colemak.cn/python/Django/note/django-note4/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1927,14 +1927,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/vue-note2/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/vue-note3/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/vue-note3/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/vue-note2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -1990,14 +1990,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/note/vue-note1/</loc>
+    <loc>http://blog.colemak.cn/front/vue/old/axios/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/vue/old/axios/</loc>
+    <loc>http://blog.colemak.cn/front/vue/note/vue-note1/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3553,41 +3553,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/tags/Java/</loc>
-    <lastmod>2022-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/JDBC/</loc>
-    <lastmod>2022-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/jFinal/</loc>
-    <lastmod>2022-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/Spring/</loc>
-    <lastmod>2022-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/SpringBoot/</loc>
-    <lastmod>2022-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/tags/django/</loc>
     <lastmod>2022-04-03</lastmod>
     <changefreq>daily</changefreq>
@@ -3638,6 +3603,41 @@
   
   <url>
     <loc>http://blog.colemak.cn/tags/tornado/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/Java/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/JDBC/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/jFinal/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/Spring/</loc>
+    <lastmod>2022-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/SpringBoot/</loc>
     <lastmod>2022-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
