@@ -261,20 +261,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/spider/selenium/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/spider/spider-for-bilibili/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/python/tornado/c10k/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -283,6 +269,20 @@
   
   <url>
     <loc>http://blog.colemak.cn/python/tornado/curl/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/spider/selenium/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/spider/spider-for-bilibili/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -332,20 +332,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/python/self_tool/regex-replace-tags/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/flask/flask-note1/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/flask/flask-note2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -409,6 +395,20 @@
   
   <url>
     <loc>http://blog.colemak.cn/python/self_tool/python-new-file/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/flask/flask-note1/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/flask/flask-note2/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -548,41 +548,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/python/base/python-method/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/base/python-re/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/base/python-single-mode/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/base/python-version-ubuntu/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/python/base/tuple-type-id/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/python/collection/PythonTestAutomationiOS/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -626,6 +591,41 @@
   
   <url>
     <loc>http://blog.colemak.cn/python/collection/python-frame/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/base/python-method/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/base/python-re/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/base/python-single-mode/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/base/python-version-ubuntu/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/python/base/tuple-type-id/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -947,20 +947,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/linux/xmind/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/linux/ydma.cn-linux/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/operation/ansible-introduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -969,6 +955,20 @@
   
   <url>
     <loc>http://blog.colemak.cn/operation/centos7-install-graphite/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/linux/xmind/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/linux/ydma.cn-linux/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2011,6 +2011,13 @@
   </url>
   
   <url>
+    <loc>http://blog.colemak.cn/front/react/react-intorduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.colemak.cn/front/quickly/emmet-html-grammer/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2019,13 +2026,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/front/quickly/sublime-regex/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/react/react-intorduce/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2193,41 +2193,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/front/jquery/jquery-base-note/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/jquery/jquery-effect/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/jquery/jquery-event/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/jquery/jquery-selector/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/jquery/magnifing-glass/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/front/js/blog-href/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2271,6 +2236,41 @@
   
   <url>
     <loc>http://blog.colemak.cn/front/js/js-interval/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/jquery/jquery-base-note/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/jquery/jquery-effect/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/jquery/jquery-event/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/jquery/jquery-selector/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/jquery/magnifing-glass/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2368,13 +2368,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/database/ubuntu-install-mysql/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/develop/gradle/</loc>
     
     <lastmod>2022-03-04</lastmod>
@@ -2383,6 +2376,41 @@
   
   <url>
     <loc>http://blog.colemak.cn/develop/restful/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/database/ubuntu-install-mysql/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-Responsive.md/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-cdn/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-introduce/</loc>
+    
+    <lastmod>2022-03-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-practice/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -2425,34 +2453,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/database/redis/redis-note4/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-Responsive.md/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-cdn/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-introduce/</loc>
-    
-    <lastmod>2022-03-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/front/bootstrap/bootstrap-practice/</loc>
     
     <lastmod>2022-03-04</lastmod>
     
@@ -3196,6 +3196,34 @@
   </url>
   
   <url>
+    <loc>http://blog.colemak.cn/tags/web/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/html/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/index/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/front/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.colemak.cn/tags/database/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -3273,34 +3301,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/tags/web/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/html/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/index/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/front/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/tags/cmder/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -3357,41 +3357,6 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/tags/colemak/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/server/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/skills/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/vim/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/Windows/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.colemak.cn/tags/graphite/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -3441,7 +3406,35 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/tags/FastAPI/</loc>
+    <loc>http://blog.colemak.cn/tags/colemak/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/server/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/skills/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/vim/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/Windows/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3449,6 +3442,27 @@
   
   <url>
     <loc>http://blog.colemak.cn/tags/jvm/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/FastAPI/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/css/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/Bootstrap/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3463,27 +3477,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/tags/standard/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/Redis/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/Bootstrap/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/css/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3539,6 +3532,13 @@
   </url>
   
   <url>
+    <loc>http://blog.colemak.cn/tags/Redis/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.colemak.cn/tags/Web/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -3547,62 +3547,6 @@
   
   <url>
     <loc>http://blog.colemak.cn/tags/Fiber/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/django/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/regex/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/python/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/data-analysis/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/pandas/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/flask/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/spider/</loc>
-    <lastmod>2022-09-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.colemak.cn/tags/tornado/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -3644,6 +3588,62 @@
   </url>
   
   <url>
+    <loc>http://blog.colemak.cn/tags/django/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/python/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/regex/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/data-analysis/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/pandas/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/flask/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/tornado/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.colemak.cn/tags/spider/</loc>
+    <lastmod>2022-09-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.colemak.cn/tags/axios/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
@@ -3658,14 +3658,14 @@
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/tags/pycharm/</loc>
+    <loc>http://blog.colemak.cn/tags/webstrom/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.colemak.cn/tags/webstrom/</loc>
+    <loc>http://blog.colemak.cn/tags/pycharm/</loc>
     <lastmod>2022-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
